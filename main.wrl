@@ -1,2 +1,279 @@
 #VRML V2.0 utf8
 
+#Background
+DEF Background Transform {
+	translation	0 0 0
+	children [
+		Inline {
+			url	"views/Background/Background.wrl"
+		}
+	]
+}
+
+#Nền
+DEF Ground Transform {
+	scale 3000 2 1400
+	translation 0 0 0
+	children [
+		Inline	{
+			url	"views/Ground/ground.wrl"
+		}
+	]
+}
+#Tường
+DEF Wall Transform {
+	translation	200 50 0
+	children [
+		#Tường bao ngoài
+		Transform {
+			children [
+				#Tường sau
+				Transform {
+					translation	0 0 700
+					children [
+						Shape {
+							appearance Appearance {
+								material Material {
+									diffuseColor .6 .6 .6
+								}
+							}
+							geometry Box {
+								size 2600 100 2
+							}
+						}
+					]
+				}
+				#Tường phải
+				Transform {
+					translation	1300 0 0
+					children [
+						Shape {
+							appearance Appearance {
+								material Material {
+									diffuseColor .6 .6 .6
+								}
+							}
+							geometry Box {
+								size 2 100 1400
+							}
+						}
+					]
+				}
+				#Tường trước
+				Transform {
+					translation	0 0 -700
+					children [
+						Shape {
+							appearance Appearance {
+								material Material {
+									diffuseColor .6 .6 .6
+								}
+							}
+							geometry Box {
+								size 2600 100 2
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+#Đường phố
+DEF Street Transform {
+	translation	-1300 1 0
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .79 .25 0
+					specularColor .63 .19 .03
+					ambientIntensity .0867
+					shininess .55
+				}
+			}
+			geometry Box {
+				size 400 1 1400
+			}
+		}
+	]
+}
+#Dãy ngang
+DEF	BlockHor Transform {
+	translation	-1000 100 0
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .33 .34 .6
+					specularColor .29 .29 .29
+					ambientIntensity .103
+					shininess .79
+				}
+			}
+			geometry Box {
+				size 200 200 600
+			}
+		}
+	]
+}
+#Dãy 1
+DEF	Block1 Transform {
+	translation	-450 100 -600
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .69 .13 .33
+					specularColor .12 .05 .05
+					ambientIntensity .0933
+					shininess .07
+				}
+			}
+			geometry Box {
+				size 1300 200 200
+			}
+		}
+	]
+}
+#Dãy 2
+DEF	Block2 Transform {
+	translation	-250 100 -200
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .69 .13 .33
+					specularColor .12 .05 .05
+					ambientIntensity .0933
+					shininess .07
+				}
+			}
+			geometry Box {
+				size 900 200 200
+			}
+		}
+	]
+}
+#Dãy 3
+DEF	Block3 Transform {
+	translation	-250 100 200
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .69 .13 .33
+					specularColor .12 .05 .05
+					ambientIntensity .0933
+					shininess .07
+				}
+			}
+			geometry Box {
+				size 900 200 200
+			}
+		}
+	]
+}
+#Dãy 4
+DEF	Block4 Transform {
+	translation	-450 100 600
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .69 .13 .33
+					specularColor .12 .05 .05
+					ambientIntensity .0933
+					shininess .07
+				}
+			}
+			geometry Box {
+				size 1300 200 200
+			}
+		}
+	]
+}
+#Dãy 5
+DEF	Block5 Transform {
+	translation	900 100 -600
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .88 .15 .01
+					specularColor .19 .03 .03
+					ambientIntensity .0833
+					shininess .08
+				}
+			}
+			geometry Box {
+				size 1000 200 200
+			}
+		}
+	]
+}
+#Dãy 6
+DEF	Block6 Transform {
+	translation	900 100 -200
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .88 .15 .01
+					specularColor .19 .03 .03
+					ambientIntensity .0833
+					shininess .08
+				}
+			}
+			geometry Box {
+				size 1000 200 200
+			}
+		}
+	]
+}
+#Dãy 7
+DEF	Block7 Transform {
+	translation	900 100 200
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .88 .15 .01
+					specularColor .19 .03 .03
+					ambientIntensity .0833
+					shininess .08
+				}
+			}
+			geometry Box {
+				size 1000 200 200
+			}
+		}
+	]
+}
+#Dãy 8
+DEF	Block8 Transform {
+	translation	900 100 600
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .88 .15 .01
+					specularColor .19 .03 .03
+					ambientIntensity .0833
+					shininess .08
+				}
+			}
+			geometry Box {
+				size 1000 200 200
+			}
+		}
+	]
+}
+#Góc nhìn
+Viewpoint {
+    fieldOfView 1
+    jump TRUE
+    description "v1"
+    orientation 1 0 0 -1
+    position 0 1500 1000
+}
