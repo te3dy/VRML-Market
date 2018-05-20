@@ -1,0 +1,27 @@
+#VRML V2.0 utf8
+
+DEF	dichuyen Transform {children [
+DEF	time TimeSensor	{
+	cycleInterval 15
+	loop TRUE
+}
+DEF	chay PositionInterpolator {
+	key	[0,.6,1]
+	keyValue [-60 0 0,61 0 0,61 0 100]
+}
+DEF	quay OrientationInterpolator {
+	key	[0,.6,.67,1]
+	keyValue [0 0 0 0,0 0 0 0, 0 1 0 -1.57,0 1 0 -1.57, 0 1 0 -1.57] 
+}
+DEF	xe Transform {
+	translation	0 0 0
+	children [
+		Inline {url	"xetai.wrl"}
+	]
+}
+]}
+
+ROUTE time.fraction_changed	TO chay.set_fraction
+ROUTE chay.value_changed TO	xe.translation
+ROUTE time.fraction_changed	TO quay.set_fraction
+ROUTE quay.value_changed TO	xe.rotation
