@@ -35,10 +35,16 @@ DEF SideWalk2 Transform {
 	scale 1 1 1
 	translation -1450 3 0
 	children [
+		Transform {
+		translation	0 0 0
+		children [
 		Inline	{
 			url	"views/SlideWalk/slidewalk.wrl"
 		}
 	]
+	}
+	
+]
 }
 #Tường
 DEF Wall Transform {
