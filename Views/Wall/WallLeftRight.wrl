@@ -1,0 +1,138 @@
+#VRML V2.0 utf8
+
+DEF Tuong Transform {
+	translation	0 0 0
+	children [
+		Inline {
+			url	"TuongCong.wrl"
+		}
+	]
+}
+Transform {
+	translation	4 0 0
+	children [
+		USE	Tuong
+	]
+}
+Transform {
+	translation	8 0 0
+	children [
+		USE	Tuong
+	]
+}
+Transform {
+	translation	12 0 0
+	children [
+		USE	Tuong
+	]
+}
+Transform {
+	translation	16 0 0
+	children [
+		USE	Tuong
+	]
+}
+Transform {
+	translation	20 0 0
+	children [
+		USE	Tuong
+	]
+}
+Transform {
+	translation	24 0 0
+	children [
+		USE	Tuong
+	]
+}
+Transform {
+	translation	28 0 0
+	children [
+		USE	Tuong
+	]
+}
+Transform {
+	translation	32 0 0
+	children [
+		USE	Tuong
+	]
+}
+Transform {
+	translation	40 0 0
+	children [
+		USE	Tuong
+	]
+}
+Transform {
+	translation	36 0 0
+	children [
+		USE	Tuong
+	]
+}
+Transform {
+	translation	-4 0 0
+	children [
+		USE	Tuong
+	]
+}
+Transform {
+	translation	-8 0 0
+	children [
+		USE	Tuong
+	]
+}
+Transform {
+	translation	-12 0 0
+	children [
+		USE	Tuong
+	]
+}
+Transform {
+	translation	-16 0 0
+	children [
+		USE	Tuong
+	]
+}
+Transform {
+	translation	-20 0 0
+	children [
+		USE	Tuong
+	]
+}
+Transform {
+	translation	-24 0 0
+	children [
+		USE	Tuong
+	]
+}
+Transform {
+	translation	-28 0 0
+	children [
+		USE	Tuong
+	]
+}
+Transform {
+	translation	-32 0 0
+	children [
+		USE	Tuong
+	]
+}
+Transform {
+	translation	-36 0 0
+	children [
+		USE	Tuong
+	]
+}
+Transform {
+	translation	-40 0 0
+	children [
+		USE	Tuong
+	]
+}
+Transform {
+	translation	-42 1.5 0
+	children [
+		Inline {
+			url	"cottru.wrl"
+		}
+	]
+}

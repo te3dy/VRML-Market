@@ -2,12 +2,12 @@
 
 DEF	dichuyen Transform {children [
 DEF	time TimeSensor	{
-	cycleInterval 20
+	cycleInterval 5
 	loop TRUE
 }
 DEF	chay PositionInterpolator {
 	key	[0,.6,1]
-	keyValue [-25 0 0,50 0 0,50 0 -30]
+	keyValue [0 0 0,20 0 0]
 }
 DEF	quay OrientationInterpolator {
 	key	[0,.6,.67,1]
@@ -24,5 +24,5 @@ DEF	xe Transform {
 
 ROUTE time.fraction_changed	TO chay.set_fraction
 ROUTE chay.value_changed TO	xe.translation
-ROUTE time.fraction_changed	TO quay.set_fraction
-ROUTE quay.value_changed TO	xe.rotation
+#ROUTE time.fraction_changed	TO quay.set_fraction
+#ROUTE quay.value_changed TO	xe.rotation

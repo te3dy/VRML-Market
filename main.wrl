@@ -53,51 +53,45 @@ DEF Wall Transform {
 		#Tường bao ngoài
 		Transform {
 			children [
+				#Tường trai
+				Transform {
+					translation	-25 -35 700
+					scale 30 30 30
+					children [
+						Inline {
+							url	"views/wall/wallleftright.wrl"
+						}
+					]
+				}
 				#Tường sau
 				Transform {
-					translation	0 0 700
+					translation	1240 -35 0
+					scale 30 30 30
+					rotation 0 1 0 1.57
 					children [
-						Shape {
-							appearance Appearance {
-								material Material {
-									diffuseColor .6 .6 .6
-								}
-							}
-							geometry Box {
-								size 2600 100 2
-							}
+						Inline {
+							url	"views/wall/wallback.wrl"
 						}
 					]
 				}
 				#Tường phải
 				Transform {
-					translation	1300 0 0
+					translation	-25 -35 -700
+					scale 30 30 30
 					children [
-						Shape {
-							appearance Appearance {
-								material Material {
-									diffuseColor .6 .6 .6
-								}
-							}
-							geometry Box {
-								size 2 100 1400
-							}
+						Inline {
+							url	"views/Wall/wallleftright.wrl"
 						}
 					]
 				}
 				#Tường trước
 				Transform {
-					translation	0 0 -700
+					translation	-1280 -35 0
+					rotation 0 1 0 1.57
+					scale 30 30 30
 					children [
-						Shape {
-							appearance Appearance {
-								material Material {
-									diffuseColor .6 .6 .6
-								}
-							}
-							geometry Box {
-								size 2600 100 2
-							}
+						Inline {
+							url	"views/Wall/wallfront.wrl"
 						}
 					]
 				}
@@ -120,19 +114,7 @@ DEF Street Transform {
 DEF	BlockHor Transform {
 	translation	-1000 100 0
 	children [
-		Shape {
-			appearance Appearance {
-				material Material {
-					diffuseColor .33 .34 .6
-					specularColor .29 .29 .29
-					ambientIntensity .103
-					shininess .79
-				}
-			}
-			geometry Box {
-				size 200 200 600
-			}
-		}
+
 	]
 }
 #Dãy 1

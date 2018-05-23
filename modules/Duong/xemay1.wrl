@@ -42,12 +42,12 @@ DEF VP6 Viewpoint {
 	
 DEF	dichuyen Transform {children [
 DEF	time TimeSensor	{
-	cycleInterval 15
+	cycleInterval 3
 	loop TRUE
 }
 DEF	chay PositionInterpolator {
 	key	[0,.6,1]
-	keyValue [-25 0 0,25 0 0,25 0 30]
+	keyValue [-7 0 0,7 0 0]
 }
 DEF	quay OrientationInterpolator {
 	key	[0,.6,.67,1]
@@ -64,5 +64,5 @@ DEF	xe Transform {
 
 ROUTE time.fraction_changed	TO chay.set_fraction
 ROUTE chay.value_changed TO	xe.translation
-ROUTE time.fraction_changed	TO quay.set_fraction
-ROUTE quay.value_changed TO	xe.rotation
+#ROUTE time.fraction_changed	TO quay.set_fraction
+#ROUTE quay.value_changed TO	xe.rotation

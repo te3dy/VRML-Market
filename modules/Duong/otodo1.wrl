@@ -40,19 +40,19 @@ DEF VP6 Viewpoint {
 }
 DEF	dichuyen Transform {children [
 DEF	time TimeSensor	{
-	cycleInterval 10
+	cycleInterval 6
 	loop TRUE
 }
 DEF	chay PositionInterpolator {
 	key	[0,.6,1]
-	keyValue [-900 0 0,1100 0 0,1100 0 1000]
+	keyValue [-150 0 0,350 0 0]
 }
 DEF	quay OrientationInterpolator {
 	key	[0,.6,.67,1]
 	keyValue [0 0 0 0,0 0 0 0, 0 1 0 -1.57,0 1 0 -1.57, 0 1 0 -1.57] 
 }
 DEF	xe Transform {
-	translation	-45 0 0
+	translation	0 0 0
 	scale .1 .1 .1
 	children [
 		Inline {url	"otodo.wrl"}
@@ -62,5 +62,5 @@ DEF	xe Transform {
 
 ROUTE time.fraction_changed	TO chay.set_fraction
 ROUTE chay.value_changed TO	xe.translation
-ROUTE time.fraction_changed	TO quay.set_fraction
-ROUTE quay.value_changed TO	xe.rotation
+#ROUTE time.fraction_changed	TO quay.set_fraction
+#ROUTE quay.value_changed TO	xe.rotation

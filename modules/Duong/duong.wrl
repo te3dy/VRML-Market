@@ -26,18 +26,18 @@ children [
 			material Material {
 			diffuseColor 1 1 1}
 		}
-		geometry Box {size 1 .04 .2}
+		geometry Box {size 2 .04 .2}
 	}
 ]
 }
 Transform {
-translation	5 0 0
+translation	0 0 0
 children [
 	USE	vachvoi
 ]
 }
 Transform {
-translation	10 0 0
+translation	5 0 0
 children [
 	USE	vachvoi
 ]
@@ -60,9 +60,44 @@ children [
 	USE	vachvoi
 ]
 }
+Transform {
+translation	25 0 0
+children [
+	USE	vachvoi
+]
+}
+Transform {
+translation	-5 0 0
+children [
+	USE	vachvoi
+]
+}
+Transform {
+translation	-10 0 0
+children [
+	USE	vachvoi
+]
+}
+Transform {
+translation	-15 0 0
+children [
+	USE	vachvoi
+]
+}
+Transform {
+translation	-20 0 0
+children [
+	USE	vachvoi
+]
+}
+Transform {
+translation	-25 0 0
+children [
+	USE	vachvoi
+]
+}
 #dong vach
 ]}
-
 ]}#đóng đường
 
 Transform {
@@ -81,20 +116,20 @@ Transform {
 	]
 }
 #xe thùng
-Transform {
-	translation	10 0 -1.9
-	children [
-		Inline {url "xethung1.wrl"}
-	]
-}
+#Transform {
+#	translation	10 0 -1.9
+#	children [
+#		Inline {url "xethung1.wrl"}
+#	]
+#}
 #xe tai
-Transform {
-	translation	-25 1.4 0
-	scale 2 2 2
-	children [
-		Inline {url "xetai1.wrl"}
-	]
-}
+#Transform {
+#	translation	-25 1.4 0
+#	scale 2 2 2
+#	children [
+#		Inline {url "xetai1.wrl"}
+#	]
+#}
 #xe máy
 Transform {
 	translation	0 1 2
