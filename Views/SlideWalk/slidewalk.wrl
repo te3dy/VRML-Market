@@ -1,0 +1,19 @@
+#VRML V2.0 utf8
+
+Transform {
+    children [
+        Shape {
+            geometry Box {
+                size 100 5 1400
+            }
+            appearance Appearance {
+				material Material {}
+				texture	ImageTexture {
+					url	"Images/Nen.png"
+                    repeatS TRUE
+                    repeatT TRUE
+				}
+            }
+        }
+    ]
+}
