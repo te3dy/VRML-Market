@@ -1,0 +1,183 @@
+#VRML V2.0 utf8
+
+Transform {
+	translation	0 0 -20
+	children [
+		Transform {
+			children [
+				Inline {
+					url	"phiatrennha.wrl"
+				}
+			]
+		}
+		#cuaso1
+		Transform {
+			translation	-9 1 5
+			children [
+				Inline {
+					url	"canhcua.wrl"
+				}
+			]
+		}
+		#cuaso2
+		Transform {
+			translation	-1 1 5
+			children [
+				Inline {
+					url	"canhcua.wrl"
+				}
+			]
+		}
+		#cuaso3
+		Transform {
+			translation	6 1 5
+			children [
+				Inline {
+					url	"canhcua.wrl"
+				}
+			]
+		}
+		#cuaso4
+		Transform {
+			translation	12 1 5
+			children [
+				Inline {
+					url	"canhcua.wrl"
+				}
+			]
+		}
+		#mainha1
+		Transform {
+			translation	0 6 -4
+			rotation 1 0 0 1
+			children [
+				Inline {
+					url	"mainha.wrl"
+				}
+			]
+		}
+			#mainha2
+		Transform {
+			translation	0 6 4
+			rotation 1 0 0 -1
+			children [
+				Inline {
+					url	"mainha.wrl"
+				}
+			]
+		}
+		#phiaduoinha
+			Transform {
+				translation	8.5 -10 0
+			children [
+				Inline {
+					url	"phiabentrai.wrl"
+				}
+			]
+		}
+		#phiabenphai
+		Transform {
+				translation	-11 -10 4.5
+			children [
+				Inline {
+					url	"phiabenphai.wrl"
+				}
+			]
+		}
+		#phiabenphai
+		Transform {
+				translation	-10.5 -10 -4.5
+			children [
+				Inline {
+					url	"phiabenphai.wrl"
+				}
+			]
+		}
+		#phiabenphai
+		Transform {
+				  translation -14.5 -10 0
+				rotation 0 1 0 1.5
+			children [
+				Inline {
+					url	"phiabenphai.wrl"
+				}
+			]
+		}
+			#maicheoduoi
+		Transform {
+			translation	0 -4 6
+			rotation 1 0 0 -1
+			children [
+				Inline {
+					url	"maichebenduoi.wrl"
+				}
+			]
+		}
+		#nenduoi
+		Transform {
+			translation	-10.5 -14.5 0
+			children [
+				Inline {
+					url	"nen.wrl"
+				}
+			]
+		}
+		#bentrongphai
+		Transform {
+			translation	-12 -9 -3
+			children [
+				Inline {
+					url	"bentrongphai.wrl"
+				}
+			]
+		}
+		#bentrongphai
+		Transform {
+			translation	-12 -9 3
+			children [
+				Inline {
+					url	"bentrongphai.wrl"
+				}
+			]
+		}
+		#bentrongphiatren
+		Transform {
+			translation	-12.3 -6 0
+			children [
+				Inline {
+					url	"bentrongphiatren.wrl"
+				}
+			]
+		}
+		#cuanha
+		Transform {
+				  translation -13 -11 0
+				rotation 0 1 0 1.5			  
+			children [
+				Inline {
+					url	"cuanha.wrl"
+				}
+			]
+		}
+		#tamgiac
+			Transform {
+				  translation -15.1 5 0
+				rotation 0 1 0 1.6			  
+			children [
+				Inline {
+					url	"tamgiac.wrl"
+				}
+			]
+		}
+			#tamgiac
+			Transform {
+				  translation 15 5 0
+				rotation 0 1 0 1.6			  
+			children [
+				Inline {
+					url	"tamgiac.wrl"
+				}
+			]
+		}
+	]
+}

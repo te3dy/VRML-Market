@@ -1,0 +1,40 @@
+#VRML V2.0 utf8
+
+PROTO Nguoi[
+	field SFTime nguoiSpeed 80,
+]
+{
+	DEF	nguoi Transform {
+		scale .5 .5 .5
+		rotation 0 1 0 -4.8
+		children [
+			Inline {url "nguoidichuyen1.wrl"}
+			
+		
+		  
+		    	]
+	}
+
+			DEF	nguoiClock TimeSensor {
+				cycleInterval IS nguoiSpeed
+				loop TRUE
+			}
+
+			DEF	nguoiOrientation PositionInterpolator {
+				key	[
+					0.0,0.2,0.4,0.6,0.8,
+				]
+				keyValue [
+					1 0 0, 30 0 0, 40 0 0, 60 0 0, 80 0 0
+
+				]
+			}
+			ROUTE nguoiClock.fraction_changed  TO nguoiOrientation.set_fraction
+			ROUTE nguoiOrientation.value_changed	TO nguoi.set_translation
+}	
+
+Transform {
+	children [
+		Nguoi {}
+	]
+}

@@ -1,0 +1,167 @@
+#VRML V2.0 utf8
+
+Transform {
+	translation	0 0 -50
+	children [
+		#cho
+		Transform {
+			translation	4 -45 15
+			scale  3 3 3
+			children [
+				Inline {
+					url	"MainCho.wrl"
+				}
+			]
+		}
+		#nha
+			Transform {
+				scale  3 3 3
+			children [
+				Inline {
+					url	"mainnha.wrl"
+				}
+			]
+		}
+		#nguoi
+			Transform {
+				translation	0 -39.1 -22
+				rotation 0 1 0 2.8
+			children [
+				Inline {
+					url	"nguoi.wrl"
+				}
+			]
+		}
+		#nguoi
+			Transform {
+				translation	5 -39.1 -22
+				rotation 0 1 0 2.8
+			children [
+				Inline {
+					url	"nguoi.wrl"
+				}
+			]
+		}
+		#nguoi
+			Transform {
+				translation	0 -39.1 -9
+				rotation 0 1 0 -1.6
+			children [
+				Inline {
+					url	"nguoi.wrl"
+				}
+			]
+		}
+		#nguoi di chuyen
+		 Transform {
+				translation	-120 -39.1 -40
+				scale 2 2 2
+			children [
+				Inline {
+					url	"cdnguoi2.wrl"
+				}
+			]
+		}
+		#nguoi di chuyen
+		 Transform {
+				translation	-100 -39.1 -40
+				scale 2 2 2
+			children [
+				Inline {
+					url	"cdnguoi3.wrl"
+				}
+			]
+		}
+		#nguoi di chuyen
+		 Transform {
+				translation	-100 -39.1 10
+				scale 2 2 2
+			children [
+				Inline {
+					url	"cdnguoi2.wrl"
+				}
+			]
+		}
+		#nguoi di chuyen
+		 Transform {
+				translation	-80 -39.1 10
+				scale 2 2 2
+			children [
+				Inline {
+					url	"cdnguoi2.wrl"
+				}
+			]
+		}
+		#nguoi di chuyen
+		 Transform {
+				translation	-100 -39.1 -8
+				scale 2 2 2
+			children [
+				Inline {
+					url	"cdnguoi1.wrl"
+				}
+			]
+		}
+		#nguoi mua hang
+		 Transform {
+				translation	-10 -39.1 -12
+				 rotation 0 1 0 1.5
+			children [
+				Inline {
+					url	"nguoi1.wrl"
+				}
+			]
+		}
+		#nguoi mua hang
+		 Transform {
+				translation	-14 -39.8 -17
+				 rotation 0 1 0 1.5
+			children [
+				Inline {
+					url	"nguoi1.wrl"
+				}
+			]
+		}
+		#nguoi mua hang
+		 Transform {
+				translation	-14 -39.8 -5
+				 rotation 0 1 0 1.5
+			children [
+				Inline {
+					url	"nguoi2.wrl"
+				}
+			]
+		}
+		#nguoi mua hang
+		 Transform {
+				translation	-1 -40 -32
+				 rotation 0 1 0 -0.4
+			children [
+				Inline {
+					url	"nguoi2.wrl"
+				}
+			]
+		}
+		#nguoi mua hang
+		 Transform {
+				translation	4 -40 -32
+				 rotation 0 1 0 -0.4
+			children [
+				Inline {
+					url	"nguoi2.wrl"
+				}
+			]
+		}
+		#gianhanghoaqua
+		Transform {
+				translation	80 -40 32
+				scale 0.18 0.18 0.18
+				rotation 0 1 0 -1.5
+			children [
+				Inline {
+					url	"GianHangQua.wrl"
+				}
+			]
+		}
+	]
+}

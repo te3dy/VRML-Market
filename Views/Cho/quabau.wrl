@@ -1,0 +1,42 @@
+#VRML V2.0 utf8
+
+Transform {
+	children [
+		Transform {
+			children [
+				Shape {
+					appearance Appearance {material Material {diffuseColor 1 1 0}}
+					geometry Sphere	{
+						radius 0.4
+					}
+				}
+			]
+		}
+			Transform {
+				translation	0 0.5 0
+			children [
+				Shape {
+					appearance Appearance {material Material {diffuseColor 1 1 0}}
+					geometry Sphere	{
+						radius 0.28
+					}
+				}
+			]
+		}
+			Transform {
+				translation	0 0.8 0
+			children [
+				Shape {
+					appearance Appearance {material Material {}}
+					geometry Cylinder	{
+						bottom TRUE
+						height 0.3
+						radius 0.01
+						side TRUE
+						top	TRUE
+					}
+				}
+			]
+		}
+	]
+}

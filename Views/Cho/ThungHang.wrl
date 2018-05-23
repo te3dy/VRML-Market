@@ -1,0 +1,382 @@
+#VRML V2.0 utf8
+
+#VRML V2.0 utf8
+ 
+
+
+######## de thung hang
+
+Transform {
+translation 0 0 0
+
+children [
+	Shape {
+		appearance Appearance {texture ImageTexture {url "Images\go.jpg"}}
+		geometry Box {size 60 .3 60}}
+		]}
+
+
+
+		########## mat tren thung hang
+
+
+
+		Transform {
+translation 0 20 0
+
+children [
+	Shape {
+		appearance Appearance {texture ImageTexture {url "Images\go.jpg"}}
+		geometry Box {size 60 .3 60}}
+		]}
+
+
+
+		 ############ mat giua thung hang
+
+
+		Transform {
+translation 0 10 -5
+
+children [
+	Shape {
+		appearance Appearance {material Material {diffuseColor .5 .5 0}}
+		geometry Box {size 60 1 50}}
+		]}
+
+
+
+		 ######### hong ben trai
+
+
+		Transform {
+		translation -30 10 0
+		children [
+			Shape {
+			appearance Appearance {texture ImageTexture {url "Images\go.jpg"}}
+		geometry Box {size .3 20 60}}]}
+
+
+
+
+		############ hong ben phai
+
+
+		Transform {
+		translation 30 10 0
+		children [
+			Shape {
+			appearance Appearance {texture ImageTexture {url "Images\go.jpg"}}
+		geometry Box {size .3 20 60}}]}
+
+
+
+		########### mat sau thung hang
+
+
+		Transform {
+		translation 0 10 -30
+		children [
+			Shape {
+			appearance Appearance {texture ImageTexture {url "Images\go.jpg"}}
+		geometry Box {size 60 20 .3}}]}
+
+
+
+
+
+		############ canh tu ben trai
+
+
+
+		DEF tutrai Transform {
+	
+	children [
+
+		DEF	mocanhtrai CylinderSensor {
+			maxAngle 0
+			minAngle -1.578
+		}
+
+
+		DEF CuaThung1 Transform {
+			children [
+
+		Transform {
+		translation 15 10 30
+		children [
+			Shape {
+			appearance Appearance {texture ImageTexture {url "Images\go.jpg"}}
+		geometry Box {size 30 20 .3}}
+
+
+
+
+		Transform {
+		translation -2 4 0
+		children [
+			Shape {appearance Appearance {material Material {diffuseColor 1 1 0}}
+				geometry Sphere {radius .8}}]} ]}]}]}
+
+
+
+				########## canh tu ben phai
+
+				 DEF tuphai Transform {
+	
+	children [
+
+
+
+
+
+
+				DEF	mocanhphai CylinderSensor {
+			maxAngle  0
+			minAngle  -1.578
+		}
+
+
+
+
+
+
+
+
+		DEF CuaThung2 Transform {
+			children [
+
+
+				Transform {
+		translation -15 10 30
+		children [
+			Shape {
+			appearance Appearance {texture ImageTexture {url "Images\go.jpg"}}
+		geometry Box {size 30 20 .3}}
+
+
+
+
+		Transform {
+		translation 3 4 0
+		children [
+			Shape {appearance Appearance {material Material {diffuseColor 1 1 0}}
+				geometry Sphere {radius .8}}]}]}]}]}
+
+
+
+
+
+				ROUTE mocanhtrai.rotation_changed  TO CuaThung1.rotation
+				ROUTE mocanhphai.rotation_changed  TO CuaThung2.rotation
+
+
+
+
+
+
+				################ hang hoa trong tu
+
+
+
+
+				Transform {
+				translation 10 6 -3
+			scale 1 1 1
+			children [Inline {url "cachua.wrl"}]}
+
+
+			Transform {
+				translation -15 6 -3
+			scale 1 1 1
+			children [Inline {url "cachua.wrl"}]}
+
+
+
+			Transform {
+				translation -20 17 -3
+			scale 1 1 1
+			children [Inline {url "cachua.wrl"}]}
+
+
+			Transform {
+				translation 5 17 -3
+			scale 1 1 1
+			children [Inline {url "cachua.wrl"}]}
+
+
+
+
+
+			Transform {
+				translation 15 15 -3
+			scale .75 .75 .75
+			children [Inline {url "quakhe.wrl"}]}
+
+
+
+
+
+
+
+
+				Transform {
+				translation 25 18 15
+			scale .75 .75 .75
+			children [Inline {url "cam.wrl"}]}
+
+
+
+
+
+			Transform {
+				translation -25 15 15
+			scale .75 .75 .75
+			children [Inline {url "le.wrl"}]}
+
+
+
+
+			############# tam ban tren
+
+
+			  ######### 4 chân bàn
+
+			DEF	chan Transform {
+			translation 29 22 10
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {diffuseColor 0 .5 0}}
+						geometry Cylinder {radius .5 height 7}}]}
+
+
+
+						Transform {
+						translation -58 0 0
+						children [USE chan ]}
+
+
+
+
+						Transform {
+						translation -58 0 -38
+						children [USE chan ]}
+
+
+
+						Transform {
+						translation 0 0 -38
+						children [USE chan ]}
+
+
+
+
+						########### mat ban trên
+
+
+
+
+						Transform {
+						translation 0 25.5 -9
+						children [
+							Shape {
+								appearance Appearance {texture ImageTexture {url "Images\go.jpg"}}
+								geometry Box {size 60 .5 40}}]}
+
+
+
+
+
+
+								################# hang hoa ben ngoai
+
+
+
+
+								Transform {
+				translation -25 35 20
+			scale .75 .75 .75
+			children [Inline {url "le.wrl"}]}
+
+
+			Transform {
+				translation 5 30 -3
+			scale .75 .75 .75
+			children [Inline {url "quakhe.wrl"}]}
+
+
+				Transform {
+				translation 20 38 15
+			scale .75 .75 .75
+			children [Inline {url "cam.wrl"}]}
+
+
+
+			Transform {
+				translation -25 43 5
+			scale .75 .75 .75
+			children [Inline {url "cam.wrl"}]}
+
+
+			Transform {
+				translation -10 30 5
+			scale .75 .75 .75
+			children [Inline {url "quaduahau.wrl"}]}
+
+
+			Transform {
+				translation 0 30 -20
+			scale .75 .75 .75
+			children [Inline {url "quaduahau.wrl"}]}
+
+
+			Transform {
+				translation -10 23.5 20
+			scale .75 .75 .75
+			children [Inline {url "quaduahau.wrl"}]}
+
+
+
+			Transform {
+				translation 10 43 0
+			scale .75 .75 .75
+			children [Inline {url "cam.wrl"}]}
+
+
+
+
+			Transform {
+				translation -20 32 -10
+			
+			children [Inline {url "cachua.wrl"}]}
+
+
+			Transform {
+				translation 25 32 -3
+			
+			children [Inline {url "cachua.wrl"}]}
+
+
+
+			Transform {
+				translation 5 25 20
+			
+			children [Inline {url "cachua.wrl"}]}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
