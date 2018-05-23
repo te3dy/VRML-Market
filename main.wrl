@@ -178,7 +178,7 @@ DEF	Block3 Transform {
 			translation	0 0 5
 			children [
 			Inline	{
-				url	"E://VRML-Market/modules/GianHangBanGhe/GianHang.wrl"
+				url	"modules/GianHangBanGhe/GianHang.wrl"
 			}
 		]
 		}
@@ -186,7 +186,7 @@ DEF	Block3 Transform {
 			translation	65 0 5
 			children [
 			Inline	{
-				url	"E://VRML-Market/modules/GianHangBanGhe/GianHang.wrl"
+				url	"modules/GianHangBanGhe/GianHang.wrl"
 			}
 		]
 		}
@@ -316,6 +316,39 @@ DEF	Block8 Transform {
 	translation	900 100 600
 	children [
 	]
+}
+#Người dịch chuyển
+DEF	WalkingMan Transform {
+	children [
+		Transform {
+			translation -300 50 0
+			scale 20 20 20
+			children [
+				Inline {
+					url "modules\WalkingMan\cdnguoi.wrl"
+				}
+			]
+		}
+		Transform {
+			translation -300 50 400
+			scale 20 20 20
+			children [
+				Inline {
+					url "modules\WalkingMan\cdnguoi.wrl"
+				}
+			]
+		}
+		Transform {
+			translation -300 50 -400
+			scale 20 20 20
+			children [
+				Inline {
+					url "modules\WalkingMan\cdnguoi.wrl"
+				}
+			]
+		}
+	]
+
 }
 #Góc nhìn
 Viewpoint {
