@@ -21,11 +21,11 @@ Transform {
 
 		}
 		Transform {
-		translation	-30 55 0
+		translation	-30 50 0
 		scale 15 15 15
 		children [
 		Inline {
-			url	"E://VRML-Market/modules/CotDen/cotden.wrl"
+			url	"cotden.wrl"
 		}
 		]
 		}
@@ -39,11 +39,11 @@ Transform {
 		]
 		}
 		Transform {
-		translation	-30 55 -400
+		translation	-30 50 -400
 		scale 15 15 15
 		children [
 		Inline {
-			url	"E://VRML-Market/modules/CotDen/cotden.wrl"
+			url	"cotden.wrl"
 		}
 		]
 		}
@@ -57,11 +57,11 @@ Transform {
 		]
 		}
 		Transform {
-		translation	-30 55 -200
+		translation	-30 50 -200
 		scale 15 15 15
 		children [
 		Inline {
-			url	"E://VRML-Market/modules/CotDen/cotden.wrl"
+			url	"cotden.wrl"
 		}
 		]
 		}
@@ -75,11 +75,11 @@ Transform {
 		]
 		}
 		Transform {
-		translation	-30 55 -600
+		translation	-30 50 -600
 		scale 15 15 15
 		children [
 		Inline {
-			url	"E://VRML-Market/modules/CotDen/cotden.wrl"
+			url	"cotden.wrl"
 		}
 		]
 		}
@@ -102,11 +102,11 @@ Transform {
 		]
 		}
 	Transform {
-		translation	-30 55 200
+		translation	-30 50 200
 		scale 15 15 15
 		children [
 		Inline {
-			url	"E://VRML-Market/modules/CotDen/cotden.wrl"
+			url	"cotden.wrl"
 		}
 		]
 		}
@@ -120,11 +120,11 @@ Transform {
 		]
 		}
 	Transform {
-		translation	-30 55 400
+		translation	-30 50 400
 		scale 15 15 15
 		children [
 		Inline {
-			url	"E://VRML-Market/modules/CotDen/cotden.wrl"
+			url	"cotden.wrl"
 		}
 		]
 		}
@@ -138,11 +138,11 @@ Transform {
 		]
 		}
 	 Transform {
-		translation	-30 55 600
+		translation	-30 50 600
 		scale 15 15 15
 		children [
 		Inline {
-			url	"E://VRML-Market/modules/CotDen/cotden.wrl"
+			url	"cotden.wrl"
 		}
 		]
 		}
