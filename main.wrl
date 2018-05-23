@@ -116,18 +116,37 @@ DEF	BlockHor Transform {
 	children [
 
 	]
-}
+}	  
 #Dãy 1
 DEF	Block1 Transform {
-	translation	-400 200 -500
-	scale 20 20 20
-	rotation 0 .1 0 1.57
+	translation	-450 100 -600
 	children [
-		Inline {
-			url	"views/House/main.wrl"
+		Transform {
+			translation 100 100 100
+				scale 20 20 20
+				rotation 0 .1 0 1.57
+				children [
+					Inline {
+						url	"views/House/main.wrl" 
+					}
+				]
 		}
+		Transform {
+			translation 100 -20 130
+				scale 20 20 20
+				rotation 0 .1 0 1.57
+				children [
+					Inline {
+						url	"views/nha1tang/nha1tang.wrl" 
+					}
+				]
+		}
+		
+
+			
 	]
 }
+
 #Dãy 2
 DEF	Block2 Transform {
 	translation	-250 100 -200
@@ -170,19 +189,38 @@ DEF	Block3 Transform {
 DEF	Block4 Transform {
 	translation	-450 100 600
 	children [
-		Shape {
-			appearance Appearance {
-				material Material {
-					diffuseColor .69 .13 .33
-					specularColor .12 .05 .05
-					ambientIntensity .0933
-					shininess .07
-				}
-			}
-			geometry Box {
-				size 1300 200 200
-			}
+		Transform {
+			translation -930 100 -100
+				scale 20 20 20
+				rotation 0 .1 0 -1.57
+				children [
+					Inline {
+						url	"views/House/main.wrl" 
+					}
+				]
 		}
+		Transform {
+			translation -290 -20 -100
+				scale 20 20 20
+				rotation 0 .1 0 -1.57
+				children [
+					Inline {
+						url	"views/nha1tang/nha1tang.wrl" 
+					}
+				]
+		}
+		Transform {
+			translation 220 -50 180
+				scale 22 22 22
+				children [
+					Inline {
+						url	"views/Cho/MaiCheNhaXe.wrl" 
+					}
+				]
+		}
+		
+
+			
 	]
 }
 #Dãy 5
@@ -268,19 +306,6 @@ DEF	Block7 Transform {
 DEF	Block8 Transform {
 	translation	900 100 600
 	children [
-		Shape {
-			appearance Appearance {
-				material Material {
-					diffuseColor .88 .15 .01
-					specularColor .19 .03 .03
-					ambientIntensity .0833
-					shininess .08
-				}
-			}
-			geometry Box {
-				size 1000 200 200
-			}
-		}
 	]
 }
 #Góc nhìn

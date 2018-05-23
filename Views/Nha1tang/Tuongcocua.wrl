@@ -1,0 +1,118 @@
+#VRML V2.0 utf8
+
+DEF	Cua Transform {
+	children [
+		#thanh doc ngoai cung ben trai 
+	Transform {
+		
+		children [
+			Shape {
+				geometry Box {
+					size 0.5 8 1
+				}
+				appearance Appearance {
+								texture ImageTexture{
+									  url "image/wall1.jpg"
+									  repeatS TRUE
+									  repeatT TRUE
+									  }
+							}
+			}
+	]
+}		#thanh ngang tren cua so
+		Transform {
+				translation	0 2.75 2
+					
+					children [
+						Shape {
+							geometry Box {
+								size 0.5 2.5 3
+							}
+							appearance Appearance {
+											texture ImageTexture{
+												  url "image/wall1.jpg"
+												  repeatS TRUE
+												  repeatT TRUE
+												  }
+										}
+						}
+				]
+			}
+			#thanh doc giua cua so va cua chinh
+	Transform {
+		translation	0 0 4
+			children [
+				Shape {
+					geometry Box {
+						size 0.5 8 1
+					}
+					appearance Appearance {
+									texture ImageTexture{
+										  url "image/wall1.jpg"
+										  repeatS TRUE
+										  repeatT TRUE
+										  }
+								}
+				}
+		]
+	}
+	#thanh ngang duoi cua so
+	Transform {
+				translation	0 -3 2
+					
+					children [
+						Shape {
+							geometry Box {
+								size 0.5 2 3
+							}
+							appearance Appearance {
+											texture ImageTexture{
+												  url "image/wall1.jpg"
+												  repeatS TRUE
+												  repeatT TRUE
+												  }
+										}
+						}
+				]
+			}
+
+		#thanh ngang tren cuachinh
+		Transform {
+				translation	0 2.75 6
+					
+					children [
+						Shape {
+							geometry Box {
+								size 0.5 2.5 3
+							}
+							appearance Appearance {
+											texture ImageTexture{
+												  url "image/wall1.jpg"
+												  repeatS TRUE
+												  repeatT TRUE
+												  }
+										}
+						}
+				]
+			}
+			#thanh doc benphai cua chinh
+	Transform {
+		translation	0 0 9
+			children [
+				Shape {
+					geometry Box {
+						size 0.5 8 3
+					}
+					appearance Appearance {
+									texture ImageTexture{
+										  url "image/wall1.jpg"
+										  repeatS TRUE
+										  repeatT TRUE
+										  }
+								}
+				}
+		]
+	}
+
+]
+}

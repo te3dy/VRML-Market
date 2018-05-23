@@ -1,0 +1,83 @@
+#VRML V2.0 utf8
+
+Transform {
+	translation	0 0 -10
+	children [
+		Transform {
+			translation	-4 2.5 4
+			children [
+				DEF	coc Shape {
+						appearance Appearance {
+							texture ImageTexture{
+								  url "Images/coc.jpg"
+								  repeatS TRUE
+								  repeatT TRUE
+								  }
+						}
+					geometry Cylinder{
+
+					height	7
+							   
+					radius 0.1
+
+					bottom TRUE
+
+					top TRUE
+
+					side TRUE
+
+					}
+
+					}
+
+				]
+			}
+			Transform {
+				translation	-4 2.5 -4
+				children USE coc
+			}
+			Transform {
+				translation	4 2.5 -4
+				children USE coc
+			}
+				Transform {
+				translation	4 2.5 4
+				children USE coc
+			}
+			#maiche1
+			Transform {
+				translation	0 7 2.3
+			    rotation 1 0 0 -1.2
+				children [
+					Shape {
+						appearance Appearance {
+							material Material	{diffuseColor 1 0 0
+							specularColor .81 .77 .75
+							ambientIntensity 1
+							shininess .306
+						}
+						}
+						geometry Box {size 14 5.0 0.1}
+					}
+				]
+			}
+			#maiche2
+			Transform {
+				translation	0 7 -2.3
+			    rotation 1 0 0 1.2
+				children [
+					Shape {
+							appearance Appearance {
+							material Material	{diffuseColor 1 0 0
+							specularColor .81 .77 .75
+							ambientIntensity 1
+							shininess .306
+						}
+						}
+						geometry Box {size 14 5.0 0.1}
+					}
+				]
+			}
+
+		]
+	}

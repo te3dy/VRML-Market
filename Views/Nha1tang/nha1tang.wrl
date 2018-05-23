@@ -1,0 +1,104 @@
+#VRML V2.0 utf8
+Transform {
+	children [
+
+		#tuong co cua
+	    Transform {
+			translation	0 2 -15
+			children [
+				Inline {
+					url	"tuongcocua.wrl"
+				}
+		    ]
+	    }
+	    #cua chinh
+	    Transform {
+	        rotation 0 1 0 -1.57
+	        translation	0 0.75 -10.5
+		    children [
+				Inline {
+					url	"cuachinh.wrl"
+				}
+			]
+	    }
+	    #cua so
+	    Transform {
+	        rotation 0 1 0 -1.57
+	        translation	0 1.75 -14.5
+		    children [
+				Inline {
+					url	"hinhcuaso.wrl"
+				}
+			]
+	    }
+	    #tuong dau hoi trai
+	    Transform {
+			translation	4.25 2 -15.5
+			rotation 0 1 0 1.56
+			children [
+				Inline {
+					url	"tuongdaunha.wrl"
+				}
+			]
+		}
+		#tuong sau nha
+	    Transform {
+			translation	8.5 2 -10
+			children [
+				Inline {
+					url	"tuongtruocnha.wrl"
+				}
+		    ]
+	    }
+	    #tuong dau hoi trai
+	    Transform {
+			translation	4.2 2 -4.75
+			rotation 0 1 0 -1.56
+			children [
+				Inline {
+					url	"tuongdaunha.wrl"
+				}
+			]
+		}
+
+		#mai nha
+		Transform {
+			translation	4.25 6.25 -10
+			rotation 1 1 0 3.14
+			children [
+				Inline {
+					url	"mainhabang.wrl"
+				}
+			]
+		}
+	    #hien nha
+		Transform {
+		    rotation 0 0 1 2.0
+		    translation	-1.25 4 -10
+			children [
+				Inline {
+					url	"hiennha.wrl"
+				}
+			]
+	    }
+        #hop
+		Transform {
+			translation	-1.2 -1.4 -5
+			rotation 0 1 0 3.14
+			children [
+				Inline {
+					url	"box.wrl"
+				}
+			]
+		}
+
+	
+
+	]
+	
+
+}
+
+
+
+
