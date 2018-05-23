@@ -21,7 +21,16 @@ Transform {
 
 		}
 		Transform {
-		translation	0 0 -600
+		translation	-30 55 0
+		scale 15 15 15
+		children [
+		Inline {
+			url	"E://VRML-Market/modules/CotDen/cotden.wrl"
+		}
+		]
+		}
+		Transform {
+		translation	 0 0 -600
 		scale 3 3 3
 		children [
 		Inline {
@@ -29,7 +38,16 @@ Transform {
 		}
 		]
 		}
-	Transform {
+		Transform {
+		translation	-30 55 -400
+		scale 15 15 15
+		children [
+		Inline {
+			url	"E://VRML-Market/modules/CotDen/cotden.wrl"
+		}
+		]
+		}
+		Transform {
 		translation	0 0 -400
 		scale 3 3 3
 		children [
@@ -38,7 +56,16 @@ Transform {
 		}
 		]
 		}
-	Transform {
+		Transform {
+		translation	-30 55 -200
+		scale 15 15 15
+		children [
+		Inline {
+			url	"E://VRML-Market/modules/CotDen/cotden.wrl"
+		}
+		]
+		}
+		Transform {
 		translation	0 0 -200
 		scale 3 3 3
 		children [
@@ -48,6 +75,15 @@ Transform {
 		]
 		}
 		Transform {
+		translation	-30 55 -600
+		scale 15 15 15
+		children [
+		Inline {
+			url	"E://VRML-Market/modules/CotDen/cotden.wrl"
+		}
+		]
+		}
+	Transform {
 		translation	0 0 0
 		scale 3 3 3
 		children [
@@ -66,11 +102,29 @@ Transform {
 		]
 		}
 	Transform {
+		translation	-30 55 200
+		scale 15 15 15
+		children [
+		Inline {
+			url	"E://VRML-Market/modules/CotDen/cotden.wrl"
+		}
+		]
+		}
+	Transform {
 		translation	0 0 400
 		scale 3 3 3
 		children [
 		Inline {
 			url	"cay_bui_3dmax.WRL"
+		}
+		]
+		}
+	Transform {
+		translation	-30 55 400
+		scale 15 15 15
+		children [
+		Inline {
+			url	"E://VRML-Market/modules/CotDen/cotden.wrl"
 		}
 		]
 		}
@@ -83,6 +137,14 @@ Transform {
 			}
 		]
 		}
-
+	 Transform {
+		translation	-30 55 600
+		scale 15 15 15
+		children [
+		Inline {
+			url	"E://VRML-Market/modules/CotDen/cotden.wrl"
+		}
+		]
+		}
 		 ]
 	}

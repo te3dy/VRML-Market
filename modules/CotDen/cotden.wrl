@@ -1,0 +1,221 @@
+#VRML V2.0 utf8
+Viewpoint {
+    position 0 0 20
+}
+DEF	cotden Transform {
+	children [
+        DEF den Transform {
+	        translation	0 3.8 0
+            scale 1 0.5 1
+	        children [
+		        DEF light1 DirectionalLight {
+
+                    on FALSE
+
+                    intensity 1
+
+                    ambientIntensity 100
+
+                    color 1 1 1
+
+                    direction 0 0 0
+
+                }
+
+		        DEF light PointLight {
+
+                    on FALSE
+
+                    intensity 1
+
+                    ambientIntensity 1
+                    color 1 1 1
+
+                    location 1 1 0
+
+                    attenuation 0 0 0
+
+                    radius 1000
+
+                }
+
+                #bong den
+                Shape {
+	                appearance  Appearance
+	                { texture ImageTexture {
+                            url "Images/cotden.jpg"
+                        }
+                        material Material {
+                            transparency 1
+                        }
+	                }
+	                geometry  Extrusion {
+    	                crossSection [	
+    		                1  0,  .8 -.8,
+    		                0 -1,  -.8 -.8,
+    		                -1  0,  -.8  .8,
+    		                0  1,   .8  .8   1 0
+    	                ]
+
+
+		                spine	[ 0 0 0 , 0 1.5 0, 0 2 0]
+
+		                scale	[ 0.5 0.5, 1 1, 0.5 0.5]
+
+    	                solid     TRUE
+	                }
+                }
+                #nut tren bong
+                Transform {
+                    translation 0 2 0
+                    children [
+                        Shape {
+                            appearance Appearance {
+                                material Material {
+                                    diffuseColor 0.8 0.8 0.8
+                                }
+                            }
+                            geometry Sphere {
+                                radius 0.5
+                            }
+                        }
+                    ]
+                }
+	        ]
+        }
+        #thanden
+        Shape {
+	        appearance  Appearance
+	        { 
+                texture ImageTexture {
+                    url "Images/cot.jpg"
+                    repeatS TRUE
+                    repeatT TRUE
+                }
+	        }
+	        geometry  Extrusion {
+    	        crossSection [	
+    		        1  0,  .8 -.8,
+    		        0 -1,  -.8 -.8,
+    		        -1  0,  -.8  .8,
+    		        0  1,   .8  .8   1 0
+    	        ]
+
+
+		        spine	[ 0 -3.2 0 , 0 -3.1 0,0 -2.9 0,0 -2.8 0 ,0 -2.7 0,0 -2.5 0,0 -1 0,  0 -0.8 0,0 -0.65 0,0 -0.5 0,0 -0.45 0,0 -0.3 0, 0 3.8 0,     ]
+
+		        scale	[ 1 1  , 0.5 0.5,0.5 0.5  ,0.4 0.4,0.3 0.3,0.5 0.5,0.3 0.3,0.4 0.4,  0.3 0.3 , 0.35 0.35, 0.35 0.35 ,0.2 0.2,0.2 0.2]
+
+    	        creaseAngle 1
+	        }
+        }
+        #thanden top, gia dỡ
+        Transform {
+            translation 0 3.7 0
+            children [
+                Shape {
+	                appearance  Appearance
+	                { 
+                        material Material {
+                            diffuseColor 0.8 0.8 0.8
+                        }
+	                }
+	                geometry  Extrusion {
+    	                crossSection [	
+    		                1  0,  .8 -.8,
+    		                0 -1,  -.8 -.8,
+    		                -1  0,  -.8  .8,
+    		                0  1,   .8  .8   1 0
+    	                ]
+
+
+		                spine	[ 0 0 0 , 0 0.2 0]
+
+		                scale	[ 0.5,0.5,0.6 0.6]
+          
+                        endCap FALSE
+                        solid FALSE
+	                }
+                }
+            ]
+        }
+
+        #chan den
+#        Transform {
+#	        translation	0 -3 0
+
+#	        children [
+
+#		        Shape {
+#			        appearance Appearance {
+#				        material Material {}
+#				        texture	ImageTexture {url "Images/cotden.jpg" repeatS TRUE repeatT TRUE }
+#			        }
+#			        geometry Cone {bottomRadius 0.8 height 1.0}
+#		        }
+#	        ]
+#        }
+
+    ]
+}
+
+
+
+DEF ma Script {
+
+    eventIn SFBool turnOn
+
+    eventOut SFBool On
+
+    eventOut SFBool Off
+
+    field SFBool turn FALSE
+
+    url "javascript:
+
+    function turnOn(val){
+
+        if(val){
+
+            turn = !turn;
+
+            if(turn)
+
+            {
+
+                On= TRUE;
+
+                Off=FALSE;
+
+            }
+
+            else
+
+            {
+
+                On=FALSE;
+
+                Off=TRUE;
+
+            }
+
+        }
+
+    }
+
+    "
+
+}
+DEF cen TouchSensor {
+
+}
+
+
+ROUTE cen.isActive TO ma.turnOn
+ROUTE ma.On TO light.on
+ROUTE ma.On TO light1.on
+ROUTE light.attenuation TO den.translation
+ROUTE light1.direction TO den.translation
+
+
+
