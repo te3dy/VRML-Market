@@ -1,0 +1,117 @@
+#VRML V2.0 utf8
+
+Transform { 
+children [
+DEF anhsang PointLight {
+intensity 1
+color 1 1 0
+location 1 4 4
+on FALSE
+radius 15
+} ]
+}
+Transform {
+translation 0 0 0
+children [
+DEF congtac TouchSensor {enabled TRUE }
+Transform {
+rotation 1 0 0 1.59
+children [
+
+
+	####### bong den
+Group {
+
+	children [
+		Transform {
+			
+			children [
+
+
+
+######## day den
+	
+	Shape {
+
+		appearance Appearance {
+
+		material Material {
+
+			diffuseColor 0.4 0.4 0.4}}
+
+			geometry Cylinder {radius .3 height 15}
+		}]}
+
+Transform {
+
+	translation 0 -2.0 0
+
+	children[
+	Shape {
+
+	appearance Appearance {
+		material Material {
+
+			diffuseColor .75 .75 .75}}
+
+			geometry Sphere { radius 1 }}]
+}
+
+Transform {
+	translation 0 -3 0
+
+	children[ 
+		Shape {
+
+			appearance Appearance {
+				material Material {
+				diffuseColor .75 .75 .75}}
+
+				geometry Cylinder {radius 1 height 4}}]}
+
+
+
+# White light bulb
+		
+
+Transform {
+	translation 0 -5.98 0
+	children[
+		Shape {
+			appearance Appearance {
+				material Material {
+
+				diffuseColor  .75 .75 .75}}
+
+				geometry Sphere {radius 2}}]}]}
+] 
+}]} 
+
+
+
+
+
+DEF ma Script {
+eventIn SFBool turnOn
+eventOut SFBool On
+field SFBool turn FALSE
+url ["javascript:
+function turnOn(val){
+if(val){
+turn = !turn;
+if(turn)
+{
+On= TRUE;
+}
+else
+{
+On=FALSE;
+}
+}
+
+}
+"]
+}
+
+ROUTE congtac.isActive TO ma.turnOn
+ROUTE ma.On TO anhsang.on

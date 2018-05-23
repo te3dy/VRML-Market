@@ -1,0 +1,251 @@
+#VRML V2.0 utf8
+
+
+DEF Hop Transform {
+	translation	-0.8 0 0
+	children [
+		DEF	SENSOR1 CylinderSensor {
+			maxAngle 0
+			minAngle -1.578
+		}
+		DEF CuaHop Transform {
+			translation	0 0 0
+			children [
+				Transform {
+					children [
+					Shape {
+						geometry Box{
+						  size 0.4 0.4 0.02
+						}
+						appearance Appearance {
+							material Material	{
+							  diffuseColor 0.8 0.8 0.8
+							}
+						}
+					}
+
+				]
+			}
+
+			Transform {
+				translation	0.15 0 0
+				children [
+					Shape {
+						geometry Sphere	{
+							radius 0.02
+						}
+						appearance Appearance {
+							material Material {
+								diffuseColor 0.85 0.85 0.85
+							}
+						}
+					}
+				]
+			}
+		
+		]
+		}
+		DEF MatHop Transform {
+			translation	0 0.2 -0.2
+			rotation 1 0 0 1.571
+			children [
+				Shape {
+				   geometry Box{
+					  size 0.4 0.4 0.02
+					}
+					appearance Appearance {
+						material Material	{
+						  diffuseColor 0.8 0.8 0.8
+						}
+					}
+				}
+			]
+		}
+
+		Transform {
+			translation	0 -0.4 0
+			children [
+				USE	MatHop
+			]
+		}
+
+		Transform {
+			rotation 0 0 1 1.571
+			translation	0.4 0 0
+			children [
+				USE	MatHop
+			]
+		}
+
+		Transform {
+			rotation 0 0 1 1.571
+			children [
+				USE	MatHop
+			]
+		}
+
+		Transform {
+			translation	0 -0.2 -0.6
+			rotation 1 0 0 1.571
+			children [
+				USE	MatHop
+			]
+		}
+	]
+}
+
+
+Transform {
+	translation	0 0.4 0
+	children [
+		USE	Hop
+	]
+}
+
+Transform {
+	translation	0 0.8 0
+	children [
+		USE	Hop
+	]
+}
+
+ Transform {
+	translation	0 1.2 0
+	children [
+		USE	Hop
+	]
+}
+
+Transform {
+	translation	0 1.6 0
+	children [
+		USE	Hop
+	]
+}
+
+
+DEF Hop2 Transform {
+	translation	-0.8 0 0
+	children [
+		DEF	SENSOR2 CylinderSensor {
+			maxAngle 0
+			minAngle -1.578
+		}
+		DEF CuaHop2 Transform {
+			translation	0.4 0 0
+			children [
+				Transform {
+					children [
+					Shape {
+						geometry Box{
+						  size 0.4 0.4 0.02
+						}
+						appearance Appearance {
+							material Material	{
+							  diffuseColor 0.8 0.8 0.8
+							}
+						}
+					}
+
+				]
+			}
+
+			Transform {
+				translation	-0.15 0 0
+				children [
+					Shape {
+						geometry Sphere	{
+							radius 0.02
+						}
+						appearance Appearance {
+							material Material {
+								diffuseColor 0.85 0.85 0.85
+							}
+						}
+					}
+				]
+			}
+		
+		]
+		}
+		DEF MatHop2 Transform {
+			translation	0.4 0.2 -0.2
+			rotation 1 0 0 1.571
+			children [
+				Shape {
+				   geometry Box{
+					  size 0.4 0.4 0.02
+					}
+					appearance Appearance {
+						material Material	{
+						  diffuseColor 0.8 0.8 0.8
+						}
+					}
+				}
+			]
+		}
+
+		Transform {
+			translation	-0.4 -0.4 0
+			children [
+				USE	MatHop2
+			]
+		}
+		
+		Transform {
+			rotation 0 0 1 1.571
+			translation	0.8 -0.4 0
+			children [
+				USE	MatHop2
+			]
+		}
+
+		Transform {
+			translation	0.4 -0.2 -0.6
+			rotation 1 0 0 1.571
+			children [
+				USE	MatHop
+			]
+		}
+
+		Transform {
+			translation	0.4 -0.4 0
+			children [
+				USE	MatHop
+			]
+		}
+	]
+}
+
+Transform {
+	translation	0 0.4 0
+	children [
+		USE	Hop2
+	]
+}
+
+Transform {
+	translation	0 0.8 0
+	children [
+		USE	Hop2
+	]
+}
+
+Transform {
+	translation	0 1.2 0
+	children [
+		USE	Hop2
+	]
+}
+
+Transform {
+	translation	0 1.6 0
+	children [
+		USE	Hop2
+	]
+}
+
+ROUTE SENSOR1.rotation_changed  TO CuaHop.rotation
+ROUTE SENSOR2.rotation_changed  TO CuaHop2.rotation
+
+								

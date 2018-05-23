@@ -1,0 +1,344 @@
+#VRML V2.0 utf8
+
+DEF	khomhoa Transform {
+	translation	-3 0 0
+	children [
+DEF	bonghoa Transform {
+	translation	0 3 0
+	children	[
+		DEF	hoadongtien Transform {
+	translation	0 0 0
+	scale .7 .7 .7
+	children [
+		Transform {
+		scale .2 .5 .2
+		children [
+			DEF	nhuyhoa Shape {
+				geometry Sphere	{
+				radius 1
+				}
+				appearance Appearance {
+					material Material {
+					diffuseColor 1 1 0
+					}
+				}
+			}
+		]
+		}
+	]
+}
+#canh hoa
+#canh 1
+DEF	canh Transform {  # cánh hoa
+	children [
+		Transform { 
+		translation	0 -.1 .6          # tìm tọa độ để đặt cánh hoa
+		rotation 1 0 0 1
+		scale .2 .6 .05
+		children [
+			DEF	canhhoa Shape {      
+				geometry Sphere	{
+				radius 1
+				}
+				appearance Appearance {
+					material Material {
+					diffuseColor 1 0 0
+					}
+				}
+			}
+		]
+		}
+		
+		Transform {
+		translation	0 .1 .4
+		rotation 1 0 0 .5
+		scale .2 .6 .05
+		children [
+		USE	canhhoa
+		]
+		}
+		]
+	}
+		#canh 2
+		Transform {
+		translation	.1 0 .05
+		rotation 0 1 0 -.8
+		children [
+		USE	canh
+		]
+		}
+		#canh 3
+		Transform {
+		translation	.05 0 0
+		rotation 0 1 0 .5
+		children [
+		USE	canh
+		]
+		}
+		#canh 4
+		Transform {
+		translation	.1 0 0
+		rotation 0 1 0 -1.5
+		children [
+		USE	canh
+		]
+		}
+		#canh 5
+		Transform {
+		translation	.05 0 -.05
+		rotation 0 1 0 -2
+		children [
+		USE	canh
+		]
+		}
+		#canh 6
+		Transform {
+		translation	.13 0 .05
+		rotation 0 1 0 -2.5
+		children [
+		USE	canh
+		]
+		}
+		#canh 7
+		Transform {
+		translation	.15 0 .1
+		rotation 0 1 0 -3
+		children [
+		USE	canh
+		]
+		}
+		#canh 8
+		Transform {
+		translation	0 0 .05
+		rotation 0 1 0 1
+		children [
+		USE	canh
+		]
+		}
+		#canh 9
+		Transform {
+		translation	0 0 .05
+		rotation 0 1 0 1.5
+		children [
+		USE	canh
+		]
+		}
+		#canh 10
+		Transform {
+		translation	.05 0 0
+		rotation 0 1 0 2
+		children [
+		USE	canh
+		]
+		}
+		#canh 11
+		Transform {
+		translation	0 0 .05
+		rotation 0 1 0 2.5
+		children [
+		USE	canh
+		]
+		}
+
+
+#cuong hoa
+		Transform {
+		translation	.03 -.5 0
+		rotation 1 0 0 3.14
+		children [
+			Shape {
+				geometry Cone {
+				bottomRadius .35 height	.4
+				}
+				appearance Appearance {
+					material Material {
+					diffuseColor 0 1 0
+					}
+				}
+		}
+		]
+		}
+#canh hoa
+		Transform {
+		translation .03 -2 0
+		rotation 1 0 0 3.14
+		children [
+			Shape {geometry Cylinder {
+				radius .1 height 3
+			}
+			appearance Appearance {
+			material Material 
+			{
+				diffuseColor 0 1 0
+			}}
+		}
+		]
+		}
+	]
+	
+}
+
+DEF	lahoa Transform	{
+	translation	0 1 0
+	children [
+		Transform {
+	scale .3 1.5 .05
+	children [
+		Shape {
+			geometry Sphere	{
+			radius 1
+			}
+			appearance Appearance {
+				material Material {
+					diffuseColor 0 1 0
+				}
+			}
+		}
+	]
+}
+Transform {
+	translation	0 -1.5 0
+	scale 1 1 .1
+	children [
+		Shape {
+		geometry Cylinder
+		{
+			height 1
+			radius .1
+			bottom TRUE
+			top	TRUE
+			side TRUE
+		}
+		appearance Appearance {
+			material Material {
+				diffuseColor 0 1 0
+			}
+		}
+		}
+	]
+}
+	]
+
+}
+#ve bo hoa
+Transform {
+translation	0 1 0
+scale 1.2 1.2 1.2
+children [
+	USE	bonghoa
+]
+}
+Transform {
+translation	0.7 0 0
+rotation 0 0 1 -.3
+scale 0.5 1 0.5
+children [
+	USE	 bonghoa
+]
+}
+Transform {
+translation	0.1 1 0.7
+rotation 1 0 0 .5
+scale 1 1 1
+children [
+	USE	bonghoa
+]
+}
+Transform {
+translation	-0.7 .6 -.3
+rotation 0 0 1 .3
+scale 0.8 1 0.8
+children [
+	USE	bonghoa
+]
+}
+#ve la hoa
+Transform {
+translation	.6 .5 -.5
+rotation 1 0 0 -.3
+scale .6 2 .6
+children [
+	USE	lahoa
+]
+}
+Transform {
+translation	-.3 0 .25
+rotation 1 0 0 .2
+scale .5 1.8 .5
+children [
+	USE	lahoa
+]
+}
+]}
+
+
+
+
+########## binh hoa
+
+Transform {
+	translation	-3 0 0
+	scale 1.5 1.3 1.3
+	children [
+Transform {
+  scale	0.8 1.2 0.8
+  children [
+	  Shape {
+		  geometry Sphere	{
+			 radius	1.0
+		  }
+		  appearance Appearance	{
+			  material Material {
+				ambientIntensity 0
+				shininess 0
+				diffuseColor  1 1 1
+			  }
+		  }
+	  }
+  ]
+}
+
+Transform {
+  translation 0 1.15 0
+  rotation 1 0 0 -3.14
+  children [
+	  Shape {
+		  geometry Cone {
+			height 1
+			bottomRadius 0.8
+			bottom TRUE
+			side TRUE
+		  }
+		  appearance Appearance	{
+			  material Material {
+				ambientIntensity 0
+				shininess 0
+				diffuseColor 1 1 1
+			  }
+		  }
+	  }
+  ]
+}
+
+Transform {
+  translation 0 -1 0
+  rotation 1 0 0 -6.28
+  children [
+	  Shape {
+		  geometry Cone {
+			height 1
+			bottomRadius 0.8
+			bottom TRUE
+			side TRUE
+		  }
+		  appearance Appearance	{
+			  material Material {
+				ambientIntensity 0
+				shininess 0
+				diffuseColor 1 1 1
+			  }
+		  }
+	  }
+  ]
+}
+]}

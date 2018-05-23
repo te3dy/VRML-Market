@@ -1,0 +1,185 @@
+#VRML V2.0 utf8
+
+DEF matban Transform {
+	translation	0 0 0
+	children [
+		Shape {
+			geometry Box {size 1 0.03 0.9}
+			appearance Appearance {
+				material Material {
+					diffuseColor .251 .239 .18
+					specularColor .55 .26 .26
+					emissiveColor .13 .13 .13
+					ambientIntensity .04
+					shininess .07
+				}
+			}
+		}
+	]
+}
+
+Transform {
+	translation	0 0 0
+	rotation 0 1 0 1.57
+	children [
+		USE	matban
+	]
+}
+
+Transform {
+	translation	0.45 0 0.45
+	children [
+		DEF gocban	Transform{
+			children [
+				Shape {
+					geometry Cylinder	{
+						radius .05
+						height 0.03
+						bottom TRUE
+						top	TRUE
+					}
+					appearance Appearance {
+				material Material {
+					diffuseColor .251 .239 .18
+					specularColor .55 .26 .26
+					emissiveColor .13 .13 .13
+					ambientIntensity .04
+					shininess .07
+				}
+			}
+				}
+			]
+		}
+	]
+}
+
+Transform {
+	translation	0.45 0 -0.45
+	children [
+		USE	gocban
+	]
+}
+
+Transform {
+	translation	-0.45 0 0.45
+	children [
+		USE	gocban
+	]
+}
+
+Transform {
+	translation	-0.45 0 -0.45
+	children [
+		USE	gocban
+	]
+}
+
+Transform {
+	translation	0 -.38 0.4
+	rotation 0 0 1 0.7
+	children [
+		DEF changhe	Transform{
+			children [
+				Shape {
+					geometry Cylinder	{
+						radius .02
+						height .98
+						bottom TRUE
+						top	TRUE
+					}
+				}
+			]
+		}
+	]
+}
+
+Transform {
+	translation	0 -.38 -0.4
+	rotation 0 0 1 0.7
+	children [
+		USE	changhe
+	]
+}
+
+Transform {
+	translation	0 -.38 0.4
+	rotation 0 0 1 -0.7
+	children [
+		USE	changhe
+	]
+}
+
+Transform {
+	translation	0 -.38 -0.4
+	rotation 0 0 1 -0.7
+	children [
+		USE	changhe
+	]
+}
+
+Transform {
+	translation	0.16 -.57 0
+	rotation 1 0 0 1.57
+	scale 1 .8 1
+	children [
+		USE	changhe
+	]
+}
+
+Transform {
+	translation	-0.16 -.57 0
+	rotation 1 0 0 1.57
+	scale 1 .8 1
+	children [
+		USE	changhe
+	]
+}
+Transform {
+	translation	-0.31 -.75 0.4
+	rotation 0 0 1 -.7 
+	children [
+		DEF demchanghe	Transform{
+			children [
+				Shape {
+					geometry Cylinder	{
+						radius .025
+						height .05
+						bottom TRUE
+						top	TRUE
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 0 0
+							specularColor .29 .3 .29
+							ambientIntensity 0
+							shininess .08
+						}
+					}
+				}
+			]
+		}
+	]
+}
+
+Transform {
+	translation	0.31 -.75 0.4
+	rotation 0 0 1 .7 
+	children [
+		USE	demchanghe
+	]
+}
+Transform {
+	translation	-0.31 -.75 -0.4
+	rotation 0 0 1 -.7 
+	children [
+		USE	demchanghe
+	]
+}
+Transform {
+	translation	0.31 -.75 -0.4
+	rotation 0 0 1 .7 
+	children [
+		USE	demchanghe
+	]
+}
+

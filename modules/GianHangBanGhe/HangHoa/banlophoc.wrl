@@ -1,0 +1,291 @@
+﻿#VRML V2.0 utf8
+#mặt bàn
+Transform {
+	children [
+		Shape {
+			geometry Box{
+			 size 1 0.05 0.3
+			}
+			appearance Appearance {
+				texture ImageTexture {
+					url	"Images\matban.png"
+				}
+			}
+		}
+	]
+}
+
+Transform {
+	translation	0.4 -0.3 0.1
+	children [
+		Shape {
+			geometry Box{
+				size 0.03 0.6 0.03
+			}
+			appearance Appearance {
+				material Material {
+				 diffuseColor 0.8 0.8 0.8
+				}
+			}
+		}
+	]
+}
+
+Transform {
+	translation	0.4 -0.3 -0.1
+	children [
+		Shape {
+			geometry Box{
+				size 0.03 0.6 0.03
+			}
+			appearance Appearance {
+				material Material {
+				 diffuseColor 0.8 0.8 0.8
+				}
+			}
+		}
+	]
+}
+
+Transform {
+	translation	-0.4 -0.3 0.1
+	children [
+		Shape {
+			geometry Box{
+				size 0.03 0.6 0.03
+			}
+			appearance Appearance {
+				material Material {
+				 diffuseColor 0.8 0.8 0.8
+				}
+			}
+		}
+	]
+}
+
+Transform {
+	translation	-0.4 -0.3 -0.1
+	children [
+		Shape {
+			geometry Box{
+				size 0.03 0.6 0.03
+			}
+			appearance Appearance {
+				material Material {
+				 diffuseColor 0.8 0.8 0.8
+				}
+			}
+		}
+	]
+}
+
+Transform {
+	translation	0.4 -0.2 0
+	children [
+		Shape {
+			geometry Box{
+				size 0.03 0.03 0.2
+			}
+			appearance Appearance {
+				material Material {
+				 diffuseColor 0.8 0.8 0.8
+				}
+			}
+		}
+	]
+}
+
+Transform {
+	translation	-0.4 -0.2 0
+	children [
+		Shape {
+			geometry Box{
+				size 0.03 0.03 0.2
+			}
+			appearance Appearance {
+				material Material {
+				 diffuseColor 0.8 0.8 0.8
+				}
+			}
+		}
+	]
+}
+
+#ngăn bàn
+Transform {
+	translation	0 -0.17 0
+	children [
+		Shape {
+			geometry Box{
+				size 0.829 0.03 0.229
+			}
+			appearance Appearance {
+				texture ImageTexture {
+					url	"Images\matban.png"
+				}
+			}
+		}
+	]
+}
+
+#thang ngang dưới ngăn bán
+Transform {
+	translation	0 -0.2 0
+	children [
+		Shape {
+			geometry Box{
+				size 0.829 0.03 0.03
+			}
+			appearance Appearance {
+				material Material {
+				 diffuseColor 0.8 0.8 0.8
+				}
+			}
+		}
+	]
+}
+
+Transform {
+	translation	0.4 -0.6 0.235
+	children [
+		Shape {
+			geometry Box{
+				size 0.03 0.03 0.7
+			}
+			appearance Appearance {
+				material Material {
+				 diffuseColor 0.8 0.8 0.8
+				}
+			}
+		}
+	]
+}
+
+Transform {
+	translation	-0.4 -0.6 0.235
+	children [
+		Shape {
+			geometry Box{
+				size 0.03 0.03 0.7
+			}
+			appearance Appearance {
+				material Material {
+				 diffuseColor 0.8 0.8 0.8
+				}
+			}
+		}
+	]
+}
+
+Transform {
+	translation	0.4 -0.45 0.5
+	children [
+		Shape {
+			geometry Box{
+				size 0.03 0.3 0.03
+			}
+			appearance Appearance {
+				material Material {
+				 diffuseColor 0.8 0.8 0.8
+				}
+			}
+		}
+	]
+}
+
+Transform {
+	translation	-0.4 -0.45 0.5
+	children [
+		Shape {
+			geometry Box{
+				size 0.03 0.3 0.03
+			}
+			appearance Appearance {
+				material Material {
+				 diffuseColor 0.8 0.8 0.8
+				}
+			}
+		}
+	]
+}
+
+Transform {
+	translation	0 -0.45 0.5
+	children [
+		Shape {
+			geometry Box{
+				size 0.829 0.03 0.03
+			}
+			appearance Appearance {
+				material Material {
+				 diffuseColor 0.8 0.8 0.8
+				}
+			}
+		}
+	]
+}
+
+Transform {
+	translation	0.4 -0.3 0.5
+	children [
+		Shape {
+			geometry Box{
+				size 0.03 0.03 0.16
+			}
+			appearance Appearance {
+				material Material {
+				 diffuseColor 0.8 0.8 0.8
+				}
+			}
+		}
+	]
+}
+
+Transform {
+	translation	-0.4 -0.3 0.5
+	children [
+		Shape {
+			geometry Box{
+				size 0.03 0.03 0.16
+			}
+			appearance Appearance {
+				material Material {
+				 diffuseColor 0.8 0.8 0.8
+				}
+			}
+		}
+	]
+}
+
+Transform {
+	translation	0 -0.3 0.5
+	children [
+		Shape {
+			geometry Box{
+				size 0.829 0.03 0.03
+			}
+			appearance Appearance {
+				material Material {
+				 diffuseColor 0.8 0.8 0.8
+				}
+			}
+		}
+	]
+}
+
+#mặt ghế
+Transform {
+	translation	0 -0.27 0.5
+	children [
+		Shape {
+			geometry Box{
+				size 0.9 0.03 0.2
+			}
+			appearance Appearance {
+				texture ImageTexture {
+					url	"Images\matban.png"
+				}
+			}
+		}
+	]
+}

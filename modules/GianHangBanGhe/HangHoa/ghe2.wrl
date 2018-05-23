@@ -1,0 +1,146 @@
+#VRML V2.0 utf8
+
+#mặt ghế
+Transform {
+	children [
+		Shape {
+			geometry Box {size 0.4 0.02 0.5}
+			appearance Appearance {
+				material Material {
+					diffuseColor 0.1 0.3 0.3
+				}
+			}
+		}
+	]
+}
+
+
+#thanh sắt 2 bên mặt ghế
+Transform {
+	translation	0.2 0 0.005
+	rotation 1 0 0 1.571
+	children [
+		DEF MB Transform {
+			children [
+				Shape {
+					geometry Cylinder {
+						height 0.5 radius 0.015
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0.9 0.9 0.9
+						}
+					}
+				}
+			]
+		}
+	]
+}
+
+Transform {
+	translation	-0.2 0 0.005
+	rotation 1 0 0 1.571
+	children [
+		USE	MB
+	]
+}
+
+#thanh sắt chân
+#chân sau trái
+Transform {
+	translation	-0.2 -0.2 -0.25
+	children [
+		DEF TS Transform {
+			children [
+				Shape {
+					geometry Cylinder {height 0.4 radius 0.015}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0.9 0.9 0.9
+						}
+					}
+				}
+			]
+		}
+	]
+}
+
+#chân trước trái
+Transform {
+	translation	-0.2 -0.2 0.25
+	children [
+		USE	TS
+	]
+}
+
+#chân trước phải
+Transform {
+	translation	0.2 -0.2 0.25
+	children [
+		USE	TS
+	]
+}
+
+#chân sau phải
+Transform {
+	translation	0.2 -0.2 -0.25
+	children [
+		USE	TS
+	]
+}
+
+#tựa
+Transform {
+	rotation 1 0 0 -0.15
+	translation	0 0 0.04
+	children [
+		Transform {
+			translation	0.2 0.28 -0.29
+			scale 1 1.2 1
+			children [
+				USE	TS
+			]
+		}
+
+		Transform {
+			translation	-0.2 0.28 -0.29
+			scale 1 1.2 1
+			children [
+				USE	TS
+			]
+		}
+
+		Transform {
+			translation	0 0.509 -0.29
+			rotation 0 0 1 1.56
+			children [
+				USE	TS
+			]
+		}
+
+		Transform {
+			translation	0 0.35 -0.29
+			rotation 0 0 1 1.56
+			children [
+				USE	TS
+			]
+		}
+
+		Transform {
+			translation	 0 0.42 -0.29
+			children [
+				Shape {
+					geometry Box {
+						size 0.4 0.15 0.02
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0.1 0.3 0.3
+						}
+					}
+				}
+			]
+		}
+
+	]
+}

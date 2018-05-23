@@ -1,0 +1,387 @@
+#VRML V2.0 utf8
+
+# Mặt bàn
+Transform {
+	children [
+		Transform {
+			translation	0 0.4 0
+			children [
+				Shape{
+					geometry Box {
+						size 2.4 0.025 0.8
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0.6 0.4 0.3
+						}
+					}
+				}
+			]
+		}
+	]
+}
+
+# Chân bàn
+# Chân đứng sau trái
+Transform {
+	translation	-1.1 0 -0.2
+	children [
+		DEF	TS Transform {
+			children [
+				Shape {
+					geometry Box {
+						size 0.02 0.8 0.02
+					}
+					appearance Appearance {
+						material Material {
+						  diffuseColor 0.8 0.8 0.8
+						}
+					}
+				}
+			]
+		}
+	]
+}
+
+# Chân đứng sau phải
+Transform {
+	translation	1.1 0 -0.2
+	children [
+		USE	TS
+	]
+}
+
+# Chân đứng trước trai
+Transform {
+	translation	-1.1 0 0.2
+	children [
+		USE	TS
+	]
+}
+
+Transform {
+	translation	-1.1 0 0.15
+	children [
+		USE	TS
+	]
+}
+
+# Chân đứng trước phải
+Transform {
+	translation	1.1 0 0.2
+	children [
+		USE	TS
+	]
+}
+
+Transform {
+	translation	1.1 0 0.15
+	children [
+		USE	TS
+	]
+}
+
+# Chân đứng giữa sau
+Transform {
+	translation	0 0 -0.2
+	children [
+		USE	TS
+	]
+}
+
+# Chân đứng giữa trước
+Transform {
+	translation	0 0 0.2
+	children [
+		USE	TS
+	]
+}
+
+Transform {
+	translation	0 0 0.15
+	children [
+		USE	TS
+	]
+}
+
+# Thanh sắt ngang dưới trái
+Transform {
+	translation	-1.1 -0.4 0
+	children [
+		DEF	TSN Transform {
+			children [
+				Shape {
+					geometry Box {
+						size 0.02 0.02 0.7
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0.8 0.8 0.8
+						}
+					}
+				}
+			]
+		}
+	]
+}
+
+# Thanh sắt ngang dưới phải
+Transform {
+	translation 1.1 -0.4 0
+	children [
+		USE	TSN
+	]
+}
+
+# Thanh sắt ngang dưới giữa
+Transform {
+	translation 0 -0.4 0
+	children [
+		USE	TSN
+	]
+}
+
+# Thanh sắt ngang dưới mặt bàn trái
+Transform {
+	translation -1.1 0.378 0.05
+	scale 1 1 0.7
+	children [
+		USE	TSN
+	]
+}
+
+# Thanh sắt ngang dưới mặt bàn phải
+Transform {
+	translation 1.1 0.378 0.05
+	scale 1 1 0.7
+	children [
+		USE	TSN
+	]
+}
+
+# Thanh sắt ngang dưới mặt bàn giữa
+Transform {
+	translation 0 0.378 0.05
+	scale 1 1 0.7
+	children [
+		USE	TSN
+	]
+}
+
+# Thanh sắt ngang trái dưới mặt bàn phím
+Transform {
+	translation -1.1 0.178 0.23
+	scale 1 1 0.25
+	children [
+		USE	TSN
+	]
+}
+
+# Thanh sắt ngang giữa dưới mặt bàn phím
+Transform {
+	translation 0 0.178 0.23
+	scale 1 1 0.25
+	children [
+		USE	TSN
+	]
+}
+
+# Thanh sắt ngang phải dưới mặt bàn phím
+Transform {
+	translation 1.1 0.178 0.23
+	scale 1 1 0.25
+	children [
+		USE	TSN
+	]
+}
+
+# Thanh sắt ngang dưới
+Transform {
+	translation	0 -0.4 0
+	children [
+		DEF	TSN2 Transform {
+			children [
+				Shape {
+					geometry Box {
+						size 2.2 0.02 0.03
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0.9 0.9 0.9
+						}
+					}
+				}
+			]
+		}
+	]
+}
+
+
+
+# Mặt gỗ ( mặt bàn để chuột + phím )
+Transform {
+	children [
+		Transform {
+			translation	0 0.2 0.36
+			children [
+				Shape{
+					geometry Box {
+						size 2.4 0.025 0.3
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0.6 0.4 0.3
+						}
+					}
+				}
+			]
+		}
+	]
+}
+
+# Hộp dây điện
+ Transform {
+	translation	0 0.2 -0.3
+	children [
+		Shape{
+			geometry Box {
+				size 2.4 0.025 0.15
+			}
+			appearance Appearance {
+				material Material {
+					diffuseColor 0.6 0.4 0.3
+				}
+			}
+		}
+	]
+}
+
+Transform {
+	translation	0 0.3 -0.22
+	children [
+		Shape{
+			geometry Box {
+				size 2.4 0.2 0.025
+			}
+			appearance Appearance {
+				material Material {
+					diffuseColor 0.6 0.4 0.3
+				}
+			}
+		}
+	]
+}
+
+Transform {
+	translation	0 0.3 -0.37
+	children [
+		Shape{
+			geometry Box {
+				size 2.4 0.2 0.025
+			}
+			appearance Appearance {
+				material Material {
+					diffuseColor 0.6 0.4 0.3
+				}
+			}
+		}
+	]
+}
+
+# Hộp máy tính
+DEF HMT Transform {
+	children [
+Transform {
+	translation	-0.33 -0.142 0
+	children [
+# Vẽ mặt bên hộp
+		DEF MBH Transform {
+			children [
+				Shape{
+					geometry Box {size 0.025 0.5 0.6}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0.6 0.4 0.3
+						}
+					}
+				}
+			]
+		}
+	]
+}
+
+Transform {
+	translation	-0.03 -0.142 0
+	children [
+		USE	MBH
+	]
+}
+
+# Vẽ mặt sau hộp
+Transform {
+	translation	-0.17 -0.142 -0.28
+	children [
+		DEF MSH Transform {
+			children [
+				Shape{
+					geometry Box {
+						size 0.3 0.5 0.025
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0.6 0.4 0.3
+						}
+					}
+				}
+			]
+		}
+	]
+}
+
+# Vẽ Mặt Trước hộp
+Transform {
+	translation	-0.185 -0.12 0.31
+	scale 1.1 0.35 1
+	children [
+		USE MSH 
+	]
+}
+
+# Vẽ mặt dưới hộp
+Transform {
+	translation	-0.17 -0.38 0
+	children [
+		DEF MDH Transform {
+			
+			children [
+				Shape{
+					geometry Box {
+						size 0.3 0.025 0.6
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0.6 0.4 0.3
+						}
+					}
+				}
+			]
+		}
+	]
+}
+
+# Mặt trên hộp
+Transform {
+	translation	-0.185 0.095 0
+	children [
+		USE MDH 
+	]
+}
+]
+}
+
+Transform {
+	translation	1.09 0 0
+	children [
+		USE	HMT
+	]
+}

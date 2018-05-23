@@ -1,0 +1,113 @@
+#VRML V2.0 utf8
+
+DEF	TS TimeSensor {
+ startTime 0
+ stopTime 500
+ cycleInterval 1.5
+ loop TRUE
+}
+
+DEF	OI OrientationInterpolator {
+	key [0, 0.33, 0.66, 1]
+	keyValue [0 1 0 0, 0 1 0 2.09, 0 1 0 4.18, 0 1 0 6.18]
+}
+
+
+
+		   Group {
+		children [
+			Transform {
+				children [
+		  DEF ghequay
+		  Transform	{
+			  children [
+
+DEF	changhe
+Transform {
+translation 0 0 0
+rotation 0 0 1 1.047
+children [
+	Transform {
+		children [
+	Shape {
+		appearance Appearance {
+			material Material {diffuseColor .5 .5 .5}}
+			geometry Cylinder {radius .3 height 2}}]}
+		
+		
+
+			Transform {
+			translation -.4 -1 0
+			rotation 1 0 0 1.57
+			children [
+				Shape {
+				appearance Appearance {
+			material Material {diffuseColor .5 .5 .5}}
+			geometry Cylinder {radius .3 height .2}}]}
+		
+		
+		]}
+
+
+
+		Transform {
+		translation -2 0 0
+	rotation 0 1 0 2.355
+	children [USE changhe ]}
+
+
+
+
+	Transform {
+		translation -1 0 1.5
+	rotation 0 -1 0 1.57
+	children [USE changhe ]}
+
+
+
+	
+	Transform {
+	translation -1 1.5 0
+	children [
+				Shape {
+				appearance Appearance {
+			material Material {diffuseColor .5 .5 .5}}
+			geometry Cylinder {radius .8 height 2.5}}]}
+
+
+
+			
+
+			Transform {
+			translation -1 2.8 0
+			scale 1 .2 1
+			children [
+				Shape {
+		appearance Appearance {
+			material Material {diffuseColor 0 0.5 .5}}
+			geometry Sphere {radius 2}}]}
+
+
+
+		   
+			Transform {
+				translation -1 5 -2
+				rotation -1 0 0 .4
+			scale 1 1.5 .3
+		children [
+				Shape {
+		appearance Appearance {
+			material Material {diffuseColor 0 0.5 .5}}
+			geometry Sphere {radius 2}}]}
+
+
+
+			DEF	T1 TouchSensor {}
+		DEF	T2 TouchSensor {}
+	]
+}]}]}
+
+ROUTE T1.touchTime TO TS.startTime
+ROUTE TS.fraction_changed TO OI.set_fraction
+ROUTE OI.value_changed TO ghequay.rotation
+ROUTE T2.touchTime TO TS.stopTime

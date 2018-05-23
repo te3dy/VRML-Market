@@ -1,0 +1,51 @@
+#VRML V2.0 utf8
+
+DEF	chan Transform {
+	rotation 0 0 -1 .785
+	children [
+		Transform {
+			children [
+		Shape {
+			appearance Appearance {
+				material Material {emissiveColor .5 .5 0}}
+				geometry Box {size 5 .2 .2}}]}
+
+
+
+
+				Transform {
+					translation 0 0 4
+				children [
+		Shape {
+			appearance Appearance {
+				material Material {emissiveColor .5 .5 0}}
+				geometry Box {size 5 .2 .2}}]}
+
+
+				 Transform {
+					translation 0 0 2
+				children [
+		Shape {
+			appearance Appearance {
+				material Material {emissiveColor .5 .5 0}}
+				geometry Box {size .2 .2 4}}]}
+
+			]}
+
+
+
+			Transform {
+			translation -15 0 0
+		rotation 0 0 -1 1.57
+		children [USE chan ]}
+
+
+
+
+
+		Transform {
+		translation -7.5 1.8 1.95
+		children [
+			Shape {
+				appearance Appearance {material Material {diffuseColor 0 1 0}}
+				geometry Box {size 12 .3 5}}]}

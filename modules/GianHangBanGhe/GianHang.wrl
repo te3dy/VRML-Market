@@ -1,0 +1,100 @@
+#VRML V2.0 utf8
+
+Transform {
+translation 0 0 0
+scale 1 1 1
+children [Inline {url "HangHoa\Nha.wrl"}]}
+
+
+
+
+
+Transform {
+translation -20 -10.5 -10
+children [
+	Shape {
+		appearance Appearance {texture ImageTexture {url "Images\nen.png"}}
+		geometry Box {size 45 .2 25}}]}
+
+
+
+
+		Transform {
+		translation -20 -9.5 0
+	scale .75 .75 .75
+	children [Inline {url "HangHoa\ghe1.wrl"}]}
+
+
+
+
+	Transform {
+		translation -30 -7.5 0
+	scale .75 .75 .75
+	children [Inline {url "HangHoa\banantron.wrl"}]}
+
+
+
+	Transform {
+		translation -38 -5 -10
+	scale 7 7 7
+	children [Inline {url "HangHoa\bananchunhat.wrl"}]}
+
+
+
+	Transform {
+		translation -33 -8.5 -20
+	scale 7 7 7
+	children [Inline {url "HangHoa\tudo.wrl"}]}
+
+
+
+	Transform {
+		translation -10 -7.5 -5
+	scale .6 .6 .6
+	children [Inline {url "HangHoa\ban1.wrl"}]}
+
+
+
+	Transform {
+		translation -20 -4.5 -10
+	scale 10 10 10
+	children [Inline {url "HangHoa\banlophoc.wrl"}]}
+
+
+
+
+	Transform {
+		translation -15 -7.5 -16
+	scale 7 7 7
+	children [Inline {url "HangHoa\banhocto.wrl"}]}
+
+
+
+
+
+	Transform {
+		translation -5 -9.5 0
+	scale .4 .4 .4
+	children [Inline {url "HangHoa\banhocmini.wrl"}]}
+
+
+
+	Transform {
+		translation -15 -7.5 0
+	scale 6 6 6
+	children [Inline {url "HangHoa\ghe2.wrl"}]}
+
+
+
+
+
+	Transform {
+	translation -20 7 2
+	children [
+		Shape {
+			appearance Appearance {texture ImageTexture {url "Images\bien.jpg"}}
+			geometry Box {size 30 5 .2}}]}
+
+
+
+
