@@ -122,7 +122,7 @@ DEF	Block1 Transform {
 	translation	-450 100 -600
 	children [
 		Transform {
-			translation 100 100 100
+			translation 100 120 100
 				scale 20 20 20
 				rotation 0 .1 0 1.57
 				children [
@@ -190,7 +190,7 @@ DEF	Block4 Transform {
 	translation	-450 100 600
 	children [
 		Transform {
-			translation -930 100 -100
+			translation -930 120 -100
 				scale 20 20 20
 				rotation 0 .1 0 -1.57
 				children [
@@ -210,16 +210,14 @@ DEF	Block4 Transform {
 				]
 		}
 		Transform {
-			translation 220 -50 180
+			translation 220 -78 180
 				scale 22 22 22
 				children [
 					Inline {
 						url	"views/Cho/MaiCheNhaXe.wrl" 
 					}
 				]
-		}
-		
-
+			}
 			
 	]
 }
@@ -252,7 +250,7 @@ Transform {
 		}
 		Transform {
 			translation 300 0 200
-			scale  2 2 2
+			scale  1.7 1.7 1.7
 			children [
 				Inline {
 					url	"Views/Cho/GianHang3.wrl" 
