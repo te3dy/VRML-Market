@@ -170,18 +170,27 @@ DEF	Block2 Transform {
 DEF	Block3 Transform {
 	translation	-250 100 200
 	children [
-		Shape {
-			appearance Appearance {
-				material Material {
-					diffuseColor .69 .13 .33
-					specularColor .12 .05 .05
-					ambientIntensity .0933
-					shininess .07
-				}
+		Transform {
+			translation	 -100 0 0
+			scale 8 8 8
+			children [
+				Transform {
+			translation	0 0 5
+			children [
+			Inline	{
+				url	"modules/GianHangBanGhe/GianHang.wrl"
 			}
-			geometry Box {
-				size 900 200 200
+		]
+		}
+			Transform {
+			translation	65 0 5
+			children [
+			Inline	{
+				url	"modules/GianHangBanGhe/GianHang.wrl"
 			}
+		]
+		}
+			]
 		}
 	]
 }
@@ -305,6 +314,39 @@ DEF	Block8 Transform {
 	translation	900 100 600
 	children [
 	]
+}
+#Người dịch chuyển
+DEF	WalkingMan Transform {
+	children [
+		Transform {
+			translation -300 50 0
+			scale 20 20 20
+			children [
+				Inline {
+					url "modules\WalkingMan\cdnguoi.wrl"
+				}
+			]
+		}
+		Transform {
+			translation -300 50 400
+			scale 20 20 20
+			children [
+				Inline {
+					url "modules\WalkingMan\cdnguoi.wrl"
+				}
+			]
+		}
+		Transform {
+			translation -300 50 -400
+			scale 20 20 20
+			children [
+				Inline {
+					url "modules\WalkingMan\cdnguoi.wrl"
+				}
+			]
+		}
+	]
+
 }
 #Góc nhìn
 Viewpoint {
