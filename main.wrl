@@ -82,19 +82,11 @@ DEF Wall Transform {
 #Đường phố
 DEF Street Transform {
 	translation	-1300 1 0
+	scale 25 25 25
+	rotation 0 1 0 1.57
 	children [
-		Shape {
-			appearance Appearance {
-				material Material {
-					diffuseColor .79 .25 0
-					specularColor .63 .19 .03
-					ambientIntensity .0867
-					shininess .55
-				}
-			}
-			geometry Box {
-				size 400 1 1400
-			}
+		Inline {
+			url	"modules/Duong/duong.wrl"
 		}
 	]
 }
@@ -119,20 +111,12 @@ DEF	BlockHor Transform {
 }
 #Dãy 1
 DEF	Block1 Transform {
-	translation	-450 100 -600
+	translation	-400 200 -500
+	scale 20 20 20
+	rotation 0 .1 0 1.57
 	children [
-		Shape {
-			appearance Appearance {
-				material Material {
-					diffuseColor .69 .13 .33
-					specularColor .12 .05 .05
-					ambientIntensity .0933
-					shininess .07
-				}
-			}
-			geometry Box {
-				size 1300 200 200
-			}
+		Inline {
+			url	"views/House/main.wrl"
 		}
 	]
 }
