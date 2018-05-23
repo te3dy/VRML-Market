@@ -1,7 +1,7 @@
 #VRML V2.0 utf8
 
  Transform {
-	translation	0 0 -50
+	translation	0 0 0
 	children [
 		#cho
 		Transform {
@@ -9,7 +9,7 @@
 			scale  3 3 3
 			children [
 				Inline {
-					url	"MainCho.wrl"
+					url	"mainCho1.wrl"
 				}
 			]
 		}

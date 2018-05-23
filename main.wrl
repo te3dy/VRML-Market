@@ -204,22 +204,44 @@ DEF	Block4 Transform {
 	]
 }
 #Dãy 5
-DEF	Block5 Transform {
+Transform {
 	translation	900 100 -600
-	children [
-		Shape {
-			appearance Appearance {
-				material Material {
-					diffuseColor .88 .15 .01
-					specularColor .19 .03 .03
-					ambientIntensity .0833
-					shininess .08
+	
+	children [ 
+		Transform {
+			translation 0 300 200
+			scale  8 8 8
+			children [
+				Inline {
+					url	"Views/Cho/GianHang1.wrl" 
 				}
-			}
-			geometry Box {
-				size 1000 200 200
-			}
+			
+			]
+
 		}
+		Transform {
+			translation -400 300 200
+			scale  8 8 8
+			children [
+				Inline {
+					url	"Views/Cho/GianHang2.wrl" 
+				}
+			
+			]
+
+		}
+		Transform {
+			translation 300 0 200
+			scale  2 2 2
+			children [
+				Inline {
+					url	"Views/Cho/GianHang3.wrl" 
+				}
+			
+			]
+
+		}
+					
 	]
 }
 #Dãy 6
