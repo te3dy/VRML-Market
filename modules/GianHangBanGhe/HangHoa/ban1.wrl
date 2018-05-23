@@ -1,0 +1,239 @@
+#VRML V2.0 utf8
+
+######### chan ban tren ben trai
+
+DEF	chanban Transform {
+translation 0 0 0
+children [
+	Shape {
+		appearance Appearance {
+			material Material {emissiveColor .5 .5 0}}
+			geometry Cylinder {radius .3 height 8}}
+		
+		
+			Transform {
+			translation 0 -4 0
+			
+		children [
+	Shape {
+		appearance Appearance {
+			material Material {emissiveColor .5 .5 0}}
+			geometry Cone {bottomRadius .8}}]}
+		
+		
+		
+		]}
+
+
+		######### chan ban giua
+
+
+		Transform {
+		translation 10 0 0
+		children [
+		USE chanban ]}
+
+
+
+
+		######## chan ban tren ben phai
+
+		Transform {
+		translation 15 0 0
+		children [USE chanban ]}
+
+
+
+
+		########## chan ban duoi ben trai
+
+		Transform {
+		translation 0 0 -8
+		children [USE chanban ]}
+
+
+
+		########## chan ban giua duoi
+
+		Transform {
+		translation 10 0 -8
+		children [USE chanban ]}
+
+
+		########## chan ban duoi ben phai
+
+		Transform {
+		translation 15 0 -8
+		children [USE chanban ]}
+
+
+
+
+		############################## đế hoopjj bàn
+
+
+		Transform {
+		translation 12.5 -3 -3.5
+		children [
+			Shape {
+				appearance Appearance {
+					material Material {emissiveColor .5 .5 0}}
+					geometry Box {size 5.5 .3 8}}]}
+
+
+					 ########## lưng hộp bàn
+
+					Transform {
+					translation 12.5 .5 -8
+					children [
+					Shape {
+				appearance Appearance {
+					material Material {emissiveColor .5 .5 0}}
+					geometry Box {size 5 6.5 .3 }}]}
+
+
+
+
+					############### hông bên trái hộp bàn
+
+					   Transform {
+					translation 10 0.5 -4
+					children [
+					Shape {
+				appearance Appearance {
+					material Material {emissiveColor .5 .5 0}}
+					geometry Box {size .3 7 8 }}]}
+
+
+
+					############# hông bên phải hộp bàn
+
+					  Transform {
+					translation 15 0.5 -4
+					children [
+					Shape {
+				appearance Appearance {
+					material Material {emissiveColor .5 .5 0}}
+					geometry Box {size .3 7 8 }}]}
+
+
+
+
+					########### ngăn hộp bàn
+
+					  Transform {
+		translation 12.5 0 -4.5
+		children [
+			Shape {
+				appearance Appearance {
+					material Material {emissiveColor .5 .5 0}}
+					geometry Box {size 5.5 .3 5}}]}
+
+
+
+
+
+
+					Transform {
+		translation 5 -3 -3.5
+		children [
+			Shape {
+				appearance Appearance {
+					material Material {emissiveColor .5 .5 0}}
+					geometry Box {size 10 .3 .3}}]}
+
+
+
+
+					Transform {
+		translation 0 -3 -4
+		children [
+			Shape {
+				appearance Appearance {
+					material Material {emissiveColor .5 .5 0}}
+					geometry Box {size .3 .3 8}}]}
+
+
+
+
+					Transform {
+		translation 0 -.5 -3.5
+		
+		children [
+			Shape {
+				appearance Appearance {
+					material Material {emissiveColor .5 .5 0}}
+					geometry Box {size .3 5 .3}}]}
+
+
+
+
+
+					Transform {
+		translation 0 -.5 -3
+		  rotation 1 0 0 .25
+		children [
+			Shape {
+				appearance Appearance {
+					material Material {emissiveColor .5 .5 0}}
+					geometry Box {size .3 5 .3}}]}
+
+
+					Transform {
+		translation 0 -.5 -4
+		  rotation -1 0 0 .25
+		children [
+			Shape {
+				appearance Appearance {
+					material Material {emissiveColor .5 .5 0}}
+					geometry Box {size .3 5 .3}}]}
+
+
+
+
+					############# ngan ban
+
+
+					Transform {
+		translation 5 2 -3.5
+		children [
+			Shape {
+				appearance Appearance {
+					material Material {emissiveColor .5 .5 0}}
+					geometry Box {size 10 .3 8}}]}
+
+
+
+
+					############## mat ban
+
+
+					Transform {
+		translation 8 4 -3.5
+		children [
+			Shape {
+				appearance Appearance {
+					material Material {emissiveColor .5 .5 0}}
+					geometry Box {size 17 .3 10}}]}
+
+
+
+
+					Transform {
+					translation 5 3 -7.7
+					children [
+					Shape {
+				appearance Appearance {
+					material Material {emissiveColor .75 .75 .75}}
+					geometry Box {size 10 1.8 .3 }}]}
+
+
+
+
+					Transform {
+					translation 0 3 -3.9
+					children [
+					Shape {
+				appearance Appearance {
+					material Material {emissiveColor .5 .5 0}}
+					geometry Box {size .3 1.8 8.5 }}]}

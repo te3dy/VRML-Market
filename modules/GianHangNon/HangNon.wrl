@@ -1,0 +1,136 @@
+#VRML V2.0 utf8
+
+Transform {
+	children [Inline {url "HangHoa\Nha.wrl"}]}
+
+
+
+	######### nguoi mua hang 1
+
+
+	Transform {
+	translation -25 -4 5
+	rotation 0 1 0 1.1
+	scale 1.35 1.35 1.35
+
+children [Inline {url "Nguoi\NguoiMua.wrl"}]}
+
+
+
+
+Transform {
+translation -21 -2.5 6
+rotation 0 1 0 1.57
+scale .9 .9 .9
+children [Inline {url "HangHoa\Non.wrl"}]}
+
+
+
+	 ########## nguoi mua hang 2
+
+
+	Transform {
+	translation -2 -4 5
+	rotation 0 1 0 .02
+	scale 1.35 1.35 1.35
+
+children [Inline {url "Nguoi\NguoiMua.wrl"}]}
+
+
+
+
+Transform {
+translation -2 -2.5 9
+rotation 0 1 0 1.57
+scale .9 .9 .9
+children [Inline {url "HangHoa\NonQuay.wrl"}]}
+
+
+
+
+
+################ hang hoa
+
+
+
+Transform {
+translation -15 -2 -5
+children [Inline {url "HangHoa\NonLa.wrl"}]}
+
+
+Transform {
+translation -15 -2 -11
+children [Inline {url "HangHoa\NonLa.wrl"}]}
+
+
+Transform {
+translation -22 -2 -5
+children [Inline {url "HangHoa\NonLa.wrl"}]}
+
+Transform {
+translation -22 -2 -11
+children [Inline {url "HangHoa\NonLa.wrl"}]}
+
+
+Transform {
+translation -8 -2 -5
+children [Inline {url "HangHoa\NonLa.wrl"}]}
+
+Transform {
+translation -8 -2 -11
+children [Inline {url "HangHoa\NonLa.wrl"}]}
+
+
+
+
+################ bang quang cao
+
+
+Transform {
+	rotation 0 0 1 1.57
+translation -39 8 7
+children [Shape {appearance	Appearance {
+	material Material {diffuseColor .5 .5 .5}}
+	geometry Cylinder {radius .3 height 10}}]}
+
+
+
+
+DEF	quangcao
+Transform {
+translation -41 4.5 8
+children [
+	Shape {
+		appearance Appearance {texture ImageTexture {url "Images\bien.jpg"}}
+		geometry Box {size 8 8 .2}}]}
+
+
+
+
+		DEF	TS TimeSensor {
+	loop TRUE                  
+	cycleInterval 2             
+}
+
+
+DEF	OI OrientationInterpolator {
+	key	[0, .25, .5, .75, 1]
+	
+	keyValue [
+		.1 0 0 0,
+		.1 0 0 -.2,
+		.1 0 0 0,
+		.1 0 0 .2,
+		.1 0 0 0,
+	]
+}
+
+
+
+
+
+
+	ROUTE TS.fraction_changed TO OI.set_fraction
+							   
+	ROUTE OI.value_changed TO quangcao.set_rotation
+	

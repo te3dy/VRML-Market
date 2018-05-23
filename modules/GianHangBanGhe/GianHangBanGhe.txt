@@ -1,0 +1,5 @@
+Gian hàng bán bàn gh?
+ði?m n?i b?t :
+	 m?t hàng t? ð? {tudo.wrl} có th? ðóng / m? cánh t?
+	gh? xoay màu xanh có th? quay v?ng tr?n {ghe1.wrl}
+	bàn ãn tr?n màu ð? có th? quay tr?n khi click chu?t (banantron.wrl)

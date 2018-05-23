@@ -1,0 +1,88 @@
+#VRML V2.0 utf8
+
+Transform {
+    children [
+		Transform {
+		children [
+        Shape {
+            geometry Box {
+                size 100 5 1400
+            }
+            appearance Appearance {
+				material Material {}
+				texture	ImageTexture {
+					url	"Images/Nen.png"
+                    repeatS TRUE
+                    repeatT TRUE
+				}
+            }
+    	 }
+		]
+
+		}
+		Transform {
+		translation	0 0 -600
+		scale 3 3 3
+		children [
+		Inline {
+			url	"cay_bui_3dmax.WRL"
+		}
+		]
+		}
+	Transform {
+		translation	0 0 -400
+		scale 3 3 3
+		children [
+		Inline {
+			url	"cay_bui_3dmax.WRL"
+		}
+		]
+		}
+	Transform {
+		translation	0 0 -200
+		scale 3 3 3
+		children [
+		Inline {
+			url	"cay_bui_3dmax.WRL"
+		}
+		]
+		}
+		Transform {
+		translation	0 0 0
+		scale 3 3 3
+		children [
+		Inline {
+			url	"cay_bui_3dmax.WRL"
+		}
+		]
+		}
+	Transform {
+		translation	0 0 200
+		scale 3 3 3
+		children [
+		Inline {
+			url	"cay_bui_3dmax.WRL"
+		}
+		]
+		}
+	Transform {
+		translation	0 0 400
+		scale 3 3 3
+		children [
+		Inline {
+			url	"cay_bui_3dmax.WRL"
+		}
+		]
+		}
+	Transform {
+		translation	0 0 600
+		scale 3 3 3
+		children [
+		Inline {
+			url	"cay_bui_3dmax.WRL"
+			}
+		]
+		}
+
+		 ]
+	}

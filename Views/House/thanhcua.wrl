@@ -1,0 +1,32 @@
+#VRML V2.0 utf8
+
+#VRML V2.0 utf8
+
+Transform {
+		children [
+		Shape {
+			appearance Appearance {
+							texture ImageTexture{
+								  url "anh/maucuaso.png"
+								  repeatS TRUE
+								  repeatT TRUE
+								  }
+						}
+			geometry Cylinder {
+
+				height 3.5
+
+				radius 0.15
+
+				bottom TRUE
+
+				top TRUE
+
+				side TRUE
+
+
+
+			}
+		}
+	]
+}

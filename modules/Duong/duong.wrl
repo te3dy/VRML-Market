@@ -10,7 +10,7 @@ children [
 			material Material {
 			diffuseColor 0 0 0}
 		}
-		geometry Box {size 200 .003 8}
+		geometry Box {size 56 .003 8}
 	}
 ]
 }
@@ -62,57 +62,9 @@ children [
 }
 #dong vach
 ]}
-Transform {
-translation	25 0 0 
-children [
-	USE	vach
-]
-}
-Transform {
-translation	50 0 0 
-children [
-	USE	vach
-]
-}
-Transform {
-translation	75 0 0 
-children [
-	USE	vach
-]
-}
 
-Transform {
-translation	-50 0 0 
-children [
-	USE	vach
-]
-}
-Transform {
-translation	-25 0 0 
-children [
-	USE	vach
-]
-}
-Transform {
-translation	-75 0 0 
-children [
-	USE	vach
-]
-}
-Transform {
-translation	-100 0 0 
-children [
-	USE	vach
-]
-}
 ]}#đóng đường
-Transform {
-translation	100 0 0
-rotation 0 1 0 1.57
-children [
-USE	duong
-]
-}
+
 Transform {
 	translation	0 10 0
 	children [

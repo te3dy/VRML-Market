@@ -1,0 +1,191 @@
+#VRML V2.0 utf8
+
+DEF	nha Transform{
+	scale 1 1 2
+	children [
+
+        DEF tang2 Transform {
+	        translation	0 2 -13
+	        #rotation 0 1 0 1
+	        children [
+		        #tuong tang tren 1
+		        Transform {
+			        children [
+				        Inline {
+					        url	"tuongtangtren.wrl"
+				        }
+			        ]
+		        }
+		        DEF	khung Transform	{
+	                children [
+		                #tuong tang tren 1
+		                Transform {
+			                translation	4.2 0 -4.25
+			                rotation 0 1 0 1.56
+			                children [
+				                Inline {
+					                url	"tuongtangtren.wrl"
+				                }
+			                ]
+		                }
+		                #tuong tang tren 1
+		                Transform {
+			                translation	8.5 0 0
+			                children [
+				                Inline {
+					                url	"tuongtangtren.wrl"
+				                }
+			                ]
+		                }
+		                #tuong tang tren 1
+		                Transform {
+			                translation	4.25 0 4.5
+			                rotation 0 1 0 1.57
+			                children [
+				                Inline {
+					                url	"tuongtangtren.wrl"
+				                }
+			                ]
+		                }
+	                ]
+                }
+		 
+
+		        #mai nha
+		        Transform {
+			        translation	4.25 4 0
+			        rotation 1 1 0 3.14
+			        children [
+				        Inline {
+					        url	"mainha.wrl"
+				        }
+			        ]
+		        }
+		        #cua so
+		        Transform {
+			        translation	4.5 0 5
+			
+			        children [
+				        Inline {
+					        url	"cuaso.wrl"
+				        }
+			        ]
+		        }
+		
+		        #cua so
+		        Transform {
+			        translation	-0.2 0 -2.9
+			        rotation 0 1 0 1.57
+			        children [
+				        Inline {
+					        url	"cuaso.wrl"
+				        }
+			        ]
+		        }
+		        #cua so
+		        Transform {
+			        translation	-0.2 0 2.9
+			        rotation 0 1 0 1.57
+			        children [
+				        Inline {
+					        url	"cuaso.wrl"
+				        }
+			        ]
+		        }
+		        #cua so
+		        Transform {
+			        translation	-0.2 0 0
+			        rotation 0 1 0 1.57
+			        children [
+				        Inline {
+					        url	"cuatotangtren.wrl"
+				        }
+			        ]
+		        }
+
+	        ]
+        }
+        #nen giua 2 tang
+		Transform {
+			translation	4 -2 -13
+			children [
+				Inline {
+					url	"nen.wrl"
+				}
+			]
+		}
+
+
+        #tang1
+        Transform {
+	        translation	0 -6.2 -13
+	        children USE khung
+        }
+        #tuong co cua ra vao
+        Transform {
+	        translation	0 -6.2 -16
+		    children [
+				Inline {
+					url	"tuongcocuamo.wrl"
+				}
+			]
+	    }
+	    #cua ra vao	
+        Transform {
+	        rotation 0 1 0 -1.57
+	        translation	0 -7.7 -14.5
+		    children [
+				Inline {
+					url	"cuaravao.wrl"
+				}
+			]
+	    }
+
+        #vom cua ra vao
+        Transform {
+	        rotation 0 0 1 2.0
+	        translation	-1.5 -4.5 -13
+		    children [
+				Inline {
+					url	"vomcua.wrl"
+				}
+			]
+	    }
+
+        #nendat
+		Transform {
+			translation	4.3 -10.5 -13
+            scale 2 0.2 10
+			children [
+				Inline {
+					url	"../objects/tuong1.wrl"
+				}
+			]
+		}
+
+        #thanh chan cua ra vao 1
+        Transform {
+	        rotation  0 0 1 -2.0
+	        translation	-1.5 -6 -14.7
+			children [
+				Inline {
+					url	"thanhcua.wrl"
+				}
+			]
+		}
+        #thanh chan cua ra vao 1
+        Transform {
+	        rotation  0 0 1 -2.0
+	        translation	-1.5 -6 -11.3
+			children [
+				Inline {
+					url	"thanhcua.wrl"
+				}
+			]
+		}
+
+	]
+}
+
+
+
