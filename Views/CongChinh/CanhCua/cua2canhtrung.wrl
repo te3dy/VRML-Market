@@ -1,0 +1,115 @@
+#VRML V2.0 utf8
+
+#cong gom 2 canh cua
+DEF	cuaconghaicanh Transform {
+	children [
+
+		#canh ben trai
+		DEF	canhbentrai Transform {
+			translation	 -1.62 0 0
+			children	[
+				DEF	cylSen2 CylinderSensor {	
+					enabled	TRUE	
+					maxAngle 0
+					minAngle -1.1
+
+	   			}
+				DEF	trai Transform {
+					translation	1.7 0 0
+					children [
+						Inline {
+
+							url ["canhcuagiaptuong.wrl"] 
+
+						}
+					]
+
+				}	 						
+			]
+		}
+		
+
+		#canh ben phai
+		DEF	canhbenphai Transform {
+			translation	5.02 0 0
+			children [
+				DEF	cylSen1 CylinderSensor {	
+					enabled	TRUE	
+					maxAngle 1.1
+					minAngle 0
+
+	   			}
+				 DEF	phai Transform {
+					 rotation  0 1 0 3.14
+					translation	-1.7 0 0
+					children [
+						Inline {
+
+							url ["canhcuagiaptuong.wrl"] 
+
+						}
+					   
+					]
+				}
+			]
+		}
+		
+
+		#moi noi voi tuong	trai tren
+		DEF moinoituong Transform	{
+			translation -1.95 2 0
+			children [
+				Inline {
+
+					url ["maunoicanhcua.wrl"] 
+
+				}
+			]
+		}
+
+		#moi noi voi tuong	trai giua
+		Transform	{
+			translation	0 -2 0
+			children [
+				USE	moinoituong
+			]
+		}   
+		
+		 #moi noi voi tuong	trai duoi
+		Transform	{
+			translation	0 -4 0
+			children [
+				USE	moinoituong
+			]
+		} 
+
+		 #moi noi voi tuong	phai tren
+		DEF muoinoituongphai Transform	{
+			rotation 0 1 0 3.14
+			translation	3.38 0 0
+			children [
+				USE	moinoituong
+			]
+		}
+
+		#moi noi voi tuong phai giua
+		Transform {
+			translation	0 -2 0
+			children [
+				USE	muoinoituongphai
+			]
+		}
+
+		#moi noi voi tuong phai duoi
+		Transform {
+			translation	0 -4 0
+			children [
+				USE	muoinoituongphai
+			]
+		}
+	]
+}
+
+ROUTE  cylSen2.rotation_changed TO canhbentrai.rotation
+ROUTE  cylSen1.rotation_changed TO canhbenphai.rotation
+

@@ -1,0 +1,85 @@
+#VRML V2.0 utf8
+
+DEF	canhcuagiaptuong Transform {
+	children [
+		#canh ben trai
+		
+		DEF	trai Transform {   
+			children [
+				Inline {
+
+					url ["motbencua.wrl"] 
+
+				}
+
+				#moi noi tren
+				DEF	mainoi Transform {
+					translation	-2.02 2 0
+					children [
+						#phan giua cua truc
+						Transform {
+							translation	.3 0 0
+							children [
+								Shape {
+									geometry Cylinder{
+										height .18 
+										radius .07 
+										bottom TRUE	
+										top TRUE 
+										side TRUE
+
+										}
+									appearance Appearance {
+										material Material {
+											diffuseColor 0 .35 .25
+											specularColor 0 .31 .36
+											ambientIntensity .0533
+											shininess .32
+										}
+									}
+								}
+							]
+						}
+
+						# phan noi voi canh cong
+						Transform {
+							translation	.4 0 0
+							children [
+								Shape {
+									geometry Box {
+										size .14 .18 .02
+									}
+									appearance Appearance {
+										material Material {
+											diffuseColor 0 .35 .25
+											specularColor 0 .31 .36
+											ambientIntensity .0533
+											shininess .32
+										}
+									}
+								}
+							]
+						}
+					]
+				}
+
+				#moi noi giua
+				Transform {
+					translation	0 -2 0
+					children [
+						USE	mainoi
+					]
+				}
+				#moi noi duoi
+				Transform {
+					translation	0 -4 0
+					children [
+						USE	mainoi
+					]
+				}
+			]
+		}
+		
+	]
+}
+													  

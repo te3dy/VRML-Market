@@ -206,7 +206,13 @@ Transform	{
 		Shape {
 			geometry Box { size 3.6 .06 .06}
 			appearance Appearance {	
-				material Material { diffuseColor .8 .8 .8 }			
+				material Material 
+				{
+					diffuseColor 0 .35 .25
+					specularColor 0 .31 .36
+					ambientIntensity .0533
+					shininess .32
+				}			
 			}
 		}
 	]
@@ -218,9 +224,65 @@ Transform	{
 		Shape {
 			geometry Box { size 3.6 .06 .06}
 			appearance Appearance {	
-				material Material { diffuseColor .8 .8 .8 }			
+				material Material {
+					diffuseColor 0 .35 .25
+					specularColor 0 .31 .36
+					ambientIntensity .0533
+					shininess .32
+				}			
 			}
 		}
+	]
+}
+# thanh sắt thẳng mũi tên
+DEF	ThanhMuiTen Transform {
+	translation	0 1.7 0
+	children [
+		Inline {
+			url	"CotMuiTen.wrl"
+		}
+	]
+}
+Transform {
+	translation	.5 0 0
+	children [
+		USE	ThanhMuiTen
+	]
+}
+Transform {
+	translation	1 0 0
+	children [
+		USE	ThanhMuiTen
+	]
+}
+Transform {
+	translation	1.5 0 0
+	children [
+		USE	ThanhMuiTen
+	]
+}
+Transform {
+	translation	2 0 0
+	children [
+		USE	ThanhMuiTen
+	]
+}
+Transform {
+	translation	-.5 0 0
+	children [
+		USE	ThanhMuiTen
+	]
+}
+Transform {
+	translation	-1 0 0
+	children [
+		USE	ThanhMuiTen
+	]
+}
+Transform {
+	translation	-1.5 0 0
+	children [
+		USE	ThanhMuiTen
 	]
 }
 

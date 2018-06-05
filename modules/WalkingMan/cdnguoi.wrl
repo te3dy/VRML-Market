@@ -1,7 +1,7 @@
 #VRML V2.0 utf8
 
 PROTO Nguoi[
-	field SFTime nguoiSpeed 80,
+	field SFTime nguoiSpeed 60,
 ]
 {
 	DEF	nguoi Transform {

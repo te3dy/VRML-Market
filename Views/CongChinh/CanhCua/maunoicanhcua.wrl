@@ -1,0 +1,153 @@
+#VRML V2.0 utf8
+
+#mau noi
+
+DEF	maunoicanhcua Transform	{
+	children [
+
+		#noi voi tuong
+		Transform {
+			children [
+				Transform {
+					translation	.07 0 0
+					children [
+					   Shape{
+							geometry Box {
+								size .25 .55 .02
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor 0 .35 .25
+									specularColor 0 .31 .36
+									ambientIntensity .0533
+									shininess .32
+								}
+							}
+						}
+					]
+				}
+				
+
+				Transform {
+					translation	 .2 .22 0
+					children [
+						Shape{
+							geometry Box {
+								size .1 .12 .02
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor 0 .35 .25
+									specularColor 0 .31 .36
+									ambientIntensity .0533
+									shininess .32
+								}
+							}
+						}
+					]
+				}
+
+				Transform {
+					translation	 .2 -.22 0
+					children [
+						Shape{
+							geometry Box {
+								size .1 .12 .02
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor 0 .35 .25
+									specularColor 0 .31 .36
+									ambientIntensity .0533
+									shininess .32
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+
+		# tru giua
+		Transform {
+			translation	 .3 0 0
+			children [
+				Shape {
+
+					geometry Cylinder{
+						height .35 
+						radius .05 
+						bottom TRUE	
+						top TRUE 
+						side TRUE
+
+						}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 .35 .25
+							specularColor 0 .31 .36
+							ambientIntensity .0533
+							shininess .32
+						}
+					}
+
+				}
+			]
+		}
+
+		#tru tren
+		Transform {
+			translation	 .3 .22 0
+			children [
+				Shape {
+
+					geometry Cylinder{
+						height .14 
+						radius .07 
+						bottom TRUE	
+						top TRUE 
+						side TRUE
+
+						}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 .35 .25
+							specularColor 0 .31 .36
+							ambientIntensity .0533
+							shininess .32
+						}
+					}
+
+				}
+			]
+		}
+
+			#tru duoi
+		Transform {
+			translation	 .3 -.22 0
+			children [
+				Shape {
+
+					geometry Cylinder{
+						height .14 
+						radius .07 
+						bottom TRUE	
+						top TRUE 
+						side TRUE
+
+						}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 .35 .25
+							specularColor 0 .31 .36
+							ambientIntensity .0533
+							shininess .32
+						}
+					}
+
+				}
+			]
+		}
+
+	]
+}

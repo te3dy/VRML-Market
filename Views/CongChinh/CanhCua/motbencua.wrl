@@ -1,0 +1,269 @@
+#VRML V2.0 utf8
+
+DEF	motbencua Transform	{
+	children [
+		DEF	thanhsat Transform {
+			translation	0 .58 0
+			children [
+				Shape {
+					geometry Box {
+						size .05 3.5 .05
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 .25 .24
+							specularColor .18 .25 .23
+							ambientIntensity .0433
+							shininess .06
+						}
+					}
+				}
+			]
+		}
+
+		#thanh khung ben phai
+		Transform {
+			translation	1.5 0 0
+			children [
+				Shape {
+					geometry Box {
+						  size	.2 5 .05
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 .35 .25
+							specularColor 0 .31 .36
+							ambientIntensity .0533
+							shininess .32
+						}
+					}
+				}
+			]
+		}
+
+		#thanh khung ben trai
+		Transform {
+			translation	-1.5 0 0
+			children [
+				Shape {
+					geometry Box {
+						  size	.2 5 .05
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 .35 .25
+							specularColor 0 .31 .36
+							ambientIntensity .0533
+							shininess .32
+						}
+					}
+				}
+			]
+		}
+
+		#thanh khung to ben tren
+		Transform {
+			translation	0 2.42 0
+			children [
+				Shape {
+					geometry Box {
+						  size 3.2 .2 .05
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 .35 .25
+							specularColor 0 .31 .36
+							ambientIntensity .0533
+							shininess .32
+						}
+					}
+				}
+			]
+		}
+
+		Transform {
+			translation	1 0 0 
+			children [
+				USE	thanhsat
+			]
+		}
+
+		Transform {
+			translation	.5 0 0 
+			children [
+				USE	thanhsat
+			]
+		}
+
+		Transform {
+			translation	-1 0 0 
+			children [
+				USE	thanhsat
+			]
+		}
+
+		Transform {
+			translation	-.5 0 0 
+			children [
+				USE	thanhsat
+			]
+		}
+
+		#thanh khung to ben duoi 1
+		Transform {
+			translation	0 -1.2 0
+			children [
+				Shape {
+					geometry Box {
+						  size 3.2 .2 .05
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 .35 .25
+							specularColor 0 .31 .36
+							ambientIntensity .0533
+							shininess .32
+						}
+					}
+				}
+			]
+		}
+
+			#thanh khung to ben duoi 2
+		Transform {
+			translation	0 -2.5 0
+			children [
+				Shape {
+					geometry Box {
+						  size 3.2 .2 .05
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 .35 .25
+							specularColor 0 .31 .36
+							ambientIntensity .0533
+							shininess .32
+						}
+					}
+				}
+			]
+		}
+
+		
+		#nen phan khung duoi
+		Transform {
+			translation	0 -1.8 0
+			children [
+				Shape {
+					geometry Box {
+						  size 3.2 1.2 .03
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 .35 .25
+							specularColor 0 .31 .36
+							ambientIntensity .0533
+							shininess .32
+						}
+					}
+				}
+			]
+		}
+
+		#thanh khung nho ben tren
+		Transform {
+			translation	0 1.92 0
+			children [
+				Shape {
+					geometry Box {
+						  size 3.2 .05 .05
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 .35 .25
+							specularColor 0 .31 .36
+							ambientIntensity .0533
+							shininess .32
+						}
+					}
+				}
+			]
+		}
+
+		#thanh khung nho ben duoi
+		Transform {
+			translation	0 -.62 0
+			children [
+				Shape {
+					geometry Box {
+						  size 3.2 .05 .05
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 .35 .25
+							specularColor 0 .31 .36
+							ambientIntensity .0533
+							shininess .32
+						}
+					}
+				}
+			]
+		}
+
+		DEF muiten Transform { 
+			translation	0 2.66 0
+			children [
+				Inline {
+
+					url ["hinhmuiten.wrl"] 
+
+				}
+			]
+		}
+
+		Transform {
+			translation	-1 0 0 
+			children [
+				USE	muiten
+			]
+		}
+
+
+		Transform {
+			translation	-.5 0 0 
+			children [
+				USE	muiten
+			]
+		}
+
+		Transform {
+			translation	1 0 0 
+			children [
+				USE	muiten
+			]
+		}
+
+
+		Transform {
+			translation	.5 0 0 
+			children [
+				USE	muiten
+			]
+		}
+
+		Transform {
+			translation	1.5 0 0 
+			children [
+				USE	muiten
+			]
+		}
+		Transform {
+			translation	-1.5 0 0 
+			children [
+				USE	muiten
+			]
+		}
+		
+
+	]
+}

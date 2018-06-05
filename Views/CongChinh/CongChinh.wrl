@@ -1,0 +1,236 @@
+#VRML V2.0 utf8
+
+DEF	CaiKhungCong Group {
+	children [
+		# Cột
+		DEF	caicot Transform {
+			translation	-2 -.2 0
+			children	[
+				Shape {
+					geometry	Cylinder {
+						height 1.6
+						radius 0.1
+						bottom TRUE
+						top TRUE
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .878 .651 .475
+							specularColor .82 .28 .28
+							ambientIntensity .113
+							shininess .8
+						}
+					}
+	   
+				}
+			]
+		}			
+		Transform {
+			translation	-2 0 0
+			children [
+				USE	caicot
+			]
+		}
+		# Cục tròn
+		DEF CucTron Transform {	  
+			translation	-4 0.625 0
+			children [
+				Shape {
+					geometry Cylinder{
+						bottom TRUE
+						top	 TRUE
+						height	0.075
+						radius	0.125
+					}
+					appearance Appearance
+					{
+						material Material {
+							diffuseColor 0.65 0.45 0.24
+						}
+					}
+				}
+			]
+		}
+		Transform {
+			translation	2 0 0
+			children [
+				USE	CucTron
+			]
+		}
+		#Cục vuông
+		DEF CucVuong Transform {
+			translation	-4 0.765 0
+			scale 0.7 0.7 1.3
+			children [
+				Transform {
+					children [
+						Shape {
+							geometry Box {
+								size 0.3 0.325 0.1
+							}
+							appearance Appearance {
+								material Material  
+								{
+									diffuseColor 1 1 0.4
+								}
+							}
+						}
+				
+					]
+				}
+				Transform {
+					children [
+						Shape {
+							geometry Box {
+								size 0.25 0.275 0.105
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor 0.65 0.45 0.24
+								}
+							}
+						}
+					]
+				}]
+		}
+		Transform {
+			translation	2 0 0
+			children [
+				USE	CucVuong
+			]
+		}
+		#thanh ngang
+		Transform {
+			rotation 1 0 0 1.57
+			scale 0.5 0.5 0.5
+			translation	-3 1 0 
+			children [
+				Shape {
+					geometry Extrusion {
+						beginCap TRUE
+						endCap TRUE
+						crossSection  [-3 0, -3 0.25,-2.95 0.25,-2.95 0.3, -2.85 0.3, -2.7 0.45, -2.65 0.45, -2.65 0.5, 0 0.5, 2.65 0.5, 2.65 0.45, 2.7 0.45, 2.85 0.3,2.95 0.3,2.95 0.25, 3 0.25,3 0,-3 0] 
+						spine [0 0 0, 0 0.1 0]
+						scale  [1 1, 1 1 ]
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .878 .651 .475
+							specularColor .82 .28 .28
+							ambientIntensity .113
+							shininess .8
+						}
+					}
+			
+				}
+			]
+		}
+		#Hình tròn chân cột
+		DEF	ChanCotTron Transform {	  
+			translation	-2 -.95 0
+			children [
+				#khac 1
+				Transform {
+					translation	0 0 0
+					children [Shape {
+							geometry Cylinder{
+								bottom TRUE
+								top	 TRUE
+								height	0.075
+								radius	0.13
+							}
+							appearance Appearance
+							{
+								material Material {
+									diffuseColor 0.65 0.45 0.24
+								}
+							}
+						}]
+				}
+				#khac 2
+				Transform {
+					translation	0 -0.01 0
+					children [
+						Shape {
+							geometry Cylinder{
+								bottom TRUE
+								top	 TRUE
+								height	0.075
+								radius	0.125
+							}
+							appearance Appearance
+							{
+								material Material {
+									diffuseColor 1 1 0.3
+								}
+							}
+						}
+					]
+				}
+				#khac 3
+				Transform {
+					translation	0 -0.02 0
+					children [
+						Shape {
+							geometry Cylinder{
+								bottom TRUE
+								top	 TRUE
+								height	0.075
+								radius	0.12
+							}
+							appearance Appearance
+							{
+								material Material {
+									diffuseColor 1 1 0.3
+								}
+							}
+						}
+					]
+				}
+				
+			]
+		}
+		Transform {
+			translation	-2 0 0
+			children [USE ChanCotTron ]
+		}
+		#chân cổng
+		DEF ChanCong Transform {
+			translation	-2 -1.2 0
+			children [
+				
+				Transform {
+					translation	0 0.19 0
+					children [
+						Shape {
+							geometry Box {
+								size 0.35 0.02 0.35
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor 0.1 0.24 0.2
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+		Transform {
+			translation	-2 0 0 
+			children [USE ChanCong ]
+		}
+		#Cổng
+		Transform {	   
+			scale 0.25 0.25 0.25
+			translation	-3.43 -.3 0
+			children [
+				Inline {
+					url	 ["CanhCua/cua2canhtrung.wrl"]
+				}
+			]
+		}
+		
+		
+	]
+}

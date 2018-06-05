@@ -1,0 +1,51 @@
+#VRML V2.0 utf8
+
+DEF	hinhmuiten Transform {
+	# mui ten phia tren
+	children [
+		DEF	muiten Transform {
+			translation	 0 .25 .025
+			rotation 1 0 0 -1.57	 
+			children [
+				Shape {
+					geometry Extrusion {
+						crossSection [
+							-1 0, 0 -1,
+						   1 0, 0 2 , -1 0
+						]
+						spine [0 0 0, 0 .05 0 ]
+						scale [ .1 .1, .1 .1]
+						beginCap TRUE
+						endCap TRUE
+						creaseAngle	10
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 .35 .25
+							specularColor 0 .31 .36
+							ambientIntensity .0533
+							shininess .32
+						}
+					}
+				}
+			]
+		}
+		
+
+		# thanh tru phia duoi
+		Shape {
+			geometry Box {
+				size .05 .3 .05
+			}
+			appearance Appearance {
+				material Material {
+					diffuseColor 0 .35 .25
+					specularColor 0 .31 .36
+					ambientIntensity .0533
+					shininess .32
+				}
+			}
+		}
+		
+	]
+}
