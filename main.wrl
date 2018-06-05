@@ -99,6 +99,33 @@ DEF Wall Transform {
 		}
 	]
 }
+#Cổng
+DEF	Gate Transform {
+	translation	-1075 102 0
+	children [
+		Transform {
+			translation	0 0 120
+			rotation 0 1 0 1.57
+			scale 100 100 70
+			children [
+				Inline {
+					url	"views/congchinh/congchinh.wrl"
+				}
+			]
+		}
+		Transform {
+			translation	0 0 -720
+			rotation 0 1 0 1.57
+			scale 100 100 70
+			children [
+				Inline {
+					url	"views/congchinh/congchinh.wrl"
+				}
+			]
+		}
+	]
+}
+
 #Đường phố
 DEF Street Transform {
 	translation	-1300 1 0
@@ -231,7 +258,7 @@ DEF	Block4 Transform {
 	]
 }
 #Dãy 5
-Transform {
+DEF Block5 Transform {
 	translation	900 100 -600
 	
 	children [ 
@@ -345,8 +372,35 @@ DEF	WalkingMan Transform {
 				}
 			]
 		}
+		Transform {
+			translation -600 50 -350
+			scale 20 20 20
+			children [
+				Inline {
+					url "modules\WalkingMan\cdnguoi.wrl"
+				}
+			]
+		}
+		Transform {
+			translation 300 50 -400
+			scale 10 10 10
+			rotation 0 1 0 3.14
+			children [
+				Inline {
+					url "modules\WalkingMan\nguoidichuyen.wrl"
+				}
+			]
+		}
+		Transform {
+			translation 300 50 -440
+			scale 10 10 10
+			children [
+				Inline {
+					url "modules\WalkingMan\nguoidichuyen.wrl"
+				}
+			]
+		}
 	]
-
 }
 #Góc nhìn
 Viewpoint {
