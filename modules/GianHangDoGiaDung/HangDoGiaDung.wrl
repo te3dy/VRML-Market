@@ -127,6 +127,6 @@ children [
 	translation -20 7 2
 	children [
 		Shape {
-			appearance Appearance {texture ImageTexture {url "Images\bien.jpg"}}
+			appearance Appearance {texture ImageTexture {url "Images\banner.png"}}
 			geometry Box {size 30 5 .2}}]}
 		
