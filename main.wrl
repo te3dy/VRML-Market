@@ -175,10 +175,10 @@ DEF	Block3 Transform {
 			scale 8 8 8
 			children [
 				Transform {
-			translation	0 0 5
+			translation	15 0 5
 			children [
 			Inline	{
-				url	"modules/GianHangBanGhe/GianHang.wrl"
+				url	"modules/GianHangDoGiaDung/HangDoGiaDung.wrl"
 			}
 		]
 		}

@@ -19,18 +19,18 @@ children [
 
 
 
-		Transform {
+	Transform {
 		translation -20 -9.5 0
-	scale .75 .75 .75
-	children [Inline {url "HangHoa\ghe1.wrl"}]}
+		scale .75 .75 .75
+		children [Inline {url "HangHoa\ghe1.wrl"}]}
 
 
 
 
 	Transform {
 		translation -30 -7.5 0
-	scale .75 .75 .75
-	children [Inline {url "HangHoa\banantron.wrl"}]}
+		scale .75 .75 .75
+		children [Inline {url "HangHoa\banantron.wrl"}]}
 
 
 

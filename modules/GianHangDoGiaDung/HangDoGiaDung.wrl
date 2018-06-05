@@ -1,0 +1,132 @@
+#VRML V2.0 utf8
+
+Transform {
+translation 0 0 0
+scale 1 1 1
+children [Inline {url "HangHoa\Nha.wrl"}]}
+Transform {
+translation -20 -10.5 -10
+children [
+	Shape {
+		appearance Appearance {texture ImageTexture {url "Images\nen.png"}}
+		geometry Box {size 45 .2 25}}]}
+	Transform {
+		translation -20 -7.5 -14
+		scale .003 .003 .003
+		children [Inline {url "HangHoa\extinguisher.wrl"}]}
+
+	Transform {
+		translation -24 -7.5 -14
+		scale .003 .003 .003
+		children [Inline {url "HangHoa\extinguisher.wrl"}]}
+
+
+	Transform {
+		translation -20 -22.5 0
+		scale .03 .03 .03
+		children [Inline {url "HangHoa\flashlight.wrl"}]}
+
+	Transform {
+		translation -25 -22.5 0
+		scale .03 .03 .03
+		children [Inline {url "HangHoa\flashlight.wrl"}]}
+	Transform {
+		translation -15 -22.5 0
+		scale .03 .03 .03
+		children [Inline {url "HangHoa\flashlight.wrl"}]}
+
+	Transform {
+		translation -37 -5.5 -10
+		rotation 1 0 0 1.57
+		scale .5 .5 .5
+		children [Inline {url "HangHoa\fork.wrl"}]}
+	Transform {
+		translation -39 -5.5 -10
+		rotation 1 0 0 1.57
+		scale .5 .5 .5
+		children [Inline {url "HangHoa\fork.wrl"}]}
+	Transform {
+		translation -41 -5.5 -10
+		rotation 1 0 0 1.57
+		scale .5 .5 .5
+		children [Inline {url "HangHoa\fork.wrl"}]}
+	Transform {
+		translation -43 -5.5 -10
+		rotation 1 0 0 1.57
+		scale .5 .5 .5
+		children [Inline {url "HangHoa\fork.wrl"}]}
+
+
+	Transform {
+		translation -35 -8.87 3
+		scale .004 .004 .004
+		children [Inline {url "HangHoa\kerolamp.wrl"}]}
+	Transform {
+		translation -30 -8.87 3
+		scale .004 .004 .004
+		children [Inline {url "HangHoa\kerolamp.wrl"}]}	
+	Transform {
+		translation -10 -8.87 3
+		scale .004 .004 .004
+		children [Inline {url "HangHoa\kerolamp.wrl"}]}
+	Transform {
+		translation -5 -8.87 3
+		scale .004 .004 .004
+		children [Inline {url "HangHoa\kerolamp.wrl"}]}	
+
+
+	Transform {
+		translation -20 -10.2 -4
+		scale 1 1 1
+		children [Inline {url "HangHoa\luxo.wrl"}]}
+
+	Transform {
+		translation -25 -10.2 -4
+		scale 1 1 1
+		children [Inline {url "HangHoa\luxo.wrl"}]}
+
+	Transform {
+		translation -30 -8 -8
+		scale 2.2 2.2 2.2
+		children [Inline {url "HangHoa\simpletable.wrl"}]}
+
+	Transform {
+		translation -40 -8 -8
+		scale 2.2 2.2 2.2
+		children [Inline {url "HangHoa\simpletable.wrl"}]}
+
+
+	Transform {
+		translation -5 -9.5 0
+		scale .1 .1 .1
+	children [Inline {url "HangHoa\banhocmini.wrl"}]}
+
+
+
+	Transform {
+		translation -30 -5.5 -10
+		scale .5 .5 .5
+		children [Inline {url "HangHoa\teapot.wrl"}]}
+
+	Transform {
+		translation -30 -5.5 -5
+		scale .5 .5 .5
+		children [Inline {url "HangHoa\teapot.wrl"}]}
+
+	Transform {
+		translation -10 -8.4 -5
+		scale .07 .07 .07
+		children [Inline {url "HangHoa\trashcan.wrl"}]}
+		
+	Transform {
+		translation -5 -8.4 -5
+		scale .07 .07 .07
+		children [Inline {url "HangHoa\trashcan.wrl"}]}
+		
+	Transform {
+	translation -20 7 2
+	children [
+		Shape {
+			appearance Appearance {texture ImageTexture {url "Images\bien.jpg"}}
+			geometry Box {size 30 5 .2}}]}
+		
