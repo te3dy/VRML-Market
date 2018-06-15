@@ -154,7 +154,7 @@ DEF	Block1 Transform {
 				rotation 0 .1 0 1.57
 				children [
 					Inline {
-						url	"views/House/main.wrl" 
+						url	"views/Block1/House/main.wrl" 
 					}
 				]
 		}
@@ -164,7 +164,7 @@ DEF	Block1 Transform {
 				rotation 0 .1 0 1.57
 				children [
 					Inline {
-						url	"views/nha1tang/nha1tang.wrl" 
+						url	"views/Block1/nha1tang/nha1tang.wrl" 
 					}
 				]
 		}
@@ -205,7 +205,7 @@ DEF	Block3 Transform {
 			translation	15 0 5
 			children [
 			Inline	{
-				url	"modules/GianHangDoGiaDung/HangDoGiaDung.wrl"
+				url	"views/Block3/GianHangDoGiaDung/HangDoGiaDung.wrl"
 			}
 		]
 		}
@@ -213,7 +213,7 @@ DEF	Block3 Transform {
 			translation	65 0 5
 			children [
 			Inline	{
-				url	"modules/GianHangBanGhe/GianHang.wrl"
+				url	"views/Block3/GianHangBanGhe/GianHang.wrl"
 			}
 		]
 		}
@@ -231,7 +231,7 @@ DEF	Block4 Transform {
 				rotation 0 .1 0 -1.57
 				children [
 					Inline {
-						url	"views/House/main.wrl" 
+						url	"views/Block4/House/main.wrl" 
 					}
 				]
 		}
@@ -241,7 +241,7 @@ DEF	Block4 Transform {
 				rotation 0 .1 0 -1.57
 				children [
 					Inline {
-						url	"views/nha1tang/nha1tang.wrl" 
+						url	"views/Block4/nha1tang/nha1tang.wrl" 
 					}
 				]
 		}
@@ -250,7 +250,7 @@ DEF	Block4 Transform {
 				scale 22 22 22
 				children [
 					Inline {
-						url	"views/Cho/MaiCheNhaXe.wrl" 
+						url	"views/Block4/Cho/MaiCheNhaXe.wrl" 
 					}
 				]
 			}
@@ -267,7 +267,7 @@ DEF Block5 Transform {
 			scale  8 8 8
 			children [
 				Inline {
-					url	"Views/Cho/GianHang1.wrl" 
+					url	"Views/Block5/Cho/GianHang1.wrl" 
 				}
 			
 			]
@@ -278,23 +278,24 @@ DEF Block5 Transform {
 			scale  8 8 8
 			children [
 				Inline {
-					url	"Views/Cho/GianHang2.wrl" 
+					url	"Views/Block5/Cho/GianHang2.wrl" 
 				}
 			
 			]
 
 		}
-		Transform {
-			translation 300 0 200
-			scale  1.7 1.7 1.7
-			children [
-				Inline {
-					url	"Views/Cho/GianHang3.wrl" 
-				}
+		
+#		Transform {
+#			translation 300 0 200
+#			scale  1.7 1.7 1.7
+#			children [
+#				Inline {
+#					url	"Views/Cho/GianHang3.wrl" 
+#				}
 			
-			]
+#			]
 
-		}
+#		}
 					
 	]
 }

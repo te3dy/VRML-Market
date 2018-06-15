@@ -8,7 +8,7 @@ PROTO Nguoi[
 		scale .5 .5 .5
 		rotation 0 1 0 -4.8
 		children [
-			Inline {url "nguoidichuyen.wrl"}
+			Inline {url "nguoidichuyen2.wrl"}
 			
 		
 		  

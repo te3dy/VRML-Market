@@ -1,0 +1,82 @@
+#VRML V2.0 utf8
+
+
+ DEF	TS TimeSensor {
+ startTime 0
+ stopTime 500
+ cycleInterval 0.5
+ loop FALSE
+}
+
+DEF	OI OrientationInterpolator {
+	key [0, 0.33, 0.66, 1]
+	keyValue [0 1 0 0, 0 1 0 2.09, 0 1 0 4.18, 0 1 0 6.18]
+}
+
+
+
+DEF chan Transform	{
+	children [
+DEF	chanban Transform {
+translation 0 0 0
+children [
+	Shape {
+		appearance Appearance {
+			material Material {
+			diffuseColor .5 0 0}}
+			geometry Box {size .3 8 .3}}]}
+
+
+
+			Transform {
+			translation 6 0 0
+			children [USE chanban ]}
+
+
+			Transform	{
+			translation 3 -3 0
+			children [
+			Shape {
+		appearance Appearance {
+			material Material {
+			diffuseColor .5 0 0}}
+			geometry Box {size 6 .3 .3}}]}
+
+		]}
+
+
+
+		Transform {
+			translation	3 0 3
+		rotation 0 1 0 1.57
+		children [USE chan ]}
+
+
+		Group	{
+			children [
+
+		 DEF banquay
+		Transform {
+		translation 3 4 0
+		
+		children [Shape {
+		appearance Appearance {
+			material Material {
+			diffuseColor .5 0 0.5}}
+			geometry Cylinder {radius 5 height .3}}
+		
+			Transform {
+			translation 1 1 1
+			scale .5 .5 .5
+			children [Inline {url "bohoa.wrl"}]}]}
+
+
+			DEF	T1 TouchSensor {}
+		DEF	T2 TouchSensor {}
+	]
+}
+
+ROUTE T1.touchTime TO TS.startTime
+ROUTE TS.fraction_changed TO OI.set_fraction
+ROUTE OI.value_changed TO banquay.rotation
+ROUTE T2.touchTime TO TS.stopTime

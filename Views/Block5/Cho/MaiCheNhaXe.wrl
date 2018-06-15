@@ -1,0 +1,171 @@
+#VRML V2.0 utf8
+
+Transform {
+	translation	0 0 0
+	children [
+		Inline {
+			url	"maiche.wrl"
+		}
+	]
+}
+Transform {
+	translation	14 0 0
+	children [
+		Inline {
+			url	"maiche.wrl"
+		}
+	]
+}
+Transform {
+	translation	28 0 0
+	children [
+		Inline {
+			url	"maiche.wrl"
+		}
+	]
+}
+Transform {
+	translation	42 0 0
+	children [
+		Inline {
+			url	"maiche.wrl"
+		}
+	]
+}
+Transform {
+	translation	56 0 0
+	children [
+		Inline {
+			url	"maiche.wrl"
+		}
+	]
+}
+Transform {
+	translation	70 0 0
+	children [
+		Inline {
+			url	"maiche.wrl"
+		}
+	]
+}
+#ThemXe
+		Transform {
+			translation 0 -1 -10
+				scale 0.019 0.019 0.019
+				rotation 0 .1 0 1.57
+				children [
+					Inline {
+						url	"../Xe/otodo.wrl" 
+					}
+				]
+		}
+		Transform {
+			translation 7 -1 -10
+				scale 0.019 0.019 0.019
+				rotation 0 .1 0 1.57
+				children [
+					Inline {
+						url	"../Xe/otodo.wrl" 
+					}
+				]
+		}
+		Transform {
+			translation 14 -1 -10
+				scale 0.019 0.019 0.019
+				rotation 0 .1 0 1.57
+				children [
+					Inline {
+						url	"../Xe/otodo.wrl" 
+					}
+				]
+		}
+		Transform {
+			translation 21 -1 -10
+				scale 0.019 0.019 0.019
+				rotation 0 .1 0 1.57
+				children [
+					Inline {
+						url	"../Xe/otodo.wrl" 
+					}
+				]
+		}
+		Transform {
+			translation 25 0.3 -10
+				scale 0.022 0.022 0.022
+				rotation 0 .1 0 1.57
+				children [
+					Inline {
+						url	"../Xe/xedap.wrl" 
+					}
+				]
+		}
+		Transform {
+			translation 27 0.3 -10
+				scale 0.022 0.022 0.022
+				rotation 0 .1 0 1.57
+				children [
+					Inline {
+						url	"../Xe/xedap.wrl" 
+					}
+				]
+		}
+		Transform {
+			translation 29 0.3 -10
+				scale 0.022 0.022 0.022
+				rotation 0 .1 0 1.57
+				children [
+					Inline {
+						url	"../Xe/xedap.wrl" 
+					}
+				]
+		}
+		Transform {
+			translation 31 0.3 -10
+				scale 0.022 0.022 0.022
+				rotation 0 .1 0 1.57
+				children [
+					Inline {
+						url	"../Xe/xedap.wrl" 
+					}
+				]
+		}
+		Transform {
+			translation 33 0.3 -10
+				scale 0.022 0.022 0.022
+				rotation 0 .1 0 1.57
+				children [
+					Inline {
+						url	"../Xe/xedap.wrl" 
+					}
+				]
+		}
+		Transform {
+			translation 35 0.3 -10
+				scale 0.022 0.022 0.022
+				rotation 0 .1 0 1.57
+				children [
+					Inline {
+						url	"../Xe/xedap.wrl" 
+					}
+				]
+		}
+		Transform {
+			translation 37 0.3 -10
+				scale 0.022 0.022 0.022
+				rotation 0 .1 0 1.57
+				children [
+					Inline {
+						url	"../Xe/xedap.wrl" 
+					}
+				]
+		}
+		Transform {
+			translation 39 0.3 -10
+				scale 0.022 0.022 0.022
+				rotation 0 .1 0 1.57
+				children [
+					Inline {
+						url	"../Xe/xedap.wrl" 
+					}
+				]
+		}
