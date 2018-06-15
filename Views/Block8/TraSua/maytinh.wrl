@@ -1,0 +1,221 @@
+#VRML V2.0 utf8
+
+ Transform {
+	children [
+		Transform {
+			translation	0 -2.9 -9.8
+			rotation 1 0 0 -0.3
+			children [
+				Shape {
+
+                    appearance Appearance {
+						material Material {}
+						texture	ImageTexture {
+							url	"Images/mauden.jpg"
+						}
+			        }
+                    geometry IndexedFaceSet {
+
+                        coord Coordinate {
+
+                            point [-2.4 0 0,-0.5 2 0,0.5 2 0,2.4 0 0]
+
+                        }
+
+                        coordIndex [0 1 2 3 ]
+
+               
+                        colorIndex [1 1]
+
+                        colorPerVertex FALSE
+
+                        solid FALSE
+                
+
+                    }
+				}
+
+			]
+		}
+		Transform {
+				translation	0 -0.55 -10.4
+			  children [
+				  Shape	{
+					   appearance Appearance {
+						material Material {}
+			        }
+					geometry Box {
+						size 1 1 0.02
+					}
+				  }
+			  ]
+		}
+		Transform {
+			translation	0 -3.1 -0.43
+			rotation 1 0 0 0.3
+			children [
+				Transform {
+			translation	0 1.9 -10.4
+			rotation 0 0 1 3.12
+			children [
+				Shape {
+
+                    appearance Appearance {
+						material Material {}
+						texture	ImageTexture {
+							url	"Images/mauden.jpg"
+						}
+			        }
+                    geometry IndexedFaceSet {
+
+                        coord Coordinate {
+
+                            point [-2.4 0 0,-0.5 2 0,0.5 2 0,2.4 0 0]
+
+                        }
+
+                        coordIndex [0 1 2 3 ]
+
+               
+                        colorIndex [1 1]
+
+                        colorPerVertex FALSE
+
+                        solid FALSE
+                
+
+                    }
+				}
+
+			]
+		}
+			]
+		}
+		Transform {
+			translation	3.1 0 -0.6
+			rotation 0 1 0 0.3
+			children [
+				Transform {
+			translation	-2.5 -0.5 -10.4
+			rotation 0 0 1 -1.56
+			children [
+				Shape {
+
+                    appearance Appearance {
+						material Material {}
+						texture	ImageTexture {
+							url	"Images/mauden.jpg"
+						}
+			        }
+                    geometry IndexedFaceSet {
+
+                        coord Coordinate {
+
+                            point [-2.35 0 0,-0.5 2 0,0.5 2 0,2.35 0 0]
+
+                        }
+
+                        coordIndex [0 1 2 3 ]
+
+               
+                        colorIndex [1 1]
+
+                        colorPerVertex FALSE
+
+                        solid FALSE
+                
+
+                    }
+				}
+
+			]
+		}
+			]
+		}
+		Transform {
+			translation	-3.1 0 -0.6
+			rotation 0 1 0 -0.3
+			children [
+				Transform {
+			translation	2.5 -0.5 -10.4
+			rotation 0 0 1 1.56
+			children [
+				Shape {
+
+                    appearance Appearance {
+						material Material {}
+						texture	ImageTexture {
+							url	"Images/mauden.jpg"
+						}
+			        }
+                    geometry IndexedFaceSet {
+
+                        coord Coordinate {
+
+                            point [-2.35 0 0,-0.5 2 0,0.5 2 0,2.35 0 0]
+
+                        }
+
+                        coordIndex [0 1 2 3 ]
+
+               
+                        colorIndex [1 1]
+
+                        colorPerVertex FALSE
+
+                        solid FALSE
+                
+
+                    }
+				}
+
+			]
+		}
+			]
+		}
+		#manhinh
+		Transform {
+			translation	0 -0.5 -9.8
+			children [
+				Shape {
+					appearance Appearance {material Material {}}
+					geometry Box {
+						size 4.8 4.6 0.01
+					}
+				}
+			]
+		}
+		#chan
+		Transform {
+			translation	0 -3.5 -9.57
+			rotation 1 0 0 -0.4
+			children [
+				 Shape {
+					appearance Appearance {material Material {}
+						texture	ImageTexture {
+							url	"Images/mauden.jpg"
+						}
+					}
+					geometry Box {
+						size 1 2 0.1
+					}
+				}
+			]
+		}
+		Transform {
+			translation	0 -4.56 -9.2
+			children [
+				 Shape {
+					appearance Appearance {material Material {}
+						texture	ImageTexture {
+							url	"Images/mauden.jpg"
+						}
+					}
+					geometry Box {
+						size 2 0.1 1
+					}
+				}
+			]
+		}
+	]
+}

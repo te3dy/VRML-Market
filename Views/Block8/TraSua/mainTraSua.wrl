@@ -1,0 +1,1150 @@
+#VRML V2.0 utf8
+
+Transform {
+	translation	0 -3 -20
+	children [
+		#nen nha
+		Transform {
+			children [
+				Shape {
+				   geometry	Box	{
+					   size	30 00.1 22
+				   }
+				}
+			]
+		}
+		Transform {
+			translation	-3 5 10
+			children [
+				Shape {
+					appearance Appearance {
+						texture	ImageTexture {
+							url	"Images\tuong1.jpg"
+							repeatS	TRUE
+							repeatT	TRUE
+						}
+					}
+				   geometry	Box	{
+					   size	3 10 1
+				   }
+				}
+			]
+		}
+		#tamkinh
+		Transform {
+			translation	-8 4.8 10
+			children [
+				Shape {
+					appearance Appearance {material Material {transparency 0.7}}
+				   geometry	Box	{
+					   size	7 9.6 0.1
+				   }
+				}
+			]
+		}
+		Transform {
+			translation	-9 9.75 10
+			children [
+				Shape {
+					appearance Appearance {
+						texture	ImageTexture {
+							url	"Images\tuong1.jpg"
+							repeatS	TRUE
+							repeatT	TRUE
+						}
+					}
+				   geometry	Box	{
+					   size	9 0.5 1
+				   }
+				}
+			]
+		}
+		Transform {
+			translation	-12.5 5 10
+			children [
+				Shape {
+					appearance Appearance {
+						texture	ImageTexture {
+							url	"Images\tuong1.jpg"
+							repeatS	TRUE
+							repeatT	TRUE
+						}
+					}
+				   geometry	Box	{
+					   size	2 10 1
+				   }
+				}
+			]
+		}
+		#ten quan
+		Transform {
+			translation	1.51 9 10
+			children [
+				Shape {
+					appearance Appearance {
+						texture	ImageTexture {
+							url	"Images\tuong1.jpg"
+							repeatS	TRUE
+							repeatT	TRUE
+						}
+					}
+				   geometry	Box	{
+					   size	6 2 1
+				   }
+				}
+			]
+		}
+
+	   Transform {
+			translation	4.5 5 10
+			children [
+				Shape {
+					appearance Appearance {
+						texture	ImageTexture {
+							url	"Images\tuong1.jpg"
+							repeatS	TRUE
+							repeatT	TRUE
+						}
+					}
+				   geometry	Box	{
+					   size	1 10 1
+				   }
+				}
+			]
+		}
+		Transform {
+			translation	9 9.75 10
+			children [
+				Shape {
+					appearance Appearance {
+						texture	ImageTexture {
+							url	"Images\tuong1.jpg"
+							repeatS	TRUE
+							repeatT	TRUE
+						}
+					}
+				   geometry	Box	{
+					   size	9 0.5 1
+				   }
+				}
+			]
+		}
+		Transform {
+			translation	12.5 5 10
+			children [
+				Shape {
+					appearance Appearance {
+						texture	ImageTexture {
+							url	"Images\tuong1.jpg"
+							repeatS	TRUE
+							repeatT	TRUE
+						}
+					}
+				   geometry	Box	{
+					   size	2 10 1
+				   }
+				}
+			]
+		}
+		#tamkinh
+			Transform {
+			translation	8 4.8 10
+			children [
+				Shape {
+					appearance Appearance {material Material {transparency 0.7}}
+				   geometry	Box	{
+					   size	7 9.6 0.1
+				   }
+				}
+			]
+		}
+		Transform {
+			translation	-13 5 8
+			children [
+				Shape {
+					appearance Appearance {
+						texture	ImageTexture {
+							url	"Images\tuong1.jpg"
+							repeatS	TRUE
+							repeatT	TRUE
+						}
+					}
+				   geometry	Box	{
+					   size	1 10 3
+				   }
+				}
+			]
+		}
+		######
+		Transform {
+			translation	-13 9.5 -0.5
+			children [
+				Shape {
+					appearance Appearance {
+						texture	ImageTexture {
+							url	"Images\tuong1.jpg"
+							repeatS	TRUE
+							repeatT	TRUE
+						}
+					}
+				   geometry	Box	{
+					   size	1 1 18
+				   }
+				}
+			]
+		}
+		#tamkinh
+			Transform {
+			translation	-13 4.8 4
+			children [
+				Shape {
+					appearance Appearance {material Material {transparency 0.7}}
+				   geometry	Box	{
+					   size	0.1 9.6 5
+				   }
+				}
+			]
+		}
+		#cot
+		Transform {
+			translation	-12.5 5 1
+			children [
+				Shape {
+					appearance Appearance {
+						texture	ImageTexture {
+							url	"Images\tuong1.jpg"
+							repeatS	TRUE
+							repeatT	TRUE
+						}
+					}
+				   geometry	Box	{
+					   size	1.5 10 1.5
+				   }
+				}
+			]
+		}
+			#tamkinh
+			Transform {
+			translation	-13 4.8 -4
+			children [
+				Shape {
+					appearance Appearance {material Material {transparency 0.7}}
+				   geometry	Box	{
+					   size	0.1 9.6 9
+				   }
+				}
+			]
+		}
+		#cot
+		Transform {
+			translation	-12.5 5 -9
+			children [
+				Shape {
+					appearance Appearance {
+						texture	ImageTexture {
+							url	"Images\tuong1.jpg"
+							repeatS	TRUE
+							repeatT	TRUE
+						}
+					}
+				   geometry	Box	{
+					   size	1.5 10 1.5
+				   }
+				}
+			]
+		}
+		######
+		Transform {
+			translation	13 9.5 -0.5
+			children [
+				Shape {
+					appearance Appearance {
+						texture	ImageTexture {
+							url	"Images\tuong1.jpg"
+							repeatS	TRUE
+							repeatT	TRUE
+						}
+					}
+				   geometry	Box	{
+					   size	1 1 18
+				   }
+				}
+			]
+		}
+		#tamkinh
+			Transform {
+			translation	13 4.8 4
+			children [
+				Shape {
+					appearance Appearance {material Material {transparency 0.7}}
+				   geometry	Box	{
+					   size	0.1 9.6 5
+				   }
+				}
+			]
+		}
+		#cot
+		Transform {
+			translation	12.5 5 1
+			children [
+				Shape {
+					appearance Appearance {
+						texture	ImageTexture {
+							url	"Images\tuong1.jpg"
+							repeatS	TRUE
+							repeatT	TRUE
+						}
+					}
+				   geometry	Box	{
+					   size	1.5 10 1.5
+				   }
+				}
+			]
+		}
+			#tamkinh
+			Transform {
+			translation	13 4.8 -4
+			children [
+				Shape {
+					appearance Appearance {material Material {transparency 0.7}}
+				   geometry	Box	{
+					   size	0.1 9.6 9
+				   }
+				}
+			]
+		}
+		#cot
+		Transform {
+			translation	12.5 5 -9
+			children [
+				Shape {
+					appearance Appearance {
+						texture	ImageTexture {
+							url	"Images\tuong1.jpg"
+							repeatS	TRUE
+							repeatT	TRUE
+						}
+					}
+				   geometry	Box	{
+					   size	1.5 10 1.5
+				   }
+				}
+			]
+		}
+		Transform {
+			translation	13 5 8
+			children [
+				Shape {
+					appearance Appearance {
+						texture	ImageTexture {
+							url	"Images\tuong1.jpg"
+							repeatS	TRUE
+							repeatT	TRUE
+						}
+					}
+				   geometry	Box	{
+					   size	1 10 3
+				   }
+				}
+			]
+		}
+		#dangsaunha
+		Transform {
+			translation	-10 5 -9
+			children [
+				Shape {
+					appearance Appearance {
+						texture	ImageTexture {
+							url	"Images\tuong1.jpg"
+							repeatS	TRUE
+							repeatT	TRUE
+						}
+					}
+				   geometry	Box	{
+					   size	4 10 1.5
+				   }
+				}
+			]
+		}
+		Transform {
+			translation	1.8 5 -9
+			children [
+				Shape {
+					appearance Appearance {
+						texture	ImageTexture {
+							url	"Images\tuong1.jpg"
+							repeatS	TRUE
+							repeatT	TRUE
+						}
+					}
+				   geometry	Box	{
+					   size	20 10 1
+				   }
+				}
+			]
+		}
+		#cuachinh
+		Transform {
+			translation	1.5 4.2 11
+			scale 0.5 0.86 0.3
+			children [
+				Inline {
+					url	"cuachinh.wrl"
+				}
+			]
+		}
+		#banso1
+		Transform {
+			translation	-1 0 -5
+			children [
+				#ban1
+		Transform {
+			translation	-8 2.2 1
+			children [
+				Inline {
+					url	"ban.wrl"
+				}
+			]
+		}
+		#ghe1 cua ban1
+		Transform {
+			translation	-8 1.5 3.5
+			rotation 0 1 0 3.1
+			children [
+				Inline {
+					url	"ghe.wrl"
+				}
+			]
+		}
+		#ghe2 cua ban1
+		Transform {
+			translation	-8 1.5 -1.5
+			rotation 0 1 0 -0.05
+			children [
+				Inline {
+					url	"ghe.wrl"
+				}
+			]
+		}
+			]
+		}
+		#banso2
+		Transform {
+			translation	-2 0 5
+			children [
+				#ban2
+		Transform {
+			translation	-8 2.2 1
+			children [
+				Inline {
+					url	"ban.wrl"
+				}
+			]
+		}
+		#ghe1 cua ban2
+		Transform {
+			translation	-8 1.5 3.5
+			rotation 0 1 0 3.1
+			children [
+				Inline {
+					url	"ghe.wrl"
+				}
+			]
+		}
+		#ghe2 cua ban2
+		Transform {
+			translation	-8 1.5 -1.5
+			rotation 0 1 0 -0.05
+			children [
+				Inline {
+					url	"ghe.wrl"
+				}
+			]
+		}
+			]
+		}
+			#banso3
+		Transform {
+			translation	5 0 5
+			children [
+				#ban3
+		Transform {
+			translation	-8 2.2 1
+			children [
+				Inline {
+					url	"ban.wrl"
+				}
+			]
+		}
+		#ghe1 cua ban3
+		Transform {
+			translation	-8 1.5 3.5
+			rotation 0 1 0 3.1
+			children [
+				Inline {
+					url	"ghe.wrl"
+				}
+			]
+		}
+		#ghe2 cua ban3
+		Transform {
+			translation	-8 1.5 -1.5
+			rotation 0 1 0 -0.05
+			children [
+				Inline {
+					url	"ghe.wrl"
+				}
+			]
+		}
+		#ghe3 cua ban3
+		Transform {
+			translation	-11 1.5 0.6
+			rotation 0 1 0 1.5
+			children [
+				Inline {
+					url	"ghe.wrl"
+				}
+			]
+		}
+			]
+		}
+		#banso4
+		Transform {
+			translation	4 0 -5
+			children [
+				#ban4
+		Transform {
+			translation	-8 2.2 1
+			children [
+				Inline {
+					url	"ban.wrl"
+				}
+			]
+		}
+		#ghe1 cua ban4
+		Transform {
+			translation	-8 1.5 3.5
+			rotation 0 1 0 3.1
+			children [
+				Inline {
+					url	"ghe.wrl"
+				}
+			]
+		}
+		#ghe2 cua ban4
+		Transform {
+			translation	-8 1.5 -1.5
+			rotation 0 1 0 -0.05
+			children [
+				Inline {
+					url	"ghe.wrl"
+				}
+			]
+		}
+			]
+		}
+		#vachtuongtrongnha
+		Transform {
+			translation	-7.2 2.46 1
+			children [
+				Shape {
+					appearance Appearance {material Material {}
+						texture	ImageTexture {
+							url	"Images/vachtuong.jpg"
+						}
+					}
+					geometry Box {
+						size 9.6 5 0.4
+					}	  
+				}
+			]
+		}
+		#bantron
+		Transform {			
+			translation	6 3 1.4
+			scale 1 1.4 1
+			 children [
+				 Inline	{
+					 url "bantron.wrl"
+				 }
+			 ]
+		}
+		#bantron
+		Transform {
+			translation	10 3 1.4
+			scale 1 1.4 1
+			 children [
+				 Inline	{
+					 url "bantron.wrl"
+				 }
+			 ]
+		}
+		#ghetron
+		Transform {
+			translation	10 0.1 -0.5
+			 children [
+				 Inline	{
+					 url "ghetron.wrl"
+				 }
+			 ]
+		}
+		#ghetron
+		Transform {
+			translation	8 0.1 -0.5
+			 children [
+				 Inline	{
+					 url "ghetron.wrl"
+				 }
+			 ]
+		}
+		#ghetron
+		Transform {
+			translation	6 0.1 -0.5
+			 children [
+				 Inline	{
+					 url "ghetron.wrl"
+				 }
+			 ]
+		}
+			#ghetron
+		Transform {
+			translation	10 0.1 3.6
+			 children [
+				 Inline	{
+					 url "ghetron.wrl"
+				 }
+			 ]
+		}
+		#ghetron
+		Transform {
+			translation	8 0.1 3.6
+			 children [
+				 Inline	{
+					 url "ghetron.wrl"
+				 }
+			 ]
+		}
+		#ghetron
+		Transform {
+			translation	6 0.1 3.6
+			 children [
+				 Inline	{
+					 url "ghetron.wrl"
+				 }
+			 ]
+		}
+		#bantron
+		Transform {			
+			translation	8 3 7
+			scale 1 1.4 1
+			 children [
+				 Inline	{
+					 url "bantron.wrl"
+				 }
+			 ]
+		}
+		#ghetron
+		Transform {
+			translation	6 0.1 7
+			 children [
+				 Inline	{
+					 url "ghetron.wrl"
+				 }
+			 ]
+		}
+		#ghetron
+		Transform {
+			translation	10.6 0.1 7
+			 children [
+				 Inline	{
+					 url "ghetron.wrl"
+				 }
+			 ]
+		}
+			#ghetron
+		Transform {
+			translation	8 0.1 9
+			 children [
+				 Inline	{
+					 url "ghetron.wrl"
+				 }
+			 ]
+		}
+		#bantinhtien
+		Transform {
+			translation	8 1.5 -5
+			children [
+				Inline {
+					url	"bantinhtien.wrl"
+				}
+			]
+		}
+		#maytinh1
+		Transform {
+			translation	6.5 5 -8.5
+			rotation 0 1 0 3.1
+			scale 0.4 0.4 0.4
+			children [
+				Inline {
+					url	"maytinh.wrl"
+				}
+			]
+		}
+			#maytinh1
+		Transform {
+			translation	10.5 5 -8.5
+			rotation 0 1 0 3.1
+			scale 0.4 0.4 0.4
+			children [
+				Inline {
+					url	"maytinh.wrl"
+				}
+			]
+		}
+		#nguoi1
+		Transform {
+			translation	10.5 3.1 -7
+			rotation 0 1 0 0
+			scale 0.6 0.6 0.6
+			children [
+				Inline {
+					url	"NguoiMua.wrl"
+				}
+			]
+		}
+		#nguoi2
+		Transform {
+			translation	6.5 3.1 -7
+			rotation 0 1 0 0
+			scale 0.6 0.6 0.6
+			children [
+				Inline {
+					url	"NguoiMua.wrl"
+				}
+			]
+		}
+		#mainha
+			Transform {
+			translation	0 12 10
+			children [
+				Shape {
+					appearance Appearance {
+							 texture ImageTexture {
+								 url "Images/banner.jpg"
+							 }
+					}
+				   geometry	Box	{
+					   size	27 4 1
+				   }
+				}
+			]
+		}
+		Transform {
+			translation	0 11 -9.1
+			children [
+				Shape {
+					appearance Appearance {
+							 texture ImageTexture {
+								 url "Images/tuong.jpg"
+							 }
+					}
+				   geometry	Box	{
+					   size	27 2 1
+				   }
+				}
+			]
+		}
+		Transform {
+			translation	13 11.05 0.5
+			children [
+				Shape {
+					appearance Appearance {
+						 texture ImageTexture {
+								 url "Images/tuong.jpg"
+							 }	
+					}
+				   geometry	Box	{
+					   size	1 2 18
+				   }
+				}
+			]
+		}
+		Transform {
+			translation	-13 11.05 0.5
+			children [
+				Shape {
+					appearance Appearance {
+						 texture ImageTexture {
+								 url "Images/tuong.jpg"
+							 }	
+					}
+				   geometry	Box	{
+					   size	1 2 18
+				   }
+				}
+			]
+		}
+		Transform {
+			translation	0 13 0
+			children [
+				Shape {
+					appearance Appearance {
+						 texture ImageTexture {
+								 url "Images/mauden.jpg"
+							 }	
+					}
+				   geometry	Box	{
+					   size	27 2 19
+				   }
+				}
+			]
+		}
+		Transform {
+			translation	0 11.6 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {diffuseColor 1 0 0}
+					}
+				   geometry	Box	{
+					   size	1 1 18.5
+				   }
+				}
+			]
+		}
+			Transform {
+			translation	0 11.6 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {diffuseColor 1 0 0}
+					}
+				   geometry	Box	{
+					   size	26.5 1 1
+				   }
+				}
+			]
+		}
+		Transform {
+			translation	1 5.25 -4
+			scale 1 1.3 1
+			children [
+				Inline {
+					url	"giadetivi.wrl"
+				}
+			]
+		}
+		Transform {
+			translation	0 0 -9
+			children [
+				#bongden
+			Transform {
+			translation	4 12.2 7
+			children [
+				Inline {
+					url	"bongden.wrl"
+				}
+			]
+		}
+		Transform {
+			translation	4 12.2 5
+			children [
+				Inline {
+					url	"bongden.wrl"
+				}
+			]
+		}
+		Transform {
+			translation	4 12.2 3
+			children [
+				Inline {
+					url	"bongden.wrl"
+				}
+			]
+		}
+		Transform {
+			translation	9 12.2 3
+			children [
+				Inline {
+					url	"bongden.wrl"
+				}
+			]
+		}
+			Transform {
+			translation	9 12.2 5
+			children [
+				Inline {
+					url	"bongden.wrl"
+				}
+			]
+		}
+			Transform {
+			translation	9 12.2 7
+			children [
+				Inline {
+					url	"bongden.wrl"
+				}
+			]
+		}
+			]
+		}
+		Transform {
+			translation	0 0 0
+			children [
+				#bongden
+			Transform {
+			translation	4 12.2 7
+			children [
+				Inline {
+					url	"bongden.wrl"
+				}
+			]
+		}
+		Transform {
+			translation	4 12.2 5
+			children [
+				Inline {
+					url	"bongden.wrl"
+				}
+			]
+		}
+		Transform {
+			translation	4 12.2 3
+			children [
+				Inline {
+					url	"bongden.wrl"
+				}
+			]
+		}
+		Transform {
+			translation	9 12.2 3
+			children [
+				Inline {
+					url	"bongden.wrl"
+				}
+			]
+		}
+			Transform {
+			translation	9 12.2 5
+			children [
+				Inline {
+					url	"bongden.wrl"
+				}
+			]
+		}
+			Transform {
+			translation	9 12.2 7
+			children [
+				Inline {
+					url	"bongden.wrl"
+				}
+			]
+		}
+			]
+		}
+		Transform {
+			translation	-13 0 0
+			children [
+				#bongden
+			Transform {
+			translation	4 12.2 7
+			children [
+				Inline {
+					url	"bongden.wrl"
+				}
+			]
+		}
+		Transform {
+			translation	4 12.2 5
+			children [
+				Inline {
+					url	"bongden.wrl"
+				}
+			]
+		}
+		Transform {
+			translation	4 12.2 3
+			children [
+				Inline {
+					url	"bongden.wrl"
+				}
+			]
+		}
+		Transform {
+			translation	9 12.2 3
+			children [
+				Inline {
+					url	"bongden.wrl"
+				}
+			]
+		}
+			Transform {
+			translation	9 12.2 5
+			children [
+				Inline {
+					url	"bongden.wrl"
+				}
+			]
+		}
+			Transform {
+			translation	9 12.2 7
+			children [
+				Inline {
+					url	"bongden.wrl"
+				}
+			]
+		}
+			]
+		}
+		Transform {
+			translation	-13 0 -9
+			children [
+				#bongden
+			Transform {
+			translation	4 12.2 7
+			children [
+				Inline {
+					url	"bongden.wrl"
+				}
+			]
+		}
+		Transform {
+			translation	4 12.2 5
+			children [
+				Inline {
+					url	"bongden.wrl"
+				}
+			]
+		}
+		Transform {
+			translation	4 12.2 3
+			children [
+				Inline {
+					url	"bongden.wrl"
+				}
+			]
+		}
+		Transform {
+			translation	9 12.2 3
+			children [
+				Inline {
+					url	"bongden.wrl"
+				}
+			]
+		}
+			Transform {
+			translation	9 12.2 5
+			children [
+				Inline {
+					url	"bongden.wrl"
+				}
+			]
+		}
+			Transform {
+			translation	9 12.2 7
+			children [
+				Inline {
+					url	"bongden.wrl"
+				}
+			]
+		}
+			]
+		}
+		#thuc an
+		Transform {
+			translation	-3.5 1.96 -6 
+			children [
+				Transform {
+					translation	0 0.3 12
+					children [
+						Inline {
+							url	"khaydoan.wrl"
+						}
+					]
+				}
+				Transform {
+					translation	0 1 13.5
+					scale 0.4 0.4 0.4
+					children [
+						Inline {
+							url	"thucan.wrl"
+						}
+					]
+				}
+				Transform {
+					translation	0.8 1 13.5
+					scale 0.4 0.4 0.4
+					children [
+						Inline {
+							url	"thucan.wrl"
+						}
+					]
+				}
+			]
+		}
+			#thuc an
+		Transform {
+			translation	-10.2 1.96 -6 
+			children [
+				Transform {
+					translation	0 0.3 12
+					children [
+						Inline {
+							url	"khaydoan.wrl"
+						}
+					]
+				}
+				Transform {
+					translation	0 1 13.5
+					scale 0.4 0.4 0.4
+					children [
+						Inline {
+							url	"thucan.wrl"
+						}
+					]
+				}
+				Transform {
+					translation	0.8 1 13.5
+					scale 0.4 0.4 0.4
+					children [
+						Inline {
+							url	"thucan.wrl"
+						}
+					]
+				}
+			]
+		}
+			#thuc an
+		Transform {
+			translation	-10.2 1.96 -16 
+			children [
+				Transform {
+					translation	0 0.3 12
+					children [
+						Inline {
+							url	"khaydoan.wrl"
+						}
+					]
+				}
+				Transform {
+					translation	0 1 13.5
+					scale 0.4 0.4 0.4
+					children [
+						Inline {
+							url	"thucan.wrl"
+						}
+					]
+				}
+				Transform {
+					translation	0.8 1 13.5
+					scale 0.4 0.4 0.4
+					children [
+						Inline {
+							url	"thucan.wrl"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,175 @@
+#VRML V2.0 utf8
+Transform {
+	translation	3 0 -4
+	children [		
+	DEF	cen TouchSensor	{}
+		DEF canh1 Transform {
+			children [
+				Shape {
+					appearance Appearance {material Material {transparency 0.7}}
+				   geometry	Box	{
+					   size	7 9.6 0.1
+				   }
+				}
+				Transform {
+					translation	-3.4 0 0
+					children [
+						Shape {
+							geometry Box {
+								size 0.4 9.6 0.1
+							}
+						}
+					]
+				}
+			]
+		}
+		DEF canh2 Transform {
+			translation	-7 0 0
+			children [
+				Shape {
+					appearance Appearance {material Material {transparency 0.7}}
+				   geometry	Box	{
+					   size	7 9.6 0.1
+				   }
+				}
+				Transform {
+					translation	3.4 0 0
+					children [
+						Shape {
+							geometry Box {
+								size 0.4 9.6 0.1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+
+
+
+
+
+
+
+  DEF OpenClock TimeSensor {
+
+    enabled FALSE
+
+    cycleInterval 1
+
+    loop FALSE
+
+    startTime 0.0
+
+    stopTime 1
+
+}
+
+DEF CloseClock TimeSensor {
+
+    enabled FALSE
+
+    cycleInterval 1
+
+    loop FALSE
+
+    startTime 0.0
+
+    stopTime 1
+
+}
+
+DEF Door1Open PositionInterpolator {
+
+ key [ 0.0, 1.0 ]
+
+ keyValue [ 0 0 0,5 0 0]
+
+}
+
+DEF Door1Close PositionInterpolator {
+
+ key [ 0.0, 1.0 ]
+
+ keyValue [ 5 0 0,0 0 0]
+
+}
+
+DEF Door2Open PositionInterpolator {
+
+ key [ 0, 1 ]
+
+ keyValue [ -7 0 0,-12 0 0]
+
+}
+DEF Door2Close PositionInterpolator {
+
+ key [ 0, 1 ]
+
+ keyValue [ -12 0 0,-7 0 0]
+
+}
+
+
+DEF ma Script {
+
+eventIn SFBool turnOn
+
+eventOut SFBool On
+
+eventOut SFBool Off
+
+field SFBool turn FALSE
+
+url "javascript:
+
+function turnOn(val){
+
+if(val){
+
+turn = !turn;
+
+if(turn)
+
+{
+
+On= TRUE;
+
+                        Off=FALSE;
+
+            }
+
+        else
+
+        {
+
+                        On=FALSE;
+
+Off=TRUE;
+
+        }
+
+            }
+
+    }
+
+    "
+
+}
+	
+ROUTE cen.isActive TO ma.turnOn
+ROUTE ma.On TO  OpenClock.enabled
+ROUTE ma.Off TO CloseClock.enabled
+ROUTE cen.touchTime TO OpenClock.startTime
+ROUTE cen.touchTime TO CloseClock.startTime
+ROUTE OpenClock.fraction_changed TO Door1Open.set_fraction
+ROUTE CloseClock.fraction_changed TO Door1Close.set_fraction
+ROUTE OpenClock.fraction_changed TO Door2Open.set_fraction
+ROUTE CloseClock.fraction_changed TO Door2Close.set_fraction
+ROUTE Door1Open.value_changed TO canh1.translation
+ROUTE Door1Close.value_changed TO canh1.translation
+ROUTE Door2Open.value_changed TO canh2.translation
+ROUTE Door2Close.value_changed TO canh2.translation
+

@@ -1,0 +1,84 @@
+#VRML V2.0 utf8
+
+Transform {
+	translation	0 0 -4
+	children [
+		Transform {
+			children [
+				Shape {
+					appearance Appearance {material Material {}}
+					geometry Box {
+						  size 4 8 1
+					}
+				}
+			]
+		}
+		Transform {
+			translation	-2 2 0
+			children [
+				Shape {
+					appearance Appearance {material Material {diffuseColor 1 0 0}}
+					geometry Box {
+						  size 0.1 2 1
+					}
+				}
+			]
+		}
+		Transform {
+			translation	2 2 0
+			children [
+				Shape {
+					appearance Appearance {material Material {diffuseColor 1 0 0}}
+					geometry Box {
+						  size 0.1 2 1
+					}
+				}
+			]
+		}
+			Transform {
+			translation	-2 -2 0
+			children [
+				Shape {
+					appearance Appearance {material Material {diffuseColor 1 0 0}}
+					geometry Box {
+						  size 0.1 2 1
+					}
+				}
+			]
+		}
+		Transform {
+			translation	2 -2 0
+			children [
+				Shape {
+					appearance Appearance {material Material {diffuseColor 1 0 0}}
+					geometry Box {
+						  size 0.1 2 1
+					}
+				}
+			]
+		}
+		Transform {
+			translation	0 2 0.56
+			children [
+				Shape {
+					appearance Appearance {material Material {diffuseColor 1 0 0}}
+					geometry Box {
+						  size 4 2 0.1
+					}
+				}
+			]
+		}
+		Transform {
+			translation	0 -2 0.56
+			children [
+				Shape {
+					appearance Appearance {material Material {diffuseColor 1 0 0}}
+					geometry Box {
+						  size 4 2 0.1
+					}
+				}
+			]
+		}
+		
+	]
+}

@@ -339,8 +339,13 @@ DEF	Block7 Transform {
 }
 #Dãy 8
 DEF	Block8 Transform {
-	translation	900 100 600
+	translation	-100 70 -245
+	scale  15 15 15
+	rotation 0 1 0 0
 	children [
+		Inline{
+			url "Views\Block8\TraSua\mainTraSua.wrl"
+		}
 	]
 }
 #Người dịch chuyển

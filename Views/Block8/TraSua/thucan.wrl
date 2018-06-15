@@ -1,0 +1,131 @@
+#VRML V2.0 utf8
+Transform {
+	translation	0 0 -4
+	rotation 1 0 0 -1.6
+	scale 0.4 0.4 0.4
+	children [
+		Shape {
+  appearance  Appearance { material  Material {}
+	  texture	ImageTexture {
+							url	"Images/aa.png"
+	  }
+
+  }
+  geometry  Extrusion {
+    crossSection [	
+      1  0,  .71 -.71,
+      0 -1,  -.71 -.71,
+     -1  0,  -.71  .71,
+      0  1,   .71  .71,   1 0
+    ]
+
+    spine	[ -2 0 0, -2 0 -4]
+    scale	[ 2 2 , 1.5 1.5  ]
+
+    beginCap  FALSE
+    endCap    TRUE
+    solid     FALSE
+  }
+}
+Transform {
+	translation	-2 0 -1
+	rotation 1 0 0 -1.6
+	children [
+		DEF thucan Shape  {
+			appearance Appearance {
+				material Material {diffuseColor 1 1 0}
+			}
+			geometry Cylinder {
+				 height	6
+				 radius	0.09
+			}
+		}
+	]
+}
+Transform {
+	translation	-3 0 -1
+	rotation 1 0 0 -1.6
+	children [
+		USE	thucan
+	]
+}
+Transform {
+	translation	-2.5 0 -1
+	rotation 1 0 0 -1.6
+	children [
+		USE	thucan
+	]
+}
+Transform {
+	translation	-2.5 1 -1
+	rotation 1 0 0 -1.6
+	children [
+		USE	thucan
+	]
+}
+Transform {
+	translation	-2.5 0.5 -1
+	rotation 1 0 0 -1.6
+	children [
+		USE	thucan
+	]
+}
+Transform {
+	translation	-2.5 0.2 -1
+	rotation 1 0 0 -1.6
+	children [
+		USE	thucan
+	]
+}
+Transform {
+	translation	-2.5 -0.5 -1
+	rotation 1 0 0 -1.6
+	children [
+		USE	thucan
+	]
+}
+Transform {
+	translation	-2.5 -1 -1
+	rotation 1 0 0 -1.6
+	children [
+		USE	thucan
+	]
+}
+Transform {
+	translation	-1.2 -1 -1
+	rotation 1 0 0 -1.6
+	children [
+		USE	thucan
+	]
+}
+Transform {
+	translation	-1.2 -0.7 -1
+	rotation 1 0 0 -1.6
+	children [
+		USE	thucan
+	]
+}
+Transform {
+	translation	-1.2 -0.2 -1
+	rotation 1 0 0 -1.6
+	children [
+		USE	thucan
+	]
+}
+Transform {
+	translation	-1.2 0.2 -1
+	rotation 1 0 0 -1.6
+	children [
+		USE	thucan
+	]
+}
+Transform {
+	translation	-1.2 0.6 -1
+	rotation 1 0 0 -1.6
+	children [
+		USE	thucan
+	]
+}
+
+	]
+} 
