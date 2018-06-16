@@ -1,0 +1,90 @@
+#VRML V2.0 utf8
+
+Transform {
+	children [
+		Shape {
+			appearance Appearance {
+							texture ImageTexture{
+								  url "Images/banhoaqua.jpg"
+								  repeatS TRUE
+								  repeatT TRUE
+								  }
+						}
+						geometry Box {size 2.5 2 3.5}
+		}
+	
+			#chauhoa
+			Transform {
+				translation 0.8 1.4 1
+				scale 0.009 0.009 0.009
+				children [
+					Inline {
+						url	"HangHoa/hoahong.wrl"
+					}
+				]
+				
+			}
+			#chauhoa
+			Transform {
+				translation 0.2 1.4 1
+				scale 0.009 0.009 0.009
+				children [
+					Inline {
+						url	"HangHoa/hoahong.wrl"
+					}
+				]
+				
+			}
+			#chauhoa
+			Transform {
+				translation -0.4 1.4 1
+				scale 0.009 0.009 0.009
+				children [
+					Inline {
+						url	"HangHoa/hoahong.wrl"
+					}
+				]
+				
+			}
+			Transform {
+				translation 0.8 1.4 0
+				scale 0.009 0.009 0.009
+				children [
+					Inline {
+						url	"HangHoa/hoahong.wrl"
+					}
+				]
+				
+			}
+			Transform {
+				translation 0.8 1.4 -1
+				scale 0.009 0.009 0.009
+				children [
+					Inline {
+						url	"HangHoa/hoahong.wrl"
+					}
+				]
+				
+			}
+			Transform {
+				translation 0.2 1.4 -1
+				scale 0.009 0.009 0.009
+				children [
+					Inline {
+						url	"HangHoa/hoahong.wrl"
+					}
+				]
+				
+			}
+			Transform {
+				translation -0.4 1.4 -1
+				scale 0.009 0.009 0.009
+				children [
+					Inline {
+						url	"HangHoa/hoahong.wrl"
+					}
+				]
+				
+			}
+	]
+}

@@ -53,7 +53,11 @@ DEF cotleu Group {children[
 			Shape {
 				appearance Appearance {
 					material Material {
-					diffuseColor 0.8824 0.7765 0.3412}}
+					diffuseColor 0 .655 .259
+					specularColor .46 .46 .46
+					ambientIntensity .0933
+					shininess .51
+				}}
 				geometry Cone {
 				bottomRadius 60 height 30}}]}
 
@@ -62,11 +66,7 @@ DEF cotleu Group {children[
 			translation 15 -30 -30 
 			children [Inline {url "ThungHang.wrl"}]}
 
-	]
-}
-
-
-
+		]}
 
 # nguoi ban hang
 

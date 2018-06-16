@@ -1,0 +1,367 @@
+#VRML V2.0 utf8
+
+Transform {
+	children [
+		Transform {
+			translation	0 3.3 0
+			children [
+				   	#dau nguoi
+		Transform {
+		translation	0 0 0
+		scale .8 1 .8
+		children [
+			Inline {url "DauNguoi.wrl"}
+		]
+		}
+
+		# phan co
+		Transform  {
+	   
+	translation 0 -1 0  
+
+	children [
+		Shape {
+			geometry  Cylinder {radius 0.3 height 1}
+			appearance	Appearance {
+				material Material {
+					diffuseColor  192 192 192  
+				}
+			}
+
+					}
+				]
+			}
+			Transform  { 
+				translation	0 -1 0 
+
+				children [
+					Shape {
+						geometry  Cone {height 1 bottomRadius  0.35}
+						appearance	Appearance {
+							material Material {
+								diffuseColor 1 1 1  
+							}
+						}
+
+					}
+				]
+			}
+
+	# phan than
+
+		 Transform  { 
+		scale 1 1 0.4
+		translation	0 -2.5 0 
+
+		children [
+			Shape {
+				geometry  Cylinder  { radius  1.2 height 2}
+
+
+			}
+		]
+	}
+
+	# cuc ao
+	Transform {
+		translation	0 0 0
+		children [
+			Transform {
+				translation	0 -3 .45
+			children [
+				Shape {
+					geometry Sphere	{
+					radius .05
+					}
+					appearance Appearance {
+						material Material {
+						diffuseColor 1 1  02
+						}
+					}
+				}
+			]
+			}
+
+				Transform {
+				translation	0 -2.3 .45
+			children [
+				Shape {
+					geometry Sphere	{
+					radius .05
+					}
+					appearance Appearance {
+						material Material {
+						diffuseColor 1 1  02
+						}
+					}
+				}
+			]
+			}
+				Transform {
+				translation	0 -2 .45
+			children [
+				Shape {
+					geometry Sphere	{
+					radius .05
+					}
+					appearance Appearance {
+						material Material {
+						diffuseColor 1 1  02
+						}
+					}
+				}
+			]
+			}
+				Transform {
+				translation	0 -2.7 .45
+			children [
+				Shape {
+					geometry Sphere	{
+					radius .05
+					}
+					appearance Appearance {
+						material Material {
+						diffuseColor 1 1  02
+						}
+					}
+				}
+			]
+			}
+		]
+	}
+
+
+	#quan
+	 Transform  { 
+		translation	0 -4 0 
+		  scale	1.2 1 .5
+		children [
+			Shape {
+				geometry  Cylinder  { radius  1 height 1}
+				appearance	Appearance {
+					material Material {
+						diffuseColor 0 0 0
+					}
+				}
+
+			}
+		]
+	}
+
+			]
+		}
+	
+	# chan	trai
+
+DEF	chantrai Transform {
+		translation	0 0 0
+		children [
+				 	Transform {
+			translation	-.65 -3 0
+			scale 1 1 .7
+			rotation 1 0 0 3.14
+			children [
+				Shape {
+					geometry Cone {
+					height 4 bottomRadius .59}
+						appearance Appearance {
+							material Material {
+							diffuseColor 0 0 0
+							}
+						}
+				}
+			]
+			}
+
+			Transform {
+				translation	-.65 -3.5 0
+				children [
+					Shape {
+						geometry Cylinder {
+						height 3
+						radius .3
+						}
+						appearance Appearance {
+							material Material {
+							diffuseColor 0 0 0
+							}
+						}
+					}
+				]
+			}
+				Transform {
+				translation	-.65 -5 .2
+				scale 1.4 .6 2.5
+				children [
+					Shape {
+						geometry Sphere	{
+						radius .2
+						
+						}
+						appearance Appearance {
+							material Material {
+							diffuseColor .8 .8 .8
+							}
+						}
+					}
+				]
+			}
+
+		]
+	}
+
+
+		# chan	phai
+
+DEF	chanphai Transform {
+		translation	1.2 0 0
+		children [
+				 	Transform {
+			translation	-.65 -3 0
+			scale 1 1 .7
+			rotation 1 0 0 3.14
+			children [
+				Shape {
+					geometry Cone {
+					height 4 bottomRadius .59}
+						appearance Appearance {
+							material Material {
+							diffuseColor 0 0 0
+							}
+						}
+				}
+			]
+			}
+
+			Transform {
+				translation	-.65 -3.5 0
+				children [
+					Shape {
+						geometry Cylinder {
+						height 3
+						radius .3
+						}
+						appearance Appearance {
+							material Material {
+							diffuseColor 0 0 0
+							}
+						}
+					}
+				]
+			}
+				Transform {
+				translation	-.65 -5 .2
+				scale 1.4 .6 2.5
+				children [
+					Shape {
+						geometry Sphere	{
+						radius .2
+						
+						}
+						appearance Appearance {
+							material Material {
+							diffuseColor .8 .8 .8
+							}
+						}
+					}
+				]
+			}
+
+		]
+	}
+
+
+
+	# tay phai
+	Transform {
+		translation	0 3.3 0
+		children [
+				 Transform {
+	translation	1.15 -1.8 0
+	scale 1.8 1 .9
+	children [
+		Shape {
+			geometry Sphere	{
+			radius .3
+			}
+		}
+	]
+	}
+	Transform {
+	translation	1.45 -2.7 0
+	children[
+		Shape {
+			geometry Cylinder {
+			radius .2
+			height 2
+			}
+		}
+	]
+	}
+			Transform {
+	translation	1.4 -3.97 0
+	scale .4 1 .6
+	children [
+		Shape {
+			geometry Sphere	{
+			radius .3
+			}
+			appearance Appearance {
+				material Material {diffuseColor 198 198 198}
+			}
+		}
+	]}
+		]
+	}
+	
+
+
+		# tay trai
+	Transform {
+		translation	0 3.3 0
+		children [
+			Transform {
+	translation	-1.15 -1.8 0
+	scale 1.8 1 .9
+	children [
+		Shape {
+			geometry Sphere	{
+			radius .3
+			}
+		}
+	]
+	}
+	Transform {
+	translation	-1.45 -2.7 0
+	children[
+		Shape {
+			geometry Cylinder {
+			radius .2
+			height 2
+			}
+		}
+	]
+	}
+
+		Transform {
+	translation	-1.4 -3.97 0
+	scale .4 1 .6
+	children [
+		Shape {
+			geometry Sphere	{
+			radius .3
+			}
+				appearance Appearance {
+				material Material {diffuseColor 198 198 198}
+			}
+		}
+	]
+	}
+		]
+	}
+	
+	]
+}
+
+
+

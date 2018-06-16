@@ -180,59 +180,11 @@ children [
 
 
 
-				Transform {
+			Transform {
 				translation 10 6 -3
 			scale 1 1 1
-			children [Inline {url "HangHoa/cachua.wrl"}]}
+			children [Inline {url "cachua.wrl"}]}
 
-
-			Transform {
-				translation -15 6 -3
-			scale 1 1 1
-			children [Inline {url "HangHoa/cachua.wrl"}]}
-
-
-
-			Transform {
-				translation -20 17 -3
-			scale 1 1 1
-			children [Inline {url "HangHoa/cachua.wrl"}]}
-
-
-			Transform {
-				translation 5 17 -3
-			scale 1 1 1
-			children [Inline {url "HangHoa/cachua.wrl"}]}
-
-
-
-
-
-			Transform {
-				translation 15 15 -3
-			scale .75 .75 .75
-			children [Inline {url "HangHoa/quakhe.wrl"}]}
-
-
-
-
-
-
-
-
-				Transform {
-				translation 25 18 15
-			scale .75 .75 .75
-			children [Inline {url "HangHoa/cam.wrl"}]}
-
-
-
-
-
-			Transform {
-				translation -25 15 15
-			scale .75 .75 .75
-			children [Inline {url "HangHoa/le.wrl"}]}
 
 
 
@@ -294,84 +246,45 @@ children [
 
 
 
-								Transform {
-				translation -25 35 20
-			scale .75 .75 .75
-			children [Inline {url "HangHoa/le.wrl"}]}
-
+			Transform {
+				translation -25 25.5 25
+			scale 0.06	0.06 0.06
+			children [Inline {url "HangHoa/chauhoa.wrl"}]}
 
 			Transform {
-				translation 5 30 -3
-			scale .75 .75 .75
-			children [Inline {url "HangHoa/quakhe.wrl"}]}
-
-
-				Transform {
-				translation 20 38 15
-			scale .75 .75 .75
-			children [Inline {url "HangHoa/cam.wrl"}]}
-
-
+				translation -1 25.5 25
+			scale 0.06	0.06 0.06
+			children [Inline {url "HangHoa/chauhoa.wrl"}]}
 
 			Transform {
-				translation -25 43 5
-			scale .75 .75 .75
-			children [Inline {url "HangHoa/cam.wrl"}]}
-
-
-			Transform {
-				translation -10 30 5
-			scale .75 .75 .75
-			children [Inline {url "HangHoa/quaduahau.wrl"}]}
-
+				translation 22 25.5 25
+			scale 0.06	0.06 0.06
+			children [Inline {url "HangHoa/chauhoa.wrl"}]}
 
 			Transform {
-				translation 0 30 -20
-			scale .75 .75 .75
-			children [Inline {url "HangHoa/quaduahau.wrl"}]}
-
-
-			Transform {
-				translation -10 23.5 20
-			scale .75 .75 .75
-			children [Inline {url "HangHoa/quaduahau.wrl"}]}
-
-
+				translation -1 31 0
+			scale 0.06	0.06 0.06
+			children [Inline {url "HangHoa/chauhoa.wrl"}]}
 
 			Transform {
-				translation 10 43 0
-			scale .75 .75 .75
-			children [Inline {url "HangHoa/cam.wrl"}]}
-
-
-
+				translation -25 26 0
+			scale 18 18 18
+			children [Inline {url "HangHoa/chauhoa1.wrl"}]}
 
 			Transform {
-				translation -20 32 -10
-			
-			children [Inline {url "HangHoa/cachua.wrl"}]}
-
-
-			Transform {
-				translation 25 32 -3
-			
-			children [Inline {url "HangHoa/cachua.wrl"}]}
-
-
+				translation 22 26 0
+			scale 18 18 18
+			children [Inline {url "HangHoa/chauhoa1.wrl"}]}
 
 			Transform {
-				translation 5 25 20
-			
-			children [Inline {url "HangHoa/cachua.wrl"}]}
+				translation 20 30.5 -20
+			scale 0.09 0.098 0.09
+			children [Inline {url "HangHoa/hoahong.wrl"}]}
 
-
-
-
-
-
-
-
-
+			Transform {
+				translation -20 30.5 -20
+			scale 0.09 0.098 0.09
+			children [Inline {url "HangHoa/hoahong.wrl"}]}
 
 
 

@@ -187,6 +187,18 @@ DEF	Block2 Transform {
 				}
 			]
 		}
+		Transform {
+			translation -600 -5 100
+			rotation 0 1 0 1.57
+			scale  1.8 1.8 1.8
+			children [
+				Inline {
+					url	"Views/Block2/GianHangHoa/GianHang3.wrl" 
+				}
+			
+			]
+
+		}
 	]
 }
 #Dãy 3
@@ -214,6 +226,18 @@ DEF	Block3 Transform {
 		]
 		}
 			]
+		}
+		Transform {
+			translation -650 -5 -20
+			rotation 0 1 0 -1.57
+			scale  1.8 1.8 1.8
+			children [
+				Inline {
+					url	"Views/Block3/GianHangDoChoi/GianHang3.wrl" 
+				}
+			
+			]
+
 		}
 	]
 }
@@ -316,6 +340,17 @@ DEF	Block6 Transform {
 			children [
 				Inline {
 					url	"Views/Block6/Cho/GianHang1.wrl" 
+				}
+			
+			]
+
+		}
+		Transform {
+			translation -650 -5 130
+			scale  1.8 1.8 1.8
+			children [
+				Inline {
+					url	"Views/Block6/Cho/GianHang3.wrl" 
 				}
 			
 			]

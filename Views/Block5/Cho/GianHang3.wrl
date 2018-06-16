@@ -74,32 +74,18 @@ DEF cotleu Group {children[
 						Inline {url "den.wrl"}]}
 
 
-
-
-
-
-						
-# nguoi ban hang
-
-						
-
-
-						
-
-		DEF	T1 TouchSensor {}
-		DEF	T2 TouchSensor {}
 	]
 }
 
 
 
 
-# nguoi mua hang
+# nguoi ban hang
 
 		Transform {
-		rotation 0 1 0 -1.57
+		rotation 0 1 0 0
 		scale 8 7 8
-	translation	57 0 -15
+	translation	20 0 -80
 	children [Inline {url "NguoiMua.wrl"}
 	]
 } 
