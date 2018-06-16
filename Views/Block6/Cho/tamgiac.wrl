@@ -1,0 +1,34 @@
+#VRML V2.0 utf8
+
+#tamgiac
+DEF tamgiac Transform {
+
+            children[
+                Shape {
+
+                    appearance Appearance {
+				        texture	ImageTexture {url "Images/maingoi.jpg"}
+			        }
+                    geometry IndexedFaceSet {
+
+                        coord Coordinate {
+
+                            point [-5 0 0, 0 3 0, 5 0 0]
+
+                        }
+
+                        coordIndex [0 1 2 ]
+
+               
+                        colorIndex [1 1]
+
+                        colorPerVertex FALSE
+
+                        solid FALSE
+                
+
+                    }
+
+                }
+            ]
+        }

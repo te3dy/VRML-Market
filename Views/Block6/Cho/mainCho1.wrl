@@ -66,11 +66,11 @@ Transform {
 				children [
 					Shape {
 						appearance Appearance {
-							texture ImageTexture{
-								  url "Images/maingoi.jpg"
-								  repeatS TRUE
-								  repeatT TRUE
-								  }
+							material Material	{diffuseColor .88 .15 .01
+							specularColor .19 .03 .03
+							ambientIntensity .0833
+							shininess .08
+						}
 						}
 						geometry Box {size 14 5.0 0.1}
 					}
@@ -83,11 +83,11 @@ Transform {
 				children [
 					Shape {
 							appearance Appearance {
-							texture ImageTexture{
-								  url "Images/maingoi.jpg"
-								  repeatS TRUE
-								  repeatT TRUE
-								  }
+							material Material	{diffuseColor .88 .15 .01
+							specularColor .19 .03 .03
+							ambientIntensity .0833
+							shininess .08
+						}
 						}
 						geometry Box {size 14 5.0 0.1}
 					}
@@ -98,7 +98,7 @@ Transform {
 				translation	-3 0.9 1.5
 				children [
 					Inline {
-						url	"gianhanghoaqua.wrl"
+						url	"gianhanghoaqua1.wrl"
 					}
 				]
 				
@@ -143,35 +143,13 @@ Transform {
 				]
 				
 			}
-			#banhoaqua
-			Transform {
-				translation	2.5 0 0
-				rotation 0 1 0 0
+
+			#thungdai
+				Transform {
+				translation	3 1.2 -2.3
 				children [
 					Inline {
-						url	"hangTao.wrl"
-					}
-				]
-				
-			}
-			#banhoaqua
-			Transform {
-				translation	0.5 0 0
-				rotation 0 1 0 0
-				children [
-					Inline {
-						url	"hangTao.wrl"
-					}
-				]
-				
-			}
-			#banhoaqua
-			Transform {
-				translation	0.5 0 0
-				rotation 0 1 0 0
-				children [
-					Inline {
-						url	"hangChuoi.wrl"
+						url	"thunghoa1.wrl"
 					}
 				]
 				
@@ -181,17 +159,47 @@ Transform {
 				translation	2 1.2 -2.3
 				children [
 					Inline {
-						url	"thungdai.wrl"
+						url	"thunghoa1.wrl"
 					}
 				]
 				
 			}
 			#thungdai
 				Transform {
-				translation	3 1.2 -2.3
+				translation	1 1.2 -2.3
 				children [
 					Inline {
-						url	"thungdai.wrl"
+						url	"thunghoa1.wrl"
+					}
+				]
+				
+			}
+			#thungdai
+				Transform {
+				translation	0 1.2 -2.3
+				children [
+					Inline {
+						url	"thunghoa1.wrl"
+					}
+				]
+				
+			}
+			#thungdai
+				Transform {
+				translation	-1 1.2 -2.3
+				children [
+					Inline {
+						url	"thunghoa1.wrl"
+					}
+				]
+				
+			}
+			#thungdai
+				Transform {
+				translation	4 1.2 -2.3
+				children [
+					Inline {
+						url	"thunghoa1.wrl"
 					}
 				]
 				
@@ -236,104 +244,6 @@ Transform {
 				]
 				
 			}
-					#tranh1
-				Transform {
-				translation	4.2 1.2 1.5
-				rotation 0 1 0 1.5
-				children [
-					Inline {
-						url	"HangHoa/tranh1.wrl"
-					}
-				]
-				
-			}
-						#tranh2
-				Transform {
-				translation	4.2 1 0
-				rotation 0 1 0 1.5
-				children [
-					Inline {
-						url	"HangHoa/tranh2.wrl"
-					}
-				]
-				
-			}
-				#duahau
-				Transform {
-				translation	-3 2.1 0.5
-				rotation 0 1 0 -1.2
-				children [
-					Inline {
-						url	"HangHoa/duahau.wrl"
-					}
-				]
-				
-			}
-			#duahau
-				Transform {
-				translation	-4 2.1 0.5
-				rotation 0 1 0 -1.2
-				children [
-					Inline {
-						url	"HangHoa/duahau.wrl"
-					}
-				]
-				
-			}
-			#quakhe
-				Transform {
-				translation	-3 2.2 1.5
-				rotation 1 0 0 1.5
-				children [
-					Inline {
-						url	"HangHoa/quakhe.wrl"
-					}
-				]
-				
-			}
-			#quakhe
-				Transform {
-				translation	-3 2.2 1.5
-				rotation 1 0 0 1.5
-				children [
-					Inline {
-						url	"HangHoa/quakhe.wrl"
-					}
-				]
-				
-			}
-			#quakhe
-				Transform {
-				translation	-4 2.2 1.5
-				rotation 1 0 0 1.5
-				children [
-					Inline {
-						url	"HangHoa/quakhe.wrl"
-					}
-				]
-				
-			}
-			#qua bau
-			 Transform {
-				 scale 0.8 0.8 0.8
-				translation	-3.6 2.2 2.8
-				children [
-					Inline {
-						url	"HangHoa/quabau.wrl"
-					}
-				]
-				
-			}
-				#qua bau
-			 Transform {
-				translation	-2.6 2.2 2.8
-				scale 0.8 0.8 0.8
-				children [
-					Inline {
-						url	"HangHoa/quabau.wrl"
-					}
-				]
-				
-			}
+
 	]
 }

@@ -1,0 +1,43 @@
+#VRML V2.0 utf8
+
+Transform {
+	children [
+		Shape {
+
+				appearance Appearance {
+				texture ImageTexture{
+			  url "Images/thungdai.jpg"
+			  repeatS TRUE
+			  repeatT TRUE
+			  }
+			}
+				geometry Cylinder{
+
+				height 2
+
+				radius 0.5
+
+				bottom TRUE
+
+				top TRUE
+
+				side TRUE
+
+				}
+
+				}
+			#chauhoa
+			Transform {
+				translation	-0.1 1.45 0.3
+				scale 0.005 0.005 0.005 
+				children [
+					Inline {
+						url	"HangHoa/chauhoa.wrl"
+					}
+				]
+				
+			}
+
+
+	]
+}

@@ -1,0 +1,57 @@
+#VRML V2.0 utf8
+
+Transform {
+	translation 0 -17.94 0
+	children[
+		Shape {
+			appearance Appearance {
+				material Material {
+
+					diffuseColor  1 1 0}}
+
+					geometry Sphere {radius 6}}]}
+
+
+
+					#### cuong
+					Transform {
+					translation 0 -12 0
+					children [
+						Shape {
+							appearance Appearance {
+								material Material {
+								diffuseColor 0 .5 0}}
+								geometry Cylinder {radius .15 height 4.5}}]}
+
+
+
+					#### la cuong
+								Transform {
+									translation	0 -13.8 -1.5
+									children [
+					Transform { 
+		translation	0 1.5 1.8          
+		rotation 3 0 0 5
+		scale .2 .7 .05
+		children [
+			DEF	cuongla Shape {      
+				geometry Sphere	{
+				radius 3
+				}
+				appearance Appearance {
+					material Material {
+					diffuseColor 0 0.5 0
+					}
+				}
+			}
+		]
+		}
+		
+		Transform {
+		translation	0 1.5 1.2
+		rotation 1 0 0 1
+		scale .2 .7 .05
+		children [
+		USE	cuongla
+		]
+	} ]}
