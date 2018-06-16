@@ -109,7 +109,7 @@ DEF	Gate Transform {
 			scale 100 100 70
 			children [
 				Inline {
-					url	"views/congchinh/congchinh.wrl"
+					url	"views/gate/congchinh.wrl"
 				}
 			]
 		}
@@ -119,7 +119,7 @@ DEF	Gate Transform {
 			scale 100 100 70
 			children [
 				Inline {
-					url	"views/congchinh/congchinh.wrl"
+					url	"views/gate/congchinh.wrl"
 				}
 			]
 		}
@@ -178,18 +178,14 @@ DEF	Block1 Transform {
 DEF	Block2 Transform {
 	translation	-250 100 -200
 	children [
-		Shape {
-			appearance Appearance {
-				material Material {
-					diffuseColor .69 .13 .33
-					specularColor .12 .05 .05
-					ambientIntensity .0933
-					shininess .07
+		Transform {
+			translation	-50 0 50
+			scale 8 8 8
+			children [
+				Inline {
+					url	"Views\Block2\GianHangNon\HangNon.wrl"
 				}
-			}
-			geometry Box {
-				size 900 200 200
-			}
+			]
 		}
 	]
 }
@@ -352,57 +348,10 @@ DEF	Block8 Transform {
 DEF	WalkingMan Transform {
 	children [
 		Transform {
-			translation -300 50 0
-			scale 20 20 20
+			translation	0 0 0
 			children [
 				Inline {
-					url "modules\WalkingMan\cdnguoi.wrl"
-				}
-			]
-		}
-		Transform {
-			translation -300 50 400
-			scale 20 20 20
-			children [
-				Inline {
-					url "modules\WalkingMan\cdnguoi.wrl"
-				}
-			]
-		}
-		Transform {
-			translation -300 50 -400
-			scale 20 20 20
-			children [
-				Inline {
-					url "modules\WalkingMan\cdnguoi.wrl"
-				}
-			]
-		}
-		Transform {
-			translation -600 50 -350
-			scale 20 20 20
-			children [
-				Inline {
-					url "modules\WalkingMan\cdnguoi.wrl"
-				}
-			]
-		}
-		Transform {
-			translation 300 50 -400
-			scale 10 10 10
-			rotation 0 1 0 3.14
-			children [
-				Inline {
-					url "modules\WalkingMan\nguoidichuyen.wrl"
-				}
-			]
-		}
-		Transform {
-			translation 300 50 -440
-			scale 10 10 10
-			children [
-				Inline {
-					url "modules\WalkingMan\nguoidichuyen.wrl"
+					url "views/walkingman/walkingman.wrl"
 				}
 			]
 		}
@@ -410,9 +359,19 @@ DEF	WalkingMan Transform {
 }
 #Góc nhìn
 Viewpoint {
-    fieldOfView 1
-    jump TRUE
-    description "v1"
-    orientation 1 0 0 -1
-    position 0 1500 1000
+    position -3000 100 0
+	orientation	0 1 0 -1.57
 }
+NavigationInfo {
+	avatarSize [0.25, 100, 0.75]
+	headlight TRUE
+	type "WALK"
+	speed 100
+}
+# anh sang tu tren chieu xuong
+DirectionalLight {
+	direction 0 -1 0
+	intensity 0.5
+	color 1 1 1
+}
+

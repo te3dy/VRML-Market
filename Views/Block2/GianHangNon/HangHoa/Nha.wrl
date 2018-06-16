@@ -76,12 +76,18 @@ DEF	cot Group {
 			
 			Transform {
 			translation -15 11 0
-			  rotation -1 0 0 20
+			rotation -1 0 0 20
 			children [
-				Shape {
+				Shape	{
 					appearance Appearance {
-						material Material {emissiveColor 0 0 1}}
-						geometry Box {size 40 16.5 .2}}]}
+						texture	ImageTexture {
+							url	"Images\ngoi4.jpg"
+						}
+					}
+					geometry Box {size 40 16.5 .2}
+				}	
+			]
+		}
 
 
 						Transform {
@@ -90,7 +96,9 @@ DEF	cot Group {
 			children [
 				Shape {
 					appearance Appearance {
-						material Material {emissiveColor 0 0 1}}
+						texture	ImageTexture {
+							url	"Images\ngoi4.jpg"
+						}}
 						geometry Box {size 40 16.5 .2}}]}
 
 
@@ -110,10 +118,10 @@ DEF	cot Group {
 
 								############# nen gian hang
 								Transform {
-								translation -15 -11 -7
+								translation -15 -10.5 -7
 								children [
 									Shape {appearance Appearance {texture ImageTexture {url "Images\nen.png"}}
-										geometry Box {size 70 .2 50}}]}
+										geometry Box {size 35 .2 20}}]}
 
 
 

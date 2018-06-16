@@ -7,10 +7,11 @@ DEF	cuaconghaicanh Transform {
 		#canh ben trai
 		DEF	canhbentrai Transform {
 			translation	 -1.62 0 0
+			rotation 0 1 0 2.4
 			children	[
 				DEF	cylSen2 CylinderSensor {	
 					enabled	TRUE	
-					maxAngle 0
+					maxAngle 2.4
 					minAngle -1.1
 
 	   			}
@@ -32,11 +33,12 @@ DEF	cuaconghaicanh Transform {
 		#canh ben phai
 		DEF	canhbenphai Transform {
 			translation	5.02 0 0
+			rotation 0 1 0 -2.4
 			children [
 				DEF	cylSen1 CylinderSensor {	
 					enabled	TRUE	
 					maxAngle 1.1
-					minAngle 0
+					minAngle -2.4
 
 	   			}
 				 DEF	phai Transform {
