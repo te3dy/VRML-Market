@@ -20,17 +20,28 @@ PROTO Nguoi[
 				loop TRUE
 			}
 
-			DEF	nguoiOrientation PositionInterpolator {
+			DEF	nguoiPos PositionInterpolator {
 				key	[
-					0.0,0.2,0.4,0.6,0.8,1
+					0,0.3,0.6,1
 				]
 				keyValue [
-					1 0 0, 10 0 0, 20 0 0, 30 0 0, 42 0 0, 50 0 0
+					0 0 0, 20 0 0,20 0 0, 0 0 0
 
 				]
 			}
-			ROUTE nguoiClock.fraction_changed  TO nguoiOrientation.set_fraction
-			ROUTE nguoiOrientation.value_changed	TO nguoi.set_translation
+			DEF nguoiOri OrientationInterpolator {
+				key	[0,0.1,0.9,1]
+				keyValue [
+					0 1 0 1.57,
+					0 0 0 0,
+					0 1 0 0,
+					0 1 0 1.57,
+				]
+			}
+			ROUTE nguoiClock.fraction_changed  TO nguoiPos.set_fraction
+			ROUTE nguoiPos.value_changed	TO nguoi.set_translation
+			ROUTE nguoiClock.fraction_changed TO nguoiOri.set_fraction
+			ROUTE nguoiOri.value_changed TO	nguoi.rotation
 }	
 
 Transform {

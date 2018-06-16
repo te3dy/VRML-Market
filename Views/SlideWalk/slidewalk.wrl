@@ -21,15 +21,6 @@ Transform {
 
 		}
 		Transform {
-		translation	-30 50 0
-		scale 15 15 15
-		children [
-		Inline {
-			url	"cotden.wrl"
-		}
-		]
-		}
-		Transform {
 		translation	 0 0 -600
 		scale 3 3 3
 		children [
@@ -38,24 +29,7 @@ Transform {
 		}
 		]
 		}
-		Transform {
-		translation	-30 50 -400
-		scale 15 15 15
-		children [
-		Inline {
-			url	"cotden.wrl"
-		}
-		]
-		}
-		Transform {
-		translation	0 0 -400
-		scale 3 3 3
-		children [
-		Inline {
-			url	"cay_bui_3dmax.WRL"
-		}
-		]
-		}
+		
 		Transform {
 		translation	-30 50 -200
 		scale 15 15 15
@@ -84,15 +58,6 @@ Transform {
 		]
 		}
 	Transform {
-		translation	0 0 0
-		scale 3 3 3
-		children [
-		Inline {
-			url	"cay_bui_3dmax.WRL"
-		}
-		]
-		}
-	Transform {
 		translation	0 0 200
 		scale 3 3 3
 		children [
@@ -103,24 +68,6 @@ Transform {
 		}
 	Transform {
 		translation	-30 50 200
-		scale 15 15 15
-		children [
-		Inline {
-			url	"cotden.wrl"
-		}
-		]
-		}
-	Transform {
-		translation	0 0 400
-		scale 3 3 3
-		children [
-		Inline {
-			url	"cay_bui_3dmax.WRL"
-		}
-		]
-		}
-	Transform {
-		translation	-30 50 400
 		scale 15 15 15
 		children [
 		Inline {

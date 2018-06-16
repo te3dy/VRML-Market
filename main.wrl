@@ -133,7 +133,7 @@ DEF Street Transform {
 	rotation 0 1 0 1.57
 	children [
 		Inline {
-			url	"modules/Duong/duong.wrl"
+			url	"views/Street/duong.wrl"
 		}
 	]
 }
@@ -146,7 +146,7 @@ DEF	BlockHor Transform {
 }	  
 #Dãy 1
 DEF	Block1 Transform {
-	translation	-450 100 -600
+	translation	-450 90 -600
 	children [
 		Transform {
 			translation 100 120 100
@@ -159,7 +159,7 @@ DEF	Block1 Transform {
 				]
 		}
 		Transform {
-			translation 100 -20 130
+			translation 100 -40 130
 				scale 20 20 20
 				rotation 0 .1 0 1.57
 				children [
@@ -176,7 +176,7 @@ DEF	Block1 Transform {
 
 #Dãy 2
 DEF	Block2 Transform {
-	translation	-250 100 -200
+	translation	-250 90 -200
 	children [
 		Transform {
 			translation	-50 0 50
@@ -191,7 +191,7 @@ DEF	Block2 Transform {
 }
 #Dãy 3
 DEF	Block3 Transform {
-	translation	-250 100 200
+	translation	-250 90 200
 	children [
 		Transform {
 			translation	 -100 0 0
@@ -222,7 +222,7 @@ DEF	Block4 Transform {
 	translation	-450 100 600
 	children [
 		Transform {
-			translation -930 120 -100
+			translation -930 110 -100
 				scale 20 20 20
 				rotation 0 .1 0 -1.57
 				children [
@@ -232,7 +232,7 @@ DEF	Block4 Transform {
 				]
 		}
 		Transform {
-			translation -290 -20 -100
+			translation -290 -60 -100
 				scale 20 20 20
 				rotation 0 .1 0 -1.57
 				children [
@@ -255,7 +255,7 @@ DEF	Block4 Transform {
 }
 #Dãy 5
 DEF Block5 Transform {
-	translation	900 100 -600
+	translation	900 70 -600
 	
 	children [ 
 		Transform {
@@ -297,7 +297,7 @@ DEF Block5 Transform {
 }
 #Dãy 6
 DEF	Block6 Transform {
-	translation	900 100 -200
+	translation	900 70 -200
 	children [ 
 		Transform {
 			translation 200 300 200
@@ -344,7 +344,7 @@ DEF	Block7 Transform {
 }
 #Dãy 8
 DEF	Block8 Transform {
-	translation	-100 70 -245
+	translation	-100 50 -245
 	scale  15 15 15
 	rotation 0 1 0 0
 	children [
@@ -366,26 +366,14 @@ DEF	WalkingMan Transform {
 		}
 	]
 }
-Sound {
-      source AudioClip {
-            url    "modules/audio/amthanh.wav"
-            loop   TRUE
-     }
-     minFront 1140.0 #vung nghe ro
-     minBack  1140.0
-     maxFront 1180.0	#vung khong nghe
-     maxBack  1180.0
-     location 0 0 0 #vi tri phat
-   }
-
-
 #Góc nhìn
 Viewpoint {
     position -3000 100 0
 	orientation	0 1 0 -1.57
 }
+# Đi bộ
 #NavigationInfo {
-#	avatarSize [0.25, 100, 0.75]
+#	avatarSize [20, 100, 20]
 #	headlight TRUE
 #	type "WALK"
 #	speed 100
@@ -396,4 +384,14 @@ DirectionalLight {
 	intensity 0.5
 	color 1 1 1
 }
-
+Sound {
+     source AudioClip {
+            url    "modules/audio/amthanh.wav"
+            loop   TRUE
+     }
+     minFront 1140.0 #vung nghe ro
+     minBack  1140.0
+     maxFront 1180.0	#vung khong nghe
+     maxBack  1180.0
+     location 0 0 0 #vi tri phat
+}

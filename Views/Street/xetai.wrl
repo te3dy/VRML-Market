@@ -1,0 +1,63 @@
+#VRML V2.0 utf8
+
+#than xe
+DEF	xetai Transform	{
+	rotation 0 1 0 3.14
+	children [
+
+	#than xe
+Transform {
+	translation	0 0 0
+	children [
+		Shape {
+			geometry Box {size 2 1 1}
+			appearance Appearance {
+				material Material {
+					diffuseColor .14 .2 .13
+					specularColor .11 .2 .11
+					ambientIntensity .0367
+					shininess .09
+					emissiveColor .11 .2 .11
+				}
+			
+			}
+		}
+	]
+}
+
+#banh xe
+DEF	banhxe Transform {
+	translation	-1 -.5 0
+	rotation 0 1 0 3.14
+	scale .65 .65 .55
+	children [
+		Inline {url "banhxe.wrl"}
+	]
+	
+}
+Transform {
+translation	1.5 0 0
+children [
+USE	banhxe
+]
+}
+
+#dau xe
+Transform {
+translation	-1.2 -.2 0
+children [
+	Shape {
+		geometry Box {size .8 .6 .9}
+		appearance Appearance {
+			material Material {
+				diffuseColor .33 .34 .6
+				specularColor .29 .29 .29
+				ambientIntensity .103
+				shininess .79
+			}
+		
+		}
+	}
+]
+}
+]}

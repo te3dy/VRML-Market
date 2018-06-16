@@ -1,0 +1,422 @@
+#VRML V2.0 utf8
+
+Transform {
+	scale .1 .1 .1
+	translation	0 0 0
+	children [
+		Inline {url	"xedap.wrl"}
+	]
+}
+
+DEF	nguoi Transform	{
+	translation	-.6 13 -2
+	scale .7 .7 .7
+	rotation 0 1 0 1.57
+	#rotation 0 1 1 .57
+	children [
+
+DEF	than Transform {
+	translation	0 -2 6
+rotation 1 0 0 .7
+children [
+# cổ			
+Transform {
+translation	0 -.5 0
+scale .6 .8 .5 
+children [
+	Shape {
+		geometry Sphere {
+			radius 1
+		}
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 .85 0
+				specularColor .87 .25 .25
+				ambientIntensity .157
+				shininess 1
+			}
+		}
+	}
+]
+}
+#đầu
+Transform {
+	translation	0 2.5 0
+	scale 1.1 1.3 1.1
+	children [
+		Shape {
+		geometry Sphere {
+			radius 1
+		}
+		appearance Appearance {
+			material Material {
+				diffuseColor 0 0 0
+				specularColor .29 .3 .29
+				ambientIntensity 0
+				shininess .08
+			}
+		}
+	}
+	]
+}
+Transform {
+	translation	0 1.7 0
+	scale 1 1.8 1
+	children [
+		Shape {
+		geometry Sphere {
+			radius 1
+		}
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 .85 0
+				specularColor .87 .25 .25
+				ambientIntensity .157
+				shininess 1
+			}
+		}
+	}
+	]
+}
+#vai trái
+Transform {
+	rotation 0 0 1 1.57
+	translation	-1.9 -1 0
+	scale .5 2 1
+	children [
+		Shape {
+		geometry Sphere {
+			radius 1
+		}
+		appearance Appearance {
+			material Material {
+				diffuseColor .88 .15 .01
+				specularColor .19 .03 .03
+				ambientIntensity .0833
+				shininess .08
+			}
+		}
+	}
+	]
+}
+#vai phải
+Transform {
+	rotation 0 0 1 1.57
+	translation	2 -1 0
+	scale .5 2 1
+	children [
+		Shape {
+		geometry Sphere {
+			radius 1
+		}
+		appearance Appearance {
+			material Material {
+				diffuseColor .88 .15 .01
+				specularColor .19 .03 .03
+				ambientIntensity .0833
+				shininess .08
+			}
+		}
+	}
+	]
+}
+#tay trái
+DEF	taytrai Transform {
+	translation	0 -1 0
+	rotation 1 0 0 -1.4
+	children 
+	[
+Transform{
+	#rotation 0 0 1 1.57
+	translation	-3 -3 0
+	scale .7 2.5 1
+	children [
+		Shape {
+		geometry Sphere {
+			radius 1
+		}
+		appearance Appearance {
+			material Material {
+				diffuseColor .88 .15 .01
+				specularColor .19 .03 .03
+				ambientIntensity .0833
+				shininess .08
+			}
+		}
+	}
+	]
+}
+Transform {
+	translation	-3 -8 0
+	scale .5 2.5 1
+	children [
+		Shape {
+		geometry Sphere {
+			radius 1
+		}
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 .85 0
+				specularColor .87 .25 .25
+				ambientIntensity .157
+				shininess 1
+			}
+		}
+	}
+	]	
+}
+#bàn tay
+Transform {
+	translation	-3 -11 0
+	scale .5 .8 .1
+	children [
+		Shape {
+		geometry Sphere {
+			radius 1
+		}
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 .85 0
+				specularColor .87 .25 .25
+				ambientIntensity .157
+				shininess 1
+			}
+		}
+	}
+	]	
+}
+]}
+#tay phải
+DEF	tayphai
+Transform {
+	translation	6 -1 0
+	rotation 1 0 0 -1.4
+	children 
+	[
+Transform{
+	#rotation 0 0 1 1.57
+	translation	-3 -3 0
+	scale .7 2.5 1
+	children [
+		Shape {
+		geometry Sphere {
+			radius 1
+		}
+		appearance Appearance {
+			material Material {
+				diffuseColor .88 .15 .01
+				specularColor .19 .03 .03
+				ambientIntensity .0833
+				shininess .08
+			}
+		}
+	}
+	]
+}
+Transform {
+	translation	-3 -8 0
+	scale .5 2.5 1
+	children [
+		Shape {
+		geometry Sphere {
+			radius 1
+		}
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 .85 0
+				specularColor .87 .25 .25
+				ambientIntensity .157
+				shininess 1
+			}
+		}
+	}
+	]	
+}
+#bàn tay
+Transform {
+	translation	-3 -11 0
+	scale .5 .8 .1
+	children [
+		Shape {
+		geometry Sphere {
+			radius 1
+		}
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 .85 0
+				specularColor .87 .25 .25
+				ambientIntensity .157
+				shininess 1
+			}
+		}
+	}
+	]	
+}
+]}
+#thân
+Transform {
+	scale 1 1 .7
+	translation	0 -5 0
+	children [
+		Shape {
+			geometry Cylinder {
+				bottom TRUE
+				height 8
+				radius 2
+				side TRUE
+				top	TRUE
+			}
+			appearance Appearance {
+				material Material {
+					diffuseColor .88 .32 .2
+					specularColor .82 .28 .28
+					ambientIntensity .113
+					shininess .8
+				}
+				
+			}
+		}
+	]
+}
+]
+}
+
+#chân trái
+DEF	chantrai Transform {
+	translation	-.5 3.8 .5
+	scale 1 1.3 1
+	children 
+	[
+DEF	chan Transform {children [
+Transform {
+	scale 1 3 1
+	translation	-1.5 -12 0
+	children [
+		Shape {
+		geometry Sphere {
+			radius 1
+		}
+		appearance Appearance {
+			material Material {
+				diffuseColor .33 .34 .6
+				specularColor .29 .29 .29
+				ambientIntensity .103
+				shininess .79
+			}
+		}
+	}		
+	]
+}
+Transform {
+	scale .8 3 1
+	translation	-1.5 -18 0
+	children [
+		Shape {
+		geometry Sphere {
+			radius 1
+		}
+		appearance Appearance {
+			material Material {
+				diffuseColor .33 .34 .6
+				specularColor .29 .29 .29
+				ambientIntensity .103
+				shininess .79
+			}
+		}
+	}		
+	]
+} 
+]}
+#bàn chân
+DEF	banchan
+Transform {
+	scale .8 .5 1.5
+	translation	-1.5 -21 1
+	children [
+		Shape {
+		geometry Sphere {
+			radius 1
+		}
+		appearance Appearance {
+			material Material {
+				diffuseColor .38 .38 .42
+				specularColor .53 .53 .53
+				ambientIntensity .0933
+				shininess .93
+			}
+		}
+	}		
+	]
+}
+]}
+
+#chân phải
+DEF	chanphai Transform {
+	translation	3 0 0
+	children 
+	[
+DEF	chan1 Transform {children [
+Transform {
+	rotation 1 0 0 -.7
+	scale 1 3 1
+	translation	-1.5 -11 2
+	children [
+		Shape {
+		geometry Sphere {
+			radius 1
+		}
+		appearance Appearance {
+			material Material {
+				diffuseColor .33 .34 .6
+				specularColor .29 .29 .29
+				ambientIntensity .103
+				shininess .79
+			}
+		}
+	}		
+	]
+}
+Transform {
+	rotation 1 0 0 .5
+	scale .8 3 1
+	translation	-1.5 -15 3
+	children [
+		Shape {
+		geometry Sphere {
+			radius 1
+		}
+		appearance Appearance {
+			material Material {
+				diffuseColor .33 .34 .6
+				specularColor .29 .29 .29
+				ambientIntensity .103
+				shininess .79
+			}
+		}
+	}		
+	]
+} 
+]}
+#bàn chân
+DEF	banchan1
+Transform {
+	scale .8 .5 1.5
+	translation	-1.5 -18 2.5
+	children [
+		Shape {
+		geometry Sphere {
+			radius 1
+		}
+		appearance Appearance {
+			material Material {
+				diffuseColor .38 .38 .42
+				specularColor .53 .53 .53
+				ambientIntensity .0933
+				shininess .93
+			}
+		}
+	}		
+	]
+}
+]}
+]}
