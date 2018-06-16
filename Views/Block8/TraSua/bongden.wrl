@@ -1,0 +1,109 @@
+#VRML V2.0 utf8
+
+
+Transform {
+
+	children [
+	
+		DEF den Transform {
+			children [
+					DEF cen TouchSensor {}
+
+
+
+			
+		Shape {
+			appearance Appearance {														 
+				material Material {diffuseColor	1 1 1
+				}
+			}
+			geometry Sphere	{radius 0.4}
+
+			
+		}
+			]
+		}
+	]
+}
+DEF ma Script {
+
+eventIn SFBool turnOn
+
+eventOut SFBool On
+
+eventOut SFBool Off
+
+field SFBool turn FALSE
+
+url "javascript:
+
+function turnOn(val){
+
+if(val){
+
+turn = !turn;
+
+if(turn)
+
+{
+
+On= TRUE;
+
+                        Off=FALSE;
+
+            }
+
+        else
+
+        {
+
+                        On=FALSE;
+
+Off=TRUE;
+
+        }
+
+            }
+
+    }
+
+    "
+
+}
+						DEF light1 DirectionalLight {
+
+on FALSE
+
+intensity 1
+
+ambientIntensity 100
+
+color 1 1 0
+
+direction 1 0 0
+
+}
+
+		DEF light PointLight {
+
+on FALSE
+
+intensity 1
+
+ambientIntensity 0
+color 1 1 0
+
+location 1 0 0
+
+attenuation 1 0 0
+
+radius 100
+
+}
+
+
+ROUTE cen.isActive TO ma.turnOn
+ROUTE ma.On TO light.on
+ROUTE ma.On TO light1.on
+ROUTE light.attenuation TO den.translation
+ROUTE light1.direction TO den.translation

@@ -1,0 +1,60 @@
+#VRML V2.0 utf8
+ DEF	WalkingMan Transform {
+	children [
+		Transform {
+			translation -300 50 0
+			scale 20 20 20
+			children [
+				Inline {
+					url "Nguoi\cdnguoi.wrl"
+				}
+			]
+		}
+		Transform {
+			translation -300 50 400
+			scale 20 20 20
+			children [
+				Inline {
+					url "Nguoi\cdnguoi.wrl"
+				}
+			]
+		}
+		Transform {
+			translation -300 50 -400
+			scale 20 20 20
+			children [
+				Inline {
+					url "Nguoi\cdnguoi.wrl"
+				}
+			]
+		}
+		Transform {
+			translation -600 50 -350
+			scale 20 20 20
+			children [
+				Inline {
+					url "Nguoi\cdnguoi.wrl"
+				}
+			]
+		}
+		Transform {
+			translation 300 50 -400
+			scale 10 10 10
+			rotation 0 1 0 3.14
+			children [
+				Inline {
+					url "Nguoi\nguoidichuyen1.wrl"
+				}
+			]
+		}
+		Transform {
+			translation 300 50 -440
+			scale 10 10 10
+			children [
+				Inline {
+					url "Nguoi\nguoidichuyen1.wrl"
+				}
+			]
+		}
+	]
+}
