@@ -325,20 +325,11 @@ DEF	Block6 Transform {
 }
 #Dãy 7
 DEF	Block7 Transform {
-	translation	900 100 200
+	translation	1000 100 300
+	scale 8 8 8
 	children [
-		Shape {
-			appearance Appearance {
-				material Material {
-					diffuseColor .88 .15 .01
-					specularColor .19 .03 .03
-					ambientIntensity .0833
-					shininess .08
-				}
-			}
-			geometry Box {
-				size 1000 200 200
-			}
+		Inline {
+			url "Views\Block7\GianHangGiayDep\HangDoGiayDep.wrl"
 		}
 	]
 }

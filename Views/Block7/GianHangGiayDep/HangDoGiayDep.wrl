@@ -1,0 +1,124 @@
+#VRML V2.0 utf8
+
+Transform {
+translation 0 0 0
+scale 1 1 1
+children [Inline {url "HangHoa\Nha.wrl"}]}
+Transform {
+translation -20 -10.5 -10
+children [
+	Shape {
+		appearance Appearance {texture ImageTexture {url "Images\nen.png"}}
+		geometry Box {size 45 .2 25}}]}
+	Transform {
+		translation -20 -9.3 -14
+		scale 14 14 14
+		children [Inline {url "HangHoa\pump.wrl"}]}
+
+	Transform {
+		translation -24 -9.3 -14
+		scale  14 14 14
+		children [Inline {url "HangHoa\pump.wrl"}]}
+	 Transform {
+		translation -16 -9.3 -14
+		scale 14 14 14
+		children [Inline {url "HangHoa\pump.wrl"}]}
+
+	Transform {
+		translation -28 -9.3 -14
+		scale  14 14 14
+		children [Inline {url "HangHoa\pump.wrl"}]}
+
+   	 Transform {
+		translation -12 -9.3 -14
+		scale 14 14 14
+		children [Inline {url "HangHoa\pump.wrl"}]}
+
+	Transform {
+		translation -32 -9.3 -14
+		scale  14 14 14
+		children [Inline {url "HangHoa\pump.wrl"}]}
+
+	Transform {
+		translation -35 -9.7 0
+		scale .3 .3 .3
+		children [Inline {url "HangHoa\sandal.wrl"}]}
+
+	Transform {
+		translation -30 -9.7 0
+		scale .3 .3 .3
+		children [Inline {url "HangHoa\sandal.wrl"}]}
+	Transform {
+		translation -25 -9.7 0
+		scale .3 .3 .3
+		children [Inline {url "HangHoa\sandal.wrl"}]}
+	Transform {
+		translation -20 -9.7 0
+		scale .3 .3 .3
+		children [Inline {url "HangHoa\sandal.wrl"}]}
+	Transform {
+		translation -15 -9.7 0
+		scale .3 .3 .3
+		children [Inline {url "HangHoa\sandal.wrl"}]}
+	Transform {
+		translation -10 -9.7 0
+		scale .3 .3 .3
+		children [Inline {url "HangHoa\sandal.wrl"}]}
+	Transform {
+		translation -5 -9.7 0
+		scale .3 .3 .3
+		children [Inline {url "HangHoa\sandal.wrl"}]}
+
+	Transform {
+		translation -35 -9.7 -10
+		rotation 0 0 0 1.57
+		scale .3 .3 .3
+		children [Inline {url "HangHoa\tennis_shoe.wrl"}]}
+	Transform {
+		translation -30 -9.7 -10
+		rotation 0 0 0 1.57
+		scale .3 .3 .3
+		children [Inline {url "HangHoa\tennis_shoe.wrl"}]}
+	Transform {
+		rotation 0 0 0 1.57
+		translation -25 -9.7 -10
+		scale .3 .3 .3
+		children [Inline {url "HangHoa\tennis_shoe.wrl"}]}
+	Transform {
+		rotation 0 0 0 1.57
+		translation -20 -9.7 -10
+		scale .3 .3 .3
+		children [Inline {url "HangHoa\tennis_shoe.wrl"}]}
+	Transform {
+		rotation 0 0 0 1.57
+		translation -15 -9.7 -10
+		scale .3 .3 .3
+		children [Inline {url "HangHoa\tennis_shoe.wrl"}]}
+
+	Transform {
+		rotation 0 0 0 1.57
+		translation -10 -9.7 -10
+		scale .3 .3 .3
+		children [Inline {url "HangHoa\tennis_shoe.wrl"}]}
+    Transform {
+		rotation 0 0 0 1.57
+		translation -5 -9.7 -10
+		scale .3 .3 .3
+		children [Inline {url "HangHoa\tennis_shoe.wrl"}]}
+    Transform {
+		rotation 0 0 0 1.57
+		translation 0 -9.7 -10
+		scale .3 .3 .3
+		children [Inline {url "HangHoa\tennis_shoe.wrl"}]}
+	Transform {
+		rotation 0 0 0 1.57
+		translation -25 -1.8 -20
+		scale 1.7 1.7 1.7
+		children [Inline {url "HangHoa\nguoi.wrl"}]}	
+	Transform {
+	translation -20 7 2
+	children [
+		Shape {
+			appearance Appearance {texture ImageTexture {url "Images\banner.png"}}
+			geometry Box {size 30 5 .2}}]}
+		
